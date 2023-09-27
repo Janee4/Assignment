@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.container {
+  display: flex; /*nu sitter left och right bredvid varandra */
+  justify-content: center; /*vi centrerar båda i mitten av horisontella axen */
+}
+.container .left {
+  border: solid 1px black;
+  margin-top: 300px;
+}
+.container .right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  padding: 150px;
+  margin-left: 500px;
+}
+.container .right .child {
+  padding: 20px;
+  border: 1px solid rgb(53, 22, 126);
+}

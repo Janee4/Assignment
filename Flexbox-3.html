@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <title></title>
+  <link rel="stylesheet" href="css/Flexbox-3.css">
+   <div>
+
+</head>
+<body>
+  <!-- Header section -->
+<header> <!--Header och div fungerar exakt likdant, bara olika namn--> 
+    <div class="container">
+      <a class="crito" href="flexbox-2.html"><img src="images/Logo.svg" alt="crito logotype"></a>
+      <button class="menu-bars"><i class="fa-solid fa-bars-staggered"></i></button>
+        <div class="menu"> 
+            <div class="top-menu"> <!--Vi har två delar längst upp, den ena består av kontakt information
+            (tel nummer, email, adress) och den andra består av länkar till sociala medier-->
+                <div class="contact-information">
+                    <div class="content-box">
+                        <i class="fa-regular fa-phone-volume"></i>
+                         + 46 (8) 121 470 50 
+                    </div>
+                    <div class="content-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        info@crito.com 
+                    </div>
+                    <div class="content-box last">
+                        <i class="fa-solid fa-location-dot"></i>
+                         Sveavägen 31, 111 34 STOCKHOLM
+                    </div>
+                </div>
+                <div class="social-media"> <!-- Vi skapar en klass som inte ligger i en annan klass, så då kan vi referera till den separat i scss dokumentet-->
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div> 
+            </div>
+            <div class="main-menu"> 
+                <nav>
+                    <a class="active" href="flexbox-2.html">Home</a>
+                    <a href="home.html">Service</a>
+                    <a href="home.html">News</a>
+                    <a href="home.html">Contact</a>
+                </nav>  <!--Vi skapar en nav som innebär navigering, vi hade likaväl kunna skapa en div tag, men 
+                       det blir lättare att tänka "okej det här är min navigering" och navigeringen ska göra att den tar användaren
+                      från ett ställe till ett annat via länkar, i vårt fall tar den användaren till "home", "service", "news"och "contact"-->
+                <a class="btn-yellow btn-login" id="login" href="login.html">Login <i class="fa-regular fa-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+ <!-- Showcase section  -->
+ <section class="showcase"> 
+    <div class="container">
+        <div class="thin-line-showcase">
+          <img src="images/thin-line-showcase.svg" alt="">
+        </div>
+        <div class="content">  <!--Lägg in all content delar i en separat div och img antingen i en separat div eller utanför content diven så att vi kan separera dem med space-between senare i scss-->
+            <h1>We Provide The Best Business Solutions</h1>
+            <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
+            <a class="btn-yellow" href="consulting.html">Get Consulting <i class="fa-regular fa-arrow-up-right"></i></a>
+            <a class="btn-transparent" href="services.html">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
+        </div>
+        <img class="man-img" src="images/Showcase.png" alt="showcase image of a man">
+    </div>
+</section>
+     
+<!--Showcase 2 section-->
+<section class="showcase-2">
+    <div class="container">
+        <div class="logo-section">
+            <img class="logo" src="images/Logos.png" alt="Logos">
+        </div>
+        <div class="container-2">
+            <div class="left">
+                <p>Features</p>
+                <h2>Our Accounting is<br> trusted by thousand<br> of companies</h2>
+                <a class="btn-yellow" href="learnmore.html">Learn More<i class="fa-regular fa-arrow-up-right"></i></a>
+            </div>
+            <div class="right">
+                <div class="business-advice">
+                    <img src="images/business-icon.svg" alt="picture of handshake">
+                    <h2>Business Advice</h2>
+                    <p>Lorem ipsum, dolor sit amet<br>
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div class="startup-business">
+                    <img src="images/startup-business-icon.svg" alt="picture of a glowing lamp icon with a man inside">
+                    <h2>Startup Business</h2>
+                    <p>Lorem ipsum, dolor sit amet<br>
+                    consectetur adipisicing elit.</p>
+                </div>
+                <div class="financial-advice">
+                    <img src="images/financial-advice-icon.svg" alt="picture of a diagram">
+                    <h2>Financial Advice</h2>
+                    <p>Lorem ipsum, dolor sit amet<br>
+                    consectetur adipisicing elit.</p> 
+                </div>
+                <div class="risk-management">
+                    <img src="images/risk-management-icon.svg" alt="picture of a box and a wheel">
+                    <h2>Risk Management</h2>
+                    <p>Lorem ipsum, dolor sit amet<br>
+                    consectetur adipisicing elit.</p>
+                </div>
+            </div>
+      </div>
+</section>
+ 
+<!--About company-->
+<section class="part-3">
+  <div class="container">
+    <div class="content-3-left">
+        <div class="woman-img">
+            <img src="images/woman.svg" alt="picture of a woman walking with a laptop in her hand">
+        </div>
+            <div class="blue-box"> <!--Skapa en låda separat ifrån bilden så att du kan förflytta dem separat i förhållande till varandra för att sedan överlappa boxen över bilden-->
+                <h3>Samantha Brown,</h3>
+                <p class="founder-paragraph">Founder</p>
+                <p class="lorem-paragraph">
+                "Lorem ipsum dolor sit amet consectetur<br> adipisicing elit."
+                </p>
+            </div>
+    </div>
+          <div class="content-3-right">
+            <p class="about-company-paragraph">About Company</p>
+            <h2>We Are Business<br>Consulting & Credit<br>Repair Experts</h2>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam<br> officiis quas assumenda esse obcaecati? Ex esse error voluptates iurevel totam eos.
+            </p>
+            <p class="lorem lorem-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse<br>quasi incidunt adipisci accusantium libero provident voluptate amet.</p> 
+            <a class="btn-learnmore" href="learnmore.html">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
+            <button class="btn-video"><i class="fa-solid fa-play"></i>
+            </button>
+            <div>
+              <p class="intro-video-paragraph">Intro Video</p>
+            </div>
+          </div>
+            
+          </div>
+      </div>
+    </section>
+
+<section class="we-provide-part4">
+  <div class="container">
+    <div class="thin-line">
+      <img src="images/thin-line (2).svg" alt="">
+    </div>
+  <div class="main-text">
+    <p>Our Services</p>
+    <h2>We Provide The Best<br>Service For Consulting</h2>
+  </div>        
+  <div class="boxes">
+          <div class="box-1">
+            <img src="images/line.svg" alt="line">
+            <h3>Business Advice</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+            <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+              <div class="box-2">
+                <img src="images/line.svg" alt="line">
+                <h3>Startup Business</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+                <a class="btn-yellow-box" href=""><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+                  <div class="box-3">
+                    <img src="images/line.svg" alt="line">
+                    <h3>Financial Advice</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+                    <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="box-4">
+                    <img src="images/line.svg" alt="line">
+                    <h3>Risk Management</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+                    <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  </div>
+                  <div class="centered-browse-services-button">
+                    <div class="button-under-boxes">
+                      <a class="btn-transparent" href="Browse-services.html">Browse Services <i class="fa-regular fa-arrow-up-right"></i></a>
+                    </div>
+                    
+                    </div>
+  </div>
+  
+
+                  
+                
+</section>
+
+<section class="why-choose-us-part5">
+  <div class="container">
+  <div class="left"> 
+      <div class="title">
+          <p>Why Choose Us</p>
+          <h2>Why We Are The<br>Best Business<br>Consulting Agency</h2>
+        </div>
+            <div class="text-and-img">
+              <div>
+                <img src="images/process-excellence-img.svg" alt="a picture of a thumb pointing up">
+              </div>
+                  <div id="different-style">
+                <h3>Process Excellence</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                  </div>
+            </div>
+            <div class="text-and-img">
+              <div>
+                <img src="images/strategic-planning-img.svg" alt="a picture of a thumb pointing up">
+              </div>
+                  <div id="different-style">
+                <h3>Strategic Planning</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                  </div>
+            </div>
+            <div class="text-and-img">
+              <div>
+                <img src="images/experience-design.svg" alt="a picture of a thumb pointing up">
+              </div>
+                  <div id="different-style">
+                    <h3>Experience Design</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                  </div>
+            </div>
+            <div class="text-and-img">
+              <div>
+                <img src="images/artificial-inteligence.svg" alt="a picture of a thumb pointing up">
+              </div>
+                  <div>
+                <h3>Artificial Inteligence</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                  </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="beige-box">
+            </div>
+                <img src="images/two-women.png" alt="a picture of two women talking">
+          </div>
+        </div>
+</section>
+
+<!-- project & case studies section -->
+<section class="project-and-case-6"><!--Det som håller allt inuti denna sectionen-->
+  <div class="container"><!--den containern somh håller h2 och p-->
+    <section class="section-title">
+    <p>Project & Case Studies</p>
+    <h2>Let's Looks Our Global Projects</h2>
+    <div class="project-and-cases">
+      <article>
+        <a href="art.html"><img src="images/article-img1.png" alt="A mans hand reading a business paper"></a>
+        <h3>Grow your business</h3>
+        <a class="read-more" href="#">Read More<i class="fa-regular fa-arrow-up-right"></i></a>
+      </article>
+      <article>
+        <a href="art.html"><img src="images/article-img2.png" alt="Pink apple products"></a>
+        <h3>Why your client needs a responsive website</h3>
+        <a class="read-more" href="#">Read More<i class="fa-regular fa-arrow-up-right"></i></a>
+      </article>
+      <article>
+       <a href="art.html"><img src="images/article-img3.png" alt="Desk with office supplies"></a> 
+        <h3>Educate your employees to get better results</h3>
+        <a class="read-more" href="#">Read More<i class="fa-regular fa-arrow-up-right"></i></a>
+      </article>
+      <article>
+        <a href="art.html"><img src="images/article-img4.png" alt="Laptop with business Intelligence Insights"></a>
+        <h3>Business Insights is a important piece of your business</h3>
+        <a class="read-more" href="#">Read More<i class="fa-regular fa-arrow-up-right"></i></a>
+      </article>
+    </div>
+    <div class="all-recent-projects-div">
+      <a class="btn-black" href="projects.html">All Recent Projects<i class="fa-regular fa-arrow-up-right"></i></a>
+    </div>
+  </div>
+  </section>
+<!--Experience Team Members section-->
+  <section class="team-members-7">
+    <div class="container">
+      <div class="title-container">
+        <div class="section-title">
+          <p>Meet Our Team</p>
+          <h2>Experience Team Members</h2>
+        </div>
+        <div class="btn-browse-team">
+          <a class="btn-browse-team" href="login.html">Browse Team<i class="fa-regular fa-arrow-up-right"></i></a>
+        </div>
+      </div>      
+      <div class="section-team-members">
+                <div class="members-name-and-proffesion">
+                  <a class="img-member" href="kristine.html"><img src="images/kristine-palmer-1.svg" alt="a picture of a team member called Kristine Palmer"></a>
+                  <h4>Kristine Palmer</h4>
+                  <p>Chef Operation Officer</p>
+                </div>
+                <div class="members-name-and-proffesion">
+                  <a class="img-member" href="mark.html"><img src="images/mark-aubri-2.svg" alt="a picture of a team member called Mark Aubri"></a>
+                  <h4>Mark Aubri</h4>
+                  <p>Senior Consultant</p>
+                </div>
+                <div class="members-name-and-proffesion">
+                  <a class="img-member" href="kimberly.html"><img src="images/kimberly-hansen-3.svg" alt="a picture of a team member called Kimberly Hansen"></a>
+                  <h4>Kimberly Hansen</h4>
+                  <p>Senior Consultant</p>
+                </div>
+                <div class="members-name-and-proffesion">
+                  <a class="img-member" href="justin.html"><img src="images/justin-willoman-4.svg" alt="a picture of a team member called Justin Willoman"></a>
+                  <h4>Justin Willoman</h4>
+                  <p>Senior Tech Consultant</p>
+                </div>
+              </div>
+                  <div class="circles">
+                    <div class="circle"></div>
+                    <div class="circle-2"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+    </div> 
+</section>
+
+<!--What our client says section-->
+
+<section class="what-our-client-says-8">
+  <div class="container">
+  <div class="section-title">
+    <p>Testimonial</p>
+    <h2>What Our Client Says</h2>
+  </div>
+  <div class="total-comments">
+    <div class="rating-1">
+      <span>&#9733;</span> <!-- Stjärna 1 -->
+      <span>&#9733;</span> <!-- Stjärna 2 -->
+      <span>&#9733;</span> <!-- Stjärna 3 -->
+      <span>&#9733;</span> <!-- Stjärna 4 -->
+      <span>&#9733;</span> <!-- Stjärna 5 -->
+      <p>"Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Laudantium libero, ad<br> dignissimos velit qui, dolorum obcaecati<br> cum saepe nesciunt nemo eligendi<br> numquam voluptate"</p>
+      <div class="img-name-profession">
+      <div class="three-images">
+      <img src="images/cassandra-warren-1.svg" alt="a picture of a woman">
+    </div>
+    <div class="name-profession">
+      <h4>Cassandra Warren</h4>
+      <p>Business Manager, Dorfus</p>
+    </div>
+    </div>
+  </div>
+    <div class="rating-1">
+      <span>&#9733;</span> <!-- Stjärna 1 -->
+      <span>&#9733;</span> <!-- Stjärna 2 -->
+      <span>&#9733;</span> <!-- Stjärna 3 -->
+      <span>&#9733;</span> <!-- Stjärna 4 -->
+      <span>&#9733;</span> <!-- Stjärna 5 -->
+      <p>"Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Laudantium libero, ad<br> dignissimos velit qui, dolorum obcaecati<br> cum saepe nesciunt nemo eligendi<br> numquam voluptate"</p>
+      <div class="img-name-profession">
+      <div class="three-images">
+      <img src="images/amanda-tulling-2.svg" alt="a picture of a woman">
+    </div>
+    <div class="name-profession">
+      <h4>Amanda Tulling</h4>
+      <p>Senior Developer, Square</p>
+    </div>
+  </div>
+  </div>
+    <div class="rating-1">
+      <span>&#9733;</span> <!-- Stjärna 1 -->
+      <span>&#9733;</span> <!-- Stjärna 2 -->
+      <span>&#9733;</span> <!-- Stjärna 3 -->
+      <span>&#9733;</span> <!-- Stjärna 4 -->
+      <span>&#9733;</span> <!-- Stjärna 5 -->
+      <p>"Lorem ipsum dolor, sit amet&nbsp;consectetur<br> adipisicing elit. Laudantium libero, ad<br> dignissimos velit qui, dolorum obcaecati<br> cum saepe nesciunt nemo eligendi<br> numquam voluptate"</p>
+      <div class="img-name-profession">
+      <div class="three-images">
+      <img src="images/jack-mcdogglas-3.svg" alt="a picture of a woman">
+    </div>
+    <div class="name-profession">
+      <h4>Jack McDogglas</h4>
+      <p>Key Account Manager, Gobona</p>
+    </div>    
+  </div>
+  </div>
+  </div>
+  <div class="all-recent-projects-div">
+    <a class="btn-black" href="projects.html">All Reviews<i class="fa-regular fa-arrow-up-right"></i></a>
+  </div>
+  </div>
+</section>
+
+<section class="article-and-news-8">
+  <div class="container">
+    <div class="title-container">
+      <div class="section-title">
+        <p>Article & News</p>
+        <h2>Get Every Single Articles & News</h2>
+      </div>
+      <div class="btn-class">
+        <a class="btn-transparent" href="login.html">Browse Articles<i class="fa-regular fa-arrow-up-right"></i></a>
+      </div>
+    </div>
+    <div class="how-to-section">
+      <div class="text-under-img">
+        <a href="how-to.html"><img src="images/articles-and-news-1.png" alt="a picture of a woman smiling"></a>
+        <p id="business">Business</p>
+        <h4>How To Use Digitalization In The Classroom</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+      </div>
+      <div class="yellow-rectangle-3">
+        <img src="images/yellow-rectangle.svg" alt="">
+        <p class="mars-13"><span class="day">13</span><br>Mar</p>
+      </div>
+      <div class="text-under-img">
+        <a href="how-to.html"><img src="images/articles-and-news-2.png" alt="a picture of three columns with text inside"></a>
+        <p id="business">Business</p>
+        <h4>How To Implement Chat GPT In Your Projects</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+      </div>
+      <div class="yellow-rectangle-2">
+        <img src="images/yellow-rectangle.svg" alt="">
+        <p class="mars-17"><span class="day">17</span><br>Mar</p>
+      </div>
+      
+      <div class="text-under-img">
+        <a href="how-to.html"><img src="images/articles-and-news-3.png" alt="a picture of a phone lying on top of two books on a table"></a>
+        <p id="business">Business</p>
+        <h4>The Guide To Support Modern CSS Design</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
+      </div>
+      <div class="yellow-rectangle-1">
+        <img src="images/yellow-rectangle.svg" alt="">
+        <p class="mars-25">25<br>Mar</p>
+      </div>
+    </div>
+        <div class="circles">
+          <div class="circle-1"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        </div>
+</section>
+
+<!-- Section over footer-->
+
+<section class="signup">
+  <div class="m-detail">
+    <img src="images/black-M.svg" alt="a black detail that is shaped as the letter M">
+  </div>
+  <div class="container">
+    <div class="left">
+      <h3>Get News Updates By Signup</h3>
+    </div>
+    <div class="right">
+      <div class="searchbar-plus-button">
+        <div class="searchbar">
+        <div><p>username@domain.com</p> 
+        </div>
+      </div>
+      <div class="btn-subscribe">
+        <a class="subscribe" href="login.html">Subscribe<i class="fa-regular fa-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+</section>
+
+<!--black section, navigation part-->
+<section class="black-navigation">
+  <div class="container">
+    <div class="crito">
+      <img src="images/black-crito-logo.svg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Placeat obcaecati voluptas<br> voluptates! Voluptates laborum nam<br> ratione minus necessitatibus, iure<br> praesentium.</p>
+    </div>
+    <div class="small-titles">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="works.html">Works</a>
+      <a href="career.html">Career</a>
+    </div>
+    <div class="small-titles">
+      <h4>Help</h4>
+      <a href="customersupport.html">Customer Support</a>
+      <a href="deliverydetails.html">Delivery Details</a>
+      <a href="terms-conditions.html">Terms & Conditions</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+    <div class="small-titles">
+      <h4>Resources</h4>
+      <a href="ebooks.html">Free eBooks</a>
+      <a href="dev-tutorial.html">Development Tutorial</a>
+      <a href="blog.html">How to -Blog</a>
+      <a href="youtube.html">Youtube Playlist</a>
+    </div>
+    <div class="small-titles">
+      <h4>Link</h4>
+      <a href="ebooks.html">Free eBooks</a>
+      <a href="dev-tutorial.html">Development Tutorial</a>
+      <a href="blog.html">How to -Blog</a>
+      <a href="youtube.html">Youtube Playlist</a>
+    </div>
+  </div>
+  <div class="grey-lines">
+    <img src="images/grey-lines.svg" alt="">
+  </div>
+</section>
+
+<!--footer-->
+<section class="footer">
+  <div class="container">
+<div class="left">
+  <p>© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
+</div>
+<div class="right">
+  <div class="social-media"> <!-- Vi skapar en klass som inte ligger i en annan klass, så då kan vi referera till den separat i scss dokumentet-->
+    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+</div> 
+
+</div>
+  </div>
+
+
+</section>
+
+
+<div style="height: 2000px;"></div>
+</main>
+</body>
+</html>
