@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.left {
+  flex: 1;
+  padding: 20px;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.image {
+  width: 45%;
+  max-width: 100%;
+}

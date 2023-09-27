@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+html, body {
+  margin: 0; /*Detta gör att allt vi gör i vår div tag (som finns i body) kommer att flyttas ända ut
+  till kanten, dvs det finns inget mellanrum längre */
+  font-size: 16px;
+ font-weight: 400; /*Här säger vi att tjockleken på texten ska vara "regular" dvs normal style 
+ vilket 400 betyder. */
+ /*font-family: hittade ej hans teckensnitt  */ 
+}
+.border {
+  border: 1px solid rgb(0, 0, 0); /*Här har vi valt en border som är en rak linje och inte "sträckad" */ 
+  
+}
+
+.parent-box  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+height: 100px;
+width: 100px;
+background-color: bisque;
+
+display: flex;/*här väljer vi att vi ska flexa*/
+justify-content: center; /*Här skjutsas texten först till mitten av taket
+på kvadraten*/
+align-items: center; /* och här åker texten ner från mitten av taket (som vi
+flyttade texten med hjälp av justify-content) ner till mitten av kvadraten */
+
+
+}
+
+.child-box { /*Anledningen till att child-boxen är flexad är för att 
+  child-boxen ligger innuti "box-classen" som också är flexad. Så därför
+  kommer cssen att reagera på height och widhten på child-boxen. */
+  height: 20px;
+  width: 20px;
+  background-color: aqua;
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
+
+
+html, body { /*All text blir till denna färg */
+  color: #191919;
+  font-family: 'Inter', sans-serif; /*Textsnitt */
+  font-size: 16px; /*storleken på texten */
+  font-weight: 400; /*hur stark färgen blir */
+  line-height: 1.5; /*mellanrum mellan varje rad */
+}
+
+  .wrapper-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto 1fr auto;
+   
+
+  }
+
+  header {
+    padding: 16px; //göra headern lite större på höjden
+    background-color: #F0EFE9; //bakgrundsfärg
+
+    .container {
+    display: grid;
+    align-items: center; //flytta ner logotypen till mitten av raden (går att använda align-items men inte justify-content då det är flex som tar hand om den!)
+    column-gap: 70px; //här skapar vi ett utrymme mellan kolumnerna, dvs det blir mer utrymme mellan logotypen och contactinfo bar och
+    grid-template-columns: 1fr auto; //Här får logotypen ta upp allt utrymme och meny baren tar bara upp det lilla som blir över längst ut till höger
+    grid-template-areas:                 "logo bars";
+    
+      @media (min-width: 992px) {
+        grid-template-columns: auto 1fr auto;
+    grid-template-areas:                 "logo cib social"
+                                          "logo menu login";
+      }
+    
+    .btn-menubars {
+      grid-area: bars; 
+      border: none;
+      font-size: 25px;
+      background-color: transparent;
+      // Här säger vi att när vi kommer över 992px så vill vi inte att menubars knappen ska synas
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    .logotype{
+      grid-area: logo;
+    }
+    .contactinformation-bar {
+      grid-area: cib;
+      display: none; /*När vi är under 992px så vill vi inte att contact delen ska synas */
+      @media (min-width: 992px) {
+        display: block; //När vi kommer över 992px då syns den.
+      }
+
+    }
+    .socialmedia-bar {
+      grid-area: social;
+
+      display: none; /*När vi är under 992px så vill vi inte att contact delen ska synas */
+      @media (min-width: 992px) {
+        display: block; //När vi kommer över 992px då syns den.
+      }
+    }
+    .mainmenu {
+      grid-area: menu;
+      
+      display: none; /*När vi är under 992px så vill vi inte att contact delen ska synas */
+      @media (min-width: 992px) {
+        display: block; //När vi kommer över 992px då syns den.
+      }
+    }
+    .login {
+      grid-area: login;
+
+      display: none; /*När vi är under 992px så vill vi inte att contact delen ska synas */
+      @media (min-width: 992px) {
+        display: block; //När vi kommer över 992px då syns den.
+      }
+    }
+  
+  }
+
+
+}
+  
