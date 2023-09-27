@@ -411,12 +411,11 @@ header .container .menu .main-menu .btn-login i {
 }
 .showcase-2 .container .container-2 .left {
   padding-left: 57px;
-  background-color: #F0EFE9;
+  background-color: #ffffff;
 }
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left {
     padding-left: 115px;
-    background-color: #ffffff;
   }
 }
 .showcase-2 .container .container-2 .left p {
