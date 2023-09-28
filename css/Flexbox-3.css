@@ -408,7 +408,6 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 .showcase-2 .container .container-2 .left {
-  padding-left: 57px;
   background-color: #ffffff;
 }
 @media (min-width: 576px) {
@@ -433,24 +432,18 @@ header .container .menu .main-menu .btn-login i {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
   font-weight: 700;
   font-size: 20px;
-  margin-left: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-align: center;
   margin-top: 30px;
-  display: block;
 }
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left h2 {
     font-size: 45px;
     text-align: left;
     margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 50px;
   }
-}
-.showcase-2 .container .container-2 .left .btn-yellow {
-  background-color: #F9D783;
-  border: solid 1px #F9D783;
-  color: #191919; /*Textens färg */
-  padding: 16px 50px;
 }
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left .btn-yellow {
@@ -458,8 +451,12 @@ header .container .menu .main-menu .btn-login i {
     padding: 16px 155px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
     font-weight: 400; /*här får vi tjockare text */
     font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
-    border-radius: 30px;
     margin-bottom: 217px;
+    margin-left: 0px;
+    border-radius: 30px;
+    background-color: #F9D783;
+    border: solid 1px #F9D783;
+    color: #191919; /*Textens färg */
   }
 }
 .showcase-2 .container .container-2 .left .btn-yellow i {
