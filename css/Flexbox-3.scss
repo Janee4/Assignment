@@ -1309,79 +1309,94 @@ header {
                 color: #191919;
                 font-family: 'DM Sans', sans-serif;
                 font-size: 25px;
-                font-weight: 900;
+                font-weight: 800;
                 margin-bottom: 55px;
 
                 br {
                   display: none;
                 }
               }
-      
             }
-            @media (min-width: 576px) {
-              margin-top: -29px;
-              margin-left: 100px;
+
+        @media (min-width: 576px) {
+          margin-top: -29px;
+          margin-left: 100px;
+
+          .title {
+            
+            p {
+              display: block;
+              color: rgb(249, 77, 28);
+              font-family: 'Inter', sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              
+            }
+
+            h2 { 
+              font-size: 45px;
+              font-weight: 900;
+              margin-bottom: 55px;
+              
+              br {
+                display: block;
+              }
+            }
+         }
+      }
+        
+  .text-and-img {
+    display: flex;
+    align-items: flex-start; /* Justera till vänster i kolumnlayout */
+    margin-left: 0px;
   
-              .title {
-                
-                p {
-                  display: block;
-                  color: rgb(249, 77, 28);
-                  font-family: 'Inter', sans-serif;
-                  font-size: 18px;
-                  font-weight: 500;
-                  
-                }
+    img {
+      margin-bottom: 30px;
+    }
+
+
+    h3 {
+      margin-left: 24px;
+      color: #191919;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 900;    
+    }
+
+    p {
+      margin-left: 24px;
+      color: #7a7979;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    @media (min-width: 576px) {
+      display: flex;
+      align-items: flex-start; /* Justera till vänster i kolumnlayout */
+      margin-left: 0px;
     
-                h2 { 
-                  font-size: 45px;
-                  font-weight: 900;
-                  margin-bottom: 55px;
-                  
-                  br {
-                    display: block;
-                  }
-                }
+      img {
+        margin-bottom: 30px;
+      }
+  
+  
+      h3 {
+        margin-left: 24px;
+        font-size: 20px;
+        font-weight: 900;    
+      }
+  
+      p {
+        margin-left: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        white-space: nowrap;
+      }
 
-
-                }
-          }
-        
-                  .text-and-img {
-                    display: flex;
-                    align-items: flex-start; /* Justera till vänster i kolumnlayout */
-                     /* Justera avståndet mellan container-elementen */
-                    margin-left: 0px;
-                  
-                    
-        
-        
-                    img {
-                      margin-bottom: 30px;
-        
-                    }
-                
-        
-                    h3 {
-                      margin-left: 24px;
-                      color: #191919;
-                      font-family: 'DM Sans', sans-serif;
-                      font-size: 20px;
-                      font-weight: 900;
-                      
-        
-                    }
-        
-                    p {
-                      margin-left: 24px;
-                      color: #7a7979;
-                      font-family: 'Inter', sans-serif;
-                      font-size: 16px;
-                      font-weight: 400;
-                      white-space: nowrap;
-                    }
-                  } 
-                }
+    }
+  } 
+}
         
                 .right {
                   position: relative;

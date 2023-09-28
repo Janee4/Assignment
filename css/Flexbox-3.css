@@ -1153,7 +1153,7 @@ header .container .menu .main-menu .btn-login i {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-size: 25px;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 55px;
 }
 .why-choose-us-part5 .container .left .title h2 br {
@@ -1183,7 +1183,6 @@ header .container .menu .main-menu .btn-login i {
 .why-choose-us-part5 .container .left .text-and-img {
   display: flex;
   align-items: flex-start; /* Justera till vänster i kolumnlayout */
-  /* Justera avståndet mellan container-elementen */
   margin-left: 0px;
 }
 .why-choose-us-part5 .container .left .text-and-img img {
@@ -1203,6 +1202,27 @@ header .container .menu .main-menu .btn-login i {
   font-size: 16px;
   font-weight: 400;
   white-space: nowrap;
+}
+@media (min-width: 576px) {
+  .why-choose-us-part5 .container .left .text-and-img {
+    display: flex;
+    align-items: flex-start; /* Justera till vänster i kolumnlayout */
+    margin-left: 0px;
+  }
+  .why-choose-us-part5 .container .left .text-and-img img {
+    margin-bottom: 30px;
+  }
+  .why-choose-us-part5 .container .left .text-and-img h3 {
+    margin-left: 24px;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .why-choose-us-part5 .container .left .text-and-img p {
+    margin-left: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
 }
 .why-choose-us-part5 .container .right {
   position: relative;
