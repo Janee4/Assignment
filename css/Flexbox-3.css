@@ -906,7 +906,7 @@ header .container .menu .main-menu .btn-login i {
 }
 .we-provide-part4 .container .main-text h2 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-  font-weight: 600; /*kolla design mallen och hämta från fonts.google.com */
+  font-weight: 800; /*kolla design mallen och hämta från fonts.google.com */
   font-size: 25px;
   color: #191919;
 }
@@ -949,7 +949,7 @@ header .container .menu .main-menu .btn-login i {
 .we-provide-part4 .container .boxes .box-3,
 .we-provide-part4 .container .boxes .box-4 {
   width: 308px; /* Bredden på lådan */
-  height: 300px; /* Höjden på lådan */
+  height: 250px; /* Höjden på lådan */
   background-color: rgb(255, 255, 255); /* Bakgrundsfärg */
   border: 2px solid rgb(255, 255, 255); /* Ram */
   padding: 20px; /* Inre utfyllnad */
@@ -966,14 +966,14 @@ header .container .menu .main-menu .btn-login i {
 .we-provide-part4 .container .boxes .box-4 h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
 }
 .we-provide-part4 .container .boxes .box-1 p,
 .we-provide-part4 .container .boxes .box-3 p,
 .we-provide-part4 .container .boxes .box-4 p {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #191919;
 }
@@ -981,7 +981,7 @@ header .container .menu .main-menu .btn-login i {
   .we-provide-part4 .container .boxes .box-1,
   .we-provide-part4 .container .boxes .box-3,
   .we-provide-part4 .container .boxes .box-4 {
-    height: 333px; /* Höjden på lådan */
+    height: 333px;
   }
   .we-provide-part4 .container .boxes .box-1 img,
   .we-provide-part4 .container .boxes .box-3 img,
@@ -992,23 +992,19 @@ header .container .menu .main-menu .btn-login i {
   .we-provide-part4 .container .boxes .box-1 h3,
   .we-provide-part4 .container .boxes .box-3 h3,
   .we-provide-part4 .container .boxes .box-4 h3 {
-    color: #191919;
-    font-family: "DM Sans", sans-serif;
     font-size: 22px;
     font-weight: 900;
   }
   .we-provide-part4 .container .boxes .box-1 p,
   .we-provide-part4 .container .boxes .box-3 p,
   .we-provide-part4 .container .boxes .box-4 p {
-    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #191919;
   }
 }
 .we-provide-part4 .container .boxes .box-2 {
   width: 308px; /* Bredden på lådan */
-  height: 300px; /* Höjden på lådan */
+  height: 250px; /* Höjden på lådan */
   background-color: rgb(249, 215, 131); /* Bakgrundsfärg */
   border: 2px solid rgb(249, 215, 131); /* Ram */
   padding: 20px; /* Inre utfyllnad */
@@ -1021,12 +1017,12 @@ header .container .menu .main-menu .btn-login i {
 .we-provide-part4 .container .boxes .box-2 h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
 }
 .we-provide-part4 .container .boxes .box-2 p {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #191919;
 }
@@ -1039,16 +1035,12 @@ header .container .menu .main-menu .btn-login i {
     margin-bottom: 44px;
   }
   .we-provide-part4 .container .boxes .box-2 h3 {
-    color: #191919;
-    font-family: "DM Sans", sans-serif;
     font-size: 22px;
     font-weight: 900;
   }
   .we-provide-part4 .container .boxes .box-2 p {
-    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #191919;
   }
 }
 

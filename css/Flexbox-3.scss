@@ -1048,7 +1048,7 @@ header {
 
         h2 {
         font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
-        font-weight: 600; /*kolla design mallen och hämta från fonts.google.com */
+        font-weight: 800; /*kolla design mallen och hämta från fonts.google.com */
         font-size: 25px;
         color: #191919;
         }
@@ -1095,7 +1095,7 @@ header {
       .box-3, 
       .box-4 {
         width: 308px; /* Bredden på lådan */
-        height: 300px; /* Höjden på lådan */
+        height: 250px; /* Höjden på lådan */
         background-color: rgb(255, 255, 255); /* Bakgrundsfärg */
         border: 2px solid rgb(255, 255, 255); /* Ram */
         padding: 20px; /* Inre utfyllnad */
@@ -1109,48 +1109,42 @@ header {
           h3 {
           color: #191919;
           font-family: 'DM Sans', sans-serif;
-          font-size: 22px;
+          font-size: 20px;
           font-weight: 900;
 
           }
 
           p {
           font-family: 'Inter', sans-serif;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 400;
           color: #191919;
           }
 
           @media (min-width: 576px) {
-            height: 333px; /* Höjden på lådan */
-            
+            height: 333px;         
           img {
             margin-top: 28px;
             margin-bottom: 44px;
-
           } 
           
           h3 {
-          color: #191919;
-          font-family: 'DM Sans', sans-serif;
           font-size: 22px;
           font-weight: 900;
-
           }
 
           p {
-          font-family: 'Inter', sans-serif;
+          
           font-size: 16px;
           font-weight: 400;
-          color: #191919;
-          }
-            
-          }
-        }
+          
+          }     
+       }
+    }
 
         .box-2 {
           width: 308px; /* Bredden på lådan */
-          height: 300px; /* Höjden på lådan */
+          height: 250px; /* Höjden på lådan */
           background-color: rgb(249, 215, 131); /* Bakgrundsfärg */
           border: 2px solid rgb(249, 215, 131); /* Ram */
           padding: 20px; /* Inre utfyllnad */
@@ -1164,14 +1158,14 @@ header {
           h3 {
             color: #191919;
             font-family: 'DM Sans', sans-serif;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 900;
 
           }
 
           p {
           font-family: 'Inter', sans-serif;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 400;
           color: #191919;
           }
@@ -1187,29 +1181,23 @@ header {
             img {
               margin-top: 28px;
               margin-bottom: 44px;
-  
             } 
             
             h3 {
-              color: #191919;
-              font-family: 'DM Sans', sans-serif;
               font-size: 22px;
               font-weight: 900;
-  
+
             }
   
             p {
-            font-family: 'Inter', sans-serif;
             font-size: 16px;
             font-weight: 400;
-            color: #191919;
             }
           }
         }
       }
-
-      }
     }
+  }
     
     
   
