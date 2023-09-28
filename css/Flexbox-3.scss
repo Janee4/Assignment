@@ -484,10 +484,11 @@ header {
             
               .left {
                 background-color:#ffffff;
+                margin-bottom: 40px;
                 
                 @media (min-width: 576px) {
                   padding-left: 115px;
-                  ;  
+                  margin-bottom: 0px;
                 }
                     
                 p {
@@ -562,6 +563,7 @@ header {
   display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
+   row-gap: 20px;
    margin-top: 0px;
    margin-left: 0px;
   
@@ -572,12 +574,15 @@ header {
     grid-template-rows: 1fr 1fr;
     margin-top: 35px;
     margin-left: 100px;
+    row-gap: 0;
   
   }
       //@media (min-width: 576px) {}
   .business-advice {
 
-    img {}
+    img {
+      margin-bottom: 10px;
+    }
     
     h2 {
       font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
@@ -617,7 +622,9 @@ header {
         
       .startup-business {
         
-        img {}
+        img {
+          margin-bottom: 10px;
+        }
             
         h2 {
           font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
@@ -658,7 +665,9 @@ header {
 
         .financial-advice {
         
-          img {}
+          img {
+            margin-bottom: 10px;
+          }
               
           h2 {
             font-family: 'DM Sans', sans-serif;
@@ -694,7 +703,9 @@ header {
          }
 
             .risk-management {
-              img {}
+              img {
+                margin-bottom: 10px;
+              }
             
         h2 {
           font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */

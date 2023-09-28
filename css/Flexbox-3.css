@@ -408,10 +408,12 @@ header .container .menu .main-menu .btn-login i {
 }
 .showcase-2 .container .container-2 .left {
   background-color: #ffffff;
+  margin-bottom: 40px;
 }
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left {
     padding-left: 115px;
+    margin-bottom: 0px;
   }
 }
 .showcase-2 .container .container-2 .left p {
@@ -472,6 +474,7 @@ header .container .menu .main-menu .btn-login i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
   margin-top: 0px;
   margin-left: 0px;
 }
@@ -482,7 +485,11 @@ header .container .menu .main-menu .btn-login i {
     grid-template-rows: 1fr 1fr;
     margin-top: 35px;
     margin-left: 100px;
+    row-gap: 0;
   }
+}
+.showcase-2 .container .right .business-advice img {
+  margin-bottom: 10px;
 }
 .showcase-2 .container .right .business-advice h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
@@ -511,6 +518,9 @@ header .container .menu .main-menu .btn-login i {
     font-size: 16px; /*storleken på texten */
     font-weight: 400;
   }
+}
+.showcase-2 .container .right .startup-business img {
+  margin-bottom: 10px;
 }
 .showcase-2 .container .right .startup-business h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
@@ -541,6 +551,9 @@ header .container .menu .main-menu .btn-login i {
     font-weight: 400;
   }
 }
+.showcase-2 .container .right .financial-advice img {
+  margin-bottom: 10px;
+}
 .showcase-2 .container .right .financial-advice h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
@@ -568,6 +581,9 @@ header .container .menu .main-menu .btn-login i {
     font-size: 16px; /*storleken på texten */
     font-weight: 400;
   }
+}
+.showcase-2 .container .right .risk-management img {
+  margin-bottom: 10px;
 }
 .showcase-2 .container .right .risk-management h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
