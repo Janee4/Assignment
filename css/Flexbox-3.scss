@@ -441,6 +441,7 @@ header {
     }
   }
 
+  //@media (min-width: 576px) { ... }
 .showcase-2 {
  margin-left: -10px;
  margin-bottom: -400px;
@@ -464,21 +465,21 @@ header {
         .logo {
           background-color: #ffffff;
           margin-left: 90px;
-          overflow: hidden;
+          // overflow: hidden;
 
         }
       }
           .container-2 {
             padding-bottom: 100px;
-            width: 1400px;
+            max-width: 1400px;
             height: 600px;
-            display: flex;
             gap: 2rem;
-            background-color:#F0EFE9;
+          
             
             @media (min-width: 576px) {
             background-color: #ffffff; 
             border: solid 1.6px rgb(208, 208, 208);
+            display: flex;
             }
             
               .left {
@@ -491,13 +492,16 @@ header {
                 }
                     
                 p {
-                  display: none;
-
+                  // display: none;
+                  font-family: 'Inter', sans-serif;
+                  font-size: 10px;
+                  font-weight: 400;
+                  color: rgb(249, 77, 28);
+                  margin-top: 30px;
                   @media (min-width: 576px) {
                     font-family: 'Inter', sans-serif; /*Textsnitt */
                     font-size: 18px; /*storleken på texten */
                     font-weight: 500;
-                    color: rgb(249, 77, 28);
                     margin-top: 60px;
                     display: block;
                   }
@@ -505,6 +509,19 @@ header {
 
                 h2 {
                   font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
+                  font-weight: 500;
+                  font-size: 20px; 
+                  margin-left: 0px;
+                  margin-bottom: 10px;
+                  text-align: center;
+                  margin-top: 0px;
+                  
+
+                  @media (min-width: 576px) {
+                    font-size: 45px; 
+                    text-align: left;
+                    margin-top: 0px;
+                    font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
                   font-weight: 700;
                   font-size: 20px; 
                   margin-left: 0px;
@@ -512,11 +529,6 @@ header {
                   text-align: center;
                   margin-top: 30px;
                   display: block;
-
-                  @media (min-width: 576px) {
-                    font-size: 45px; 
-                    text-align: left;
-                    margin-top: 0px;
 
                   }
                 }
@@ -549,7 +561,8 @@ header {
           }
   
 .right {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr;
   
       
   @media (min-width: 576px) {
