@@ -704,20 +704,20 @@ header .container .menu .main-menu .btn-login i {
 
 .we-provide-part4 {
   background-color: rgb(240, 239, 233);
-  margin-right: 30px;
+  position: relative;
+}
+.we-provide-part4 .thin-line {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
 }
 .we-provide-part4 .container {
   border: solid 1px rgb(240, 239, 233);
   background-color: rgb(240, 239, 233);
   position: relative;
   padding-bottom: 100px;
-}
-.we-provide-part4 .container .thin-line {
-  position: absolute;
-  margin-left: 850px;
-  z-index: 1;
-  bottom: 0;
-  overflow: hidden;
 }
 .we-provide-part4 .container .main-text {
   margin-left: 14px;
@@ -813,7 +813,7 @@ header .container .menu .main-menu .btn-login i {
 }
 
 .why-choose-us-part5 {
-  margin-right: 195px;
+  margin-right: 185px;
   margin-top: 4rem;
   position: relative;
 }
@@ -861,24 +861,27 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 400;
   white-space: nowrap;
 }
+.why-choose-us-part5 .container .right {
+  position: relative;
+  padding-right: 554px;
+}
 .why-choose-us-part5 .container .right .beige-box {
   position: absolute;
-  width: 100%; /* Ange önskad bredd */
+  width: 90%; /* Ange önskad bredd */
   height: 425px; /* Ange önskad höjd */
   background-color: rgb(240, 239, 233); /* Ange önskad bakgrundsfärg */
   border: 2px solid rgb(240, 239, 233); /* Ange önskad ramfärg och tjocklek */
-  margin-left: 110px;
-  margin-top: 155px;
   padding: 10px; /* Ange önskat inre utfyllnad */
   text-align: center; /* Centrera text inom lådan */
   color: #ffffff; /* Ange önskad textfärg */
   font-size: 18px; /* Ange önskad textstorlek */
-  overflow: hidden;
+  right: 0;
+  bottom: 0;
 }
 .why-choose-us-part5 .container .right img {
   position: relative;
-  top: -1px; /* Justera vertikal position */
-  left: 200px; /* Justera horisontell position */
+  top: 15px; /* Justera vertikal position */
+  left: 230px; /* Justera horisontell position */
   overflow: hidden;
 }
 
@@ -1245,9 +1248,14 @@ header .container .menu .main-menu .btn-login i {
   align-items: center;
   position: relative;
 }
+.signup .m-detail {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
 .signup .container {
   display: flex;
-  justify-content: center;
   gap: 190px;
 }
 .signup .container .left h3 {
@@ -1293,12 +1301,6 @@ header .container .menu .main-menu .btn-login i {
   background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
   border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
   color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
-}
-.signup .m-detail {
-  position: absolute;
-  z-index: 1;
-  margin-left: 1700px;
-  margin-top: 150px;
 }
 
 .black-navigation {
@@ -1354,15 +1356,15 @@ header .container .menu .main-menu .btn-login i {
 }
 .footer .container {
   display: flex;
-  justify-content: space-around;
+  gap: 700px;
   align-items: center;
+  margin-right: 310px;
 }
 .footer .container .left p {
   color: #b9b9b9;
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 14px; /*storleken på texten */
   font-weight: 400;
-  margin-top: 15px;
 }
 .footer .container .right a {
   color: #ffffff;

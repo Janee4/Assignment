@@ -844,21 +844,26 @@ header {
 
   .we-provide-part4 {
     background-color: rgb(240, 239, 233);
-    margin-right: 30px;
+    // margin-right: 30px;
+    position: relative;
+    .thin-line {
+      // border: solid 1px black;
+      position: absolute;
+      // margin-left: 844px;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      overflow: hidden;
+    }
+    
     .container {
     border: solid 1px rgb(240, 239, 233);
     background-color: rgb(240, 239, 233);
     position: relative;
     padding-bottom: 100px;
     
-
-    .thin-line {
-      position: absolute;
-      margin-left: 850px;
-      z-index: 1;
-      bottom: 0;
-      overflow: hidden;
-    }
+      
+    
 
       .main-text {
         margin-left: 14px;
@@ -982,7 +987,7 @@ header {
           }
            
           .why-choose-us-part5 {
-            margin-right: 195px;
+            margin-right: 185px;
             margin-top: 4rem;
             position: relative;
             
@@ -1053,27 +1058,32 @@ header {
                 }
         
                 .right {
+                  position: relative;
+                  padding-right: 554px;
                   
         
                     .beige-box {
+                      
                      position: absolute;
-                      width: 100%; /* Ange önskad bredd */
+                      width: 90%; /* Ange önskad bredd */
                       height: 425px; /* Ange önskad höjd */
                       background-color: rgb(240, 239, 233); /* Ange önskad bakgrundsfärg */
                       border: 2px solid rgb(240, 239, 233); /* Ange önskad ramfärg och tjocklek */
-                      margin-left: 110px;
-                      margin-top: 155px;
+                      // margin-left: 110px;
+                      // margin-right: 500px;
                       padding: 10px; /* Ange önskat inre utfyllnad */
                       text-align: center; /* Centrera text inom lådan */
                       color: #ffffff; /* Ange önskad textfärg */
                       font-size: 18px; /* Ange önskad textstorlek */
-                      overflow: hidden;
+                      // overflow: hidden;
+                      right: 0;
+                      bottom: 0;
                     }
         
                     img {
                       position: relative;
-                      top: -1px; /* Justera vertikal position */
-                      left: 200px; /* Justera horisontell position */
+                      top: 15px; /* Justera vertikal position */
+                      left: 230px; /* Justera horisontell position */
                       overflow: hidden;
                     }
         
@@ -1589,12 +1599,22 @@ height: 1005px;
   display: flex;
   align-items: center;
   position: relative;
+
+  .m-detail {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right:0;
+    // margin-left: 1700px;
+    // margin-top: 150px;
+    
+    }
   
   .container{
     display: flex;
-    justify-content: center;
     gap: 190px;
     // position: relative;
+    // margin-left: 280px;
     
     .left {
       h3 {
@@ -1658,13 +1678,7 @@ height: 1005px;
   }
  
 }
-.m-detail {
-  position: absolute;
-z-index: 1;
-margin-left: 1700px;
-margin-top: 150px;
 
-}
 }
 
 .black-navigation {
@@ -1677,6 +1691,7 @@ margin-top: 150px;
     justify-content: space-around;
     padding-top: 100px;
     position: relative;
+    // margin-left: 230px;
     .crito {
       margin-top: -10px;
       img {
@@ -1727,11 +1742,15 @@ margin-top: 150px;
 .footer {
   background-color: #0E1021;
   border-top: solid 1px #707070;
+  
   .container {
     display: flex;
-    justify-content: space-around;
+    gap: 700px;
     align-items: center;
-  
+    margin-right: 310px;
+    
+
+    
   
   .left {
     p{
@@ -1739,7 +1758,7 @@ margin-top: 150px;
       font-family: 'Inter', sans-serif; /*Textsnitt */
       font-size: 14px; /*storleken på texten */
       font-weight: 400;
-      margin-top: 15px;
+      
 
     }
   }
