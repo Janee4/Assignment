@@ -451,7 +451,7 @@ header .container .menu .main-menu .btn-login i {
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left .btn-yellow {
     text-decoration: none; /*vi tar bort strecket under texten Login */
-    padding: 10px 155px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+    padding: 0px 155px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
     font-weight: 400; /*här får vi tjockare text */
     font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
     margin-bottom: 217px;
@@ -1234,23 +1234,37 @@ header .container .menu .main-menu .btn-login i {
   padding-right: 554px;
 }
 .why-choose-us-part5 .container .right .beige-box {
-  position: absolute;
-  width: 90%; /* Ange önskad bredd */
-  height: 425px; /* Ange önskad höjd */
-  background-color: rgb(240, 239, 233); /* Ange önskad bakgrundsfärg */
-  border: 2px solid rgb(240, 239, 233); /* Ange önskad ramfärg och tjocklek */
-  padding: 10px; /* Ange önskat inre utfyllnad */
-  text-align: center; /* Centrera text inom lådan */
-  color: #ffffff; /* Ange önskad textfärg */
-  font-size: 18px; /* Ange önskad textstorlek */
-  right: 0;
-  bottom: 0;
+  display: none;
 }
 .why-choose-us-part5 .container .right img {
-  position: relative;
-  top: 15px; /* Justera vertikal position */
-  left: 230px; /* Justera horisontell position */
-  overflow: hidden;
+  display: none;
+}
+@media (min-width: 576px) {
+  .why-choose-us-part5 .container .right {
+    position: relative;
+    padding-right: 554px;
+  }
+  .why-choose-us-part5 .container .right .beige-box {
+    display: block;
+    position: absolute;
+    width: 90%; /* Ange önskad bredd */
+    height: 425px; /* Ange önskad höjd */
+    background-color: rgb(240, 239, 233); /* Ange önskad bakgrundsfärg */
+    border: 2px solid rgb(240, 239, 233); /* Ange önskad ramfärg och tjocklek */
+    padding: 10px; /* Ange önskat inre utfyllnad */
+    text-align: center; /* Centrera text inom lådan */
+    color: #ffffff; /* Ange önskad textfärg */
+    font-size: 18px; /* Ange önskad textstorlek */
+    right: 0;
+    bottom: 0;
+  }
+  .why-choose-us-part5 .container .right img {
+    position: relative;
+    top: 15px; /* Justera vertikal position */
+    left: 230px; /* Justera horisontell position */
+    overflow: hidden;
+    display: block;
+  }
 }
 
 .project-and-case-6 .container .section-title {
@@ -1334,6 +1348,39 @@ header .container .menu .main-menu .btn-login i {
   align-items: center;
   margin-bottom: 95px;
   padding-top: 150px;
+}
+@media (min-width: 576px) {
+  .team-members-7 .container .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 95px;
+    padding-top: 150px;
+  }
+}
+.team-members-7 .container .title-container .section-title p {
+  display: none;
+}
+.team-members-7 .container .title-container .section-title h2 {
+  font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
+  font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+  font-size: 45px;
+  color: #191919;
+}
+@media (min-width: 576px) {
+  .team-members-7 .container .title-container .section-title p {
+    display: block;
+    color: rgb(249, 77, 28);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .team-members-7 .container .title-container .section-title h2 {
+    font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
+    font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+    font-size: 45px;
+    color: #191919;
+  }
 }
 .team-members-7 .container .title-container .btn-browse-team {
   margin-left: 260px;
