@@ -1282,41 +1282,70 @@ header {
             }
             
           }
-           
-          .why-choose-us-part5 {
-            margin-right: 185px;
-            margin-top: 4rem;
-            position: relative;
+           //@media (min-width: 576px) {}
+.why-choose-us-part5 {
+  margin-top: 4rem;
+  position: relative;
+
+  @media (min-width: 576px) {
+    margin-right: 185px;
+    margin-top: 4rem;
+    position: relative;
+  }
             
-            .container {
-            display: flex;
-            
-        
-              .left {
-                margin-top: -29px;
-                margin-left: 100px;
-               
+    .container {
+      display: flex;
+
+        .left {
+          margin-top: -29px;
+          margin-left: 30px;
+
+            .title {
+              p {
+                display: none; 
+              }
+  
+              h2 {
+                color: #191919;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 25px;
+                font-weight: 900;
+                margin-bottom: 55px;
+
+                br {
+                  display: none;
+                }
+              }
+      
+            }
+            @media (min-width: 576px) {
+              margin-top: -29px;
+              margin-left: 100px;
+  
+              .title {
+                
+                p {
+                  display: block;
+                  color: rgb(249, 77, 28);
+                  font-family: 'Inter', sans-serif;
+                  font-size: 18px;
+                  font-weight: 500;
                   
-              
-                  .title {
-                    
-                    p {
-                      color: rgb(249, 77, 28);
-                      font-family: 'Inter', sans-serif;
-                      font-size: 18px;
-                      font-weight: 500;
-                      
-                    }
-        
-                    h2 {
-                      color: #191919;
-                      font-family: 'DM Sans', sans-serif;
-                      font-size: 45px;
-                      font-weight: 900;
-                      margin-bottom: 55px;
-                    }
-        
+                }
+    
+                h2 { 
+                  font-size: 45px;
+                  font-weight: 900;
+                  margin-bottom: 55px;
+                  
+                  br {
+                    display: block;
                   }
+                }
+
+
+                }
+          }
         
                   .text-and-img {
                     display: flex;
@@ -2042,21 +2071,16 @@ height: 1005px;
   
   .container {
     display: flex;
-    gap: 700px;
+    justify-content: space-between;
     align-items: center;
     margin-right: 310px;
     
-
-    
-  
   .left {
     p{
       color: #b9b9b9;
       font-family: 'Inter', sans-serif; /*Textsnitt */
       font-size: 14px; /*storleken på texten */
       font-weight: 400;
-      
-
     }
   }
   .right {

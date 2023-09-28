@@ -1129,29 +1129,56 @@ header .container .menu .main-menu .btn-login i {
 }
 
 .why-choose-us-part5 {
-  margin-right: 185px;
   margin-top: 4rem;
   position: relative;
+}
+@media (min-width: 576px) {
+  .why-choose-us-part5 {
+    margin-right: 185px;
+    margin-top: 4rem;
+    position: relative;
+  }
 }
 .why-choose-us-part5 .container {
   display: flex;
 }
 .why-choose-us-part5 .container .left {
   margin-top: -29px;
-  margin-left: 100px;
+  margin-left: 30px;
 }
 .why-choose-us-part5 .container .left .title p {
-  color: rgb(249, 77, 28);
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+  display: none;
 }
 .why-choose-us-part5 .container .left .title h2 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 900;
   margin-bottom: 55px;
+}
+.why-choose-us-part5 .container .left .title h2 br {
+  display: none;
+}
+@media (min-width: 576px) {
+  .why-choose-us-part5 .container .left {
+    margin-top: -29px;
+    margin-left: 100px;
+  }
+  .why-choose-us-part5 .container .left .title p {
+    display: block;
+    color: rgb(249, 77, 28);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .why-choose-us-part5 .container .left .title h2 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 55px;
+  }
+  .why-choose-us-part5 .container .left .title h2 br {
+    display: block;
+  }
 }
 .why-choose-us-part5 .container .left .text-and-img {
   display: flex;
@@ -1672,7 +1699,7 @@ header .container .menu .main-menu .btn-login i {
 }
 .footer .container {
   display: flex;
-  gap: 700px;
+  justify-content: space-between;
   align-items: center;
   margin-right: 310px;
 }
