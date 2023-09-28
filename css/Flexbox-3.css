@@ -1340,7 +1340,13 @@ header .container .menu .main-menu .btn-login i {
 
 .team-members-7 {
   background-color: rgb(240, 208, 130);
-  height: 1100px;
+  height: 2400px;
+}
+@media (min-width: 576px) {
+  .team-members-7 {
+    background-color: rgb(240, 208, 130);
+    height: 1100px;
+  }
 }
 .team-members-7 .container .title-container {
   align-items: start;
@@ -1457,12 +1463,18 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 .team-members-7 .container .circles {
-  display: grid;
-  grid-template-columns: repeat(5, 10px); /* Skapar 4 kolumner med 100px vardera */
-  grid-gap: 15px; /* Avstånd mellan cirklarna */
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  display: none;
+}
+@media (min-width: 576px) {
+  .team-members-7 .container .circles {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(5, 10px); /* Skapar 4 kolumner med 100px vardera */
+    grid-gap: 15px; /* Avstånd mellan cirklarna */
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
 }
 .team-members-7 .container .circles .circle {
   width: 10px;

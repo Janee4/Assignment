@@ -1539,8 +1539,13 @@ header {
 }
 
 .team-members-7 {
+  background-color: rgb(240, 208, 130);
+  height: 2400px;
+
+@media (min-width: 576px) { 
 background-color: rgb(240, 208, 130);
 height: 1100px;
+}
   .container {
     
     .title-container {
@@ -1693,33 +1698,36 @@ height: 1100px;
    }
 }
     
-  .circles {
+.circles {
+  display: none;
+  
+  @media (min-width: 576px) {
+    display: block;
     display: grid;
     grid-template-columns: repeat(5, 10px); /* Skapar 4 kolumner med 100px vardera */
     grid-gap: 15px; /* Avstånd mellan cirklarna */
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 70px;
-    
-    .circle {
-      width: 10px;
-      height: 10px;
-      background-color: #404a51;
-      opacity: 20%; /* Fyllningsfärg för cirklarna */
-      border-radius: 50%; /* Gör elementet till en cirkel */
-   
-    }
-    .circle-2 {
-      width: 10px;
-      height: 10px;
-      background-color: #191919;
-      border-radius: 50%;
-    }
+   }
+  
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #404a51;
+  opacity: 20%; /* Fyllningsfärg för cirklarna */
+  border-radius: 50%; /* Gör elementet till en cirkel */
 
 }
-  }
-
-
+.circle-2 {
+  width: 10px;
+  height: 10px;
+  background-color: #191919;
+  border-radius: 50%;
+}
+}
+}
 }
 
 .what-our-client-says-8 {
