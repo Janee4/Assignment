@@ -513,24 +513,34 @@ header .container .menu .main-menu .btn-login i {
     font-weight: 400;
   }
 }
-.showcase-2 .container .right .startup-business {
-  margin-left: 62px;
-  margin-top: 40px;
-}
-.showcase-2 .container .right .startup-business img {
-  margin-bottom: 30px;
-}
 .showcase-2 .container .right .startup-business h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
-  font-weight: 900;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 18px;
   color: #191919;
 }
 .showcase-2 .container .right .startup-business p {
   color: rgb(94, 94, 93);
   font-family: "Inter", sans-serif; /*Textsnitt */
-  font-size: 16px; /*storleken på texten */
+  font-size: 13px; /*storleken på texten */
   font-weight: 400;
+}
+@media (min-width: 576px) {
+  .showcase-2 .container .right .startup-business {
+    margin-top: 40px;
+    margin-left: 62px;
+  }
+  .showcase-2 .container .right .startup-business img {
+    margin-bottom: 30px;
+  }
+  .showcase-2 .container .right .startup-business h2 {
+    font-weight: 900;
+    font-size: 22px;
+  }
+  .showcase-2 .container .right .startup-business p {
+    font-size: 16px; /*storleken på texten */
+    font-weight: 400;
+  }
 }
 .showcase-2 .container .right .financial-advice {
   margin-top: 40px;
