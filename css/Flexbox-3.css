@@ -452,7 +452,7 @@ header .container .menu .main-menu .btn-login i {
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left .btn-yellow {
     text-decoration: none; /*vi tar bort strecket under texten Login */
-    padding: 10px 155px 0; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+    padding: 10px 155px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
     font-weight: 400; /*här får vi tjockare text */
     font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
     margin-bottom: 217px;
@@ -488,6 +488,9 @@ header .container .menu .main-menu .btn-login i {
     row-gap: 0;
   }
 }
+.showcase-2 .container .right .business-advice {
+  margin-left: 13px;
+}
 .showcase-2 .container .right .business-advice img {
   margin-bottom: 10px;
 }
@@ -506,6 +509,7 @@ header .container .menu .main-menu .btn-login i {
 @media (min-width: 576px) {
   .showcase-2 .container .right .business-advice {
     margin-top: 40px;
+    margin-left: 0;
   }
   .showcase-2 .container .right .business-advice img {
     margin-bottom: 30px;
@@ -518,6 +522,9 @@ header .container .menu .main-menu .btn-login i {
     font-size: 16px; /*storleken på texten */
     font-weight: 400;
   }
+}
+.showcase-2 .container .right .startup-business {
+  margin-left: 13px;
 }
 .showcase-2 .container .right .startup-business img {
   margin-bottom: 10px;
@@ -551,6 +558,9 @@ header .container .menu .main-menu .btn-login i {
     font-weight: 400;
   }
 }
+.showcase-2 .container .right .financial-advice {
+  margin-left: 13px;
+}
 .showcase-2 .container .right .financial-advice img {
   margin-bottom: 10px;
 }
@@ -569,6 +579,7 @@ header .container .menu .main-menu .btn-login i {
 @media (min-width: 576px) {
   .showcase-2 .container .right .financial-advice {
     margin-top: 40px;
+    margin-left: 0px;
   }
   .showcase-2 .container .right .financial-advice img {
     margin-bottom: 30px;
@@ -581,6 +592,9 @@ header .container .menu .main-menu .btn-login i {
     font-size: 16px; /*storleken på texten */
     font-weight: 400;
   }
+}
+.showcase-2 .container .right .risk-management {
+  margin-left: 13px;
 }
 .showcase-2 .container .right .risk-management img {
   margin-bottom: 10px;
@@ -620,18 +634,18 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: 100px;
   margin-left: -240px;
 }
-.part-3 .container {
-  display: flex;
-  gap: 133px;
+@media (min-width: 576px) {
+  .part-3 .container {
+    display: flex;
+    gap: 133px;
+  }
 }
 .part-3 .container .content-3-left {
   position: relative; /* Gör den överordnade behållaren relativt positionerad */
   flex: 1;
 }
 .part-3 .container .content-3-left .woman-img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 80px;
+  display: none;
 }
 @media (min-width: 576px) {
   .part-3 .container .content-3-left .woman-img {

@@ -535,7 +535,7 @@ header {
 
                   @media (min-width: 576px) {
                     text-decoration: none; /*vi tar bort strecket under texten Login */
-                    padding: 10px 155px 0; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+                    padding: 10px 155px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
                     font-weight: 400; /*här får vi tjockare text */
                     font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
                     margin-bottom: 217px;
@@ -566,8 +566,7 @@ header {
    row-gap: 20px;
    margin-top: 0px;
    margin-left: 0px;
-  
-      
+
   @media (min-width: 576px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -575,11 +574,10 @@ header {
     margin-top: 35px;
     margin-left: 100px;
     row-gap: 0;
-  
   }
-      //@media (min-width: 576px) {}
+  
   .business-advice {
-
+    margin-left: 13px;
     img {
       margin-bottom: 10px;
     }
@@ -601,6 +599,7 @@ header {
     }
     @media (min-width: 576px) {
       margin-top: 40px;
+      margin-left: 0;
 
       img {
         margin-bottom: 30px;
@@ -621,7 +620,7 @@ header {
   }
         
       .startup-business {
-        
+        margin-left: 13px;
         img {
           margin-bottom: 10px;
         }
@@ -664,7 +663,7 @@ header {
       }
 
         .financial-advice {
-        
+          margin-left: 13px;
           img {
             margin-bottom: 10px;
           }
@@ -684,6 +683,7 @@ header {
           }
           @media (min-width: 576px) {
             margin-top: 40px;
+            margin-left: 0px;
           
             img {
               margin-bottom: 30px;
@@ -703,6 +703,7 @@ header {
          }
 
             .risk-management {
+              margin-left: 13px;
               img {
                 margin-bottom: 10px;
               }
@@ -754,21 +755,25 @@ header {
   margin-bottom: 100px;
   margin-left: -240px;
   .container {
-    display: flex;
-    gap: 133px;
+    
+
+    @media (min-width: 576px) {
+      display: flex;
+      gap: 133px;
+    }
     .content-3-left {
       position: relative; /* Gör den överordnade behållaren relativt positionerad */
       flex:1;
       
         .woman-img {
-          // display: none;
-          max-width: 100%;
-          height: auto;
-          margin-left: 80px;
+          display: none;
+        
+          
 
           @media (min-width: 576px) {
           display: block;
           margin-left: 200px;
+          
           img {
             // max-width: 100%; /* Anpassa bildens storlek efter behov */
             display: block; /* Ta bort eventuell vertikal avståndsmarginal */
