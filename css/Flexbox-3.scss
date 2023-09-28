@@ -529,10 +529,12 @@ header {
                   // font-weight: 500;
                   
                   // margin-left: 130px;
+                  display: none;
+                  
 
                   @media (min-width: 576px) {
                     text-decoration: none; /*vi tar bort strecket under texten Login */
-                    padding: 16px 155px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+                    padding: 10px 155px 0; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
                     font-weight: 400; /*här får vi tjockare text */
                     font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
                     margin-bottom: 217px;
@@ -541,6 +543,8 @@ header {
                     background-color: #F9D783;
                     border: solid 1px #F9D783 ;
                     color: #191919; /*Textens färg */
+                    display: block;
+                    align-items: center;
                   }
                   
                   i {
@@ -553,17 +557,21 @@ header {
             }
           }
   
+          // @media (min-width: 576px) { ... }
 .right {
   display: grid;
-  grid-template-columns: 1fr;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   margin-top: 0px;
+   margin-left: 0px;
   
       
   @media (min-width: 576px) {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   margin-top: 35px;
-   margin-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 35px;
+    margin-left: 100px;
   
   }
       
