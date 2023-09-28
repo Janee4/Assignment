@@ -768,20 +768,16 @@ header {
         .woman-img {
           display: none;
         
-          
-
           @media (min-width: 576px) {
           display: block;
           margin-left: 200px;
           
-          img {
-            // max-width: 100%; /* Anpassa bildens storlek efter behov */
-            display: block; /* Ta bort eventuell vertikal avståndsmarginal */
+          img { 
+            display: block;
             margin-bottom: 1px;
-           
           }
         }
-        }
+      }
     
         .blue-box {
           display: none;
@@ -833,17 +829,27 @@ header {
         flex: 1.1;
         
         .about-company-paragraph {
-          color: rgb(249, 77, 28);
-          margin-top: -5px;
-          font-family: 'Inter', sans-serif;
-          font-weight: 500;
+
+          @media (min-width: 576px) {
+            color: rgb(249, 77, 28);
+            margin-top: -5px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+          }
           
         }
 
         h2 {
           font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
-          font-weight: 800; /*ska vara 700 egentligen men den blir för smal */
-          font-size: 40px;
+          font-weight: 800;
+          font-size: 30px;
+          text-align: center;
+          
+          @media (min-width: 576px) { 
+            font-weight: 800;
+            font-size: 40px;
+            text-align: start;
+          }
         }
 
         .lorem {
@@ -852,18 +858,31 @@ header {
           font-family: 'Inter', sans-serif;
           color: #707070; 
           margin-top: 29px;
+          line-height: 25px;
+
+          @media (min-width: 576px) { 
+            font-size: 13px;
+          font-weight: 400; 
+          margin-top: 29px;
           line-height: 30px;
+          }
           
         }
 
         .lorem-2 {
-          margin-bottom: 55px;
           font-size: 13px;
           font-weight: 400;
           font-family: 'Inter', sans-serif;
           color: #707070; 
           margin-top: 29px;
           line-height: 25px;
+
+          @media (min-width: 576px) { 
+            font-size: 13px;
+          font-weight: 400; 
+          margin-top: 29px;
+          line-height: 30px;
+          }
         }
 
         .btn-learnmore {

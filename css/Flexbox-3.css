@@ -653,7 +653,7 @@ header .container .menu .main-menu .btn-login i {
     margin-left: 200px;
   }
   .part-3 .container .content-3-left .woman-img img {
-    display: block; /* Ta bort eventuell vertikal avståndsmarginal */
+    display: block;
     margin-bottom: 1px;
   }
 }
@@ -699,16 +699,26 @@ header .container .menu .main-menu .btn-login i {
 .part-3 .content-3-right {
   flex: 1.1;
 }
-.part-3 .content-3-right .about-company-paragraph {
-  color: rgb(249, 77, 28);
-  margin-top: -5px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+@media (min-width: 576px) {
+  .part-3 .content-3-right .about-company-paragraph {
+    color: rgb(249, 77, 28);
+    margin-top: -5px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
 }
 .part-3 .content-3-right h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
-  font-weight: 800; /*ska vara 700 egentligen men den blir för smal */
-  font-size: 40px;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .part-3 .content-3-right h2 {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: start;
+  }
 }
 .part-3 .content-3-right .lorem {
   font-size: 13px;
@@ -716,16 +726,31 @@ header .container .menu .main-menu .btn-login i {
   font-family: "Inter", sans-serif;
   color: #707070;
   margin-top: 29px;
-  line-height: 30px;
+  line-height: 25px;
+}
+@media (min-width: 576px) {
+  .part-3 .content-3-right .lorem {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 29px;
+    line-height: 30px;
+  }
 }
 .part-3 .content-3-right .lorem-2 {
-  margin-bottom: 55px;
   font-size: 13px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
   color: #707070;
   margin-top: 29px;
   line-height: 25px;
+}
+@media (min-width: 576px) {
+  .part-3 .content-3-right .lorem-2 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 29px;
+    line-height: 30px;
+  }
 }
 .part-3 .content-3-right .btn-learnmore {
   position: absolute;
