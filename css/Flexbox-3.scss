@@ -1039,7 +1039,7 @@ header {
     padding-bottom: 100px;
     
       .main-text {
-        margin-left: 14px;
+        margin-left: 51px;
         margin-top: 30px;
         position: absolute;
         p {
@@ -1049,7 +1049,7 @@ header {
         h2 {
         font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
         font-weight: 600; /*kolla design mallen och hämta från fonts.google.com */
-        font-size: 30px;
+        font-size: 25px;
         color: #191919;
         }
 
@@ -1075,21 +1075,31 @@ header {
    }
 
     .boxes {
-      display: flex;
+      display: grid;
       justify-content: center;
       align-items: center;
-      margin-top: 314px;
+      margin-top: 150px;
+      row-gap: 50px;
       // margin-bottom: 223px;
+
+      @media (min-width: 576px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 314px;
+        row-gap: 0px;
+        
+      }
 
       .box-1,
       .box-3, 
       .box-4 {
-          width: 308px; /* Bredden på lådan */
-          height: 333px; /* Höjden på lådan */
-          background-color: rgb(255, 255, 255); /* Bakgrundsfärg */
-          border: 2px solid rgb(255, 255, 255); /* Ram */
-          padding: 20px; /* Inre utfyllnad */
-          margin: 0 15px;
+        width: 308px; /* Bredden på lådan */
+        height: 300px; /* Höjden på lådan */
+        background-color: rgb(255, 255, 255); /* Bakgrundsfärg */
+        border: 2px solid rgb(255, 255, 255); /* Ram */
+        padding: 20px; /* Inre utfyllnad */
+        margin: 0 15px;
           img {
             margin-top: 28px;
             margin-bottom: 44px;
@@ -1109,14 +1119,38 @@ header {
           font-size: 16px;
           font-weight: 400;
           color: #191919;
+          }
+
+          @media (min-width: 576px) {
+            height: 333px; /* Höjden på lådan */
+            
+          img {
+            margin-top: 28px;
+            margin-bottom: 44px;
+
+          } 
+          
+          h3 {
+          color: #191919;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 22px;
+          font-weight: 900;
 
           }
 
+          p {
+          font-family: 'Inter', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          color: #191919;
+          }
+            
+          }
         }
 
         .box-2 {
           width: 308px; /* Bredden på lådan */
-          height: 333px; /* Höjden på lådan */
+          height: 300px; /* Höjden på lådan */
           background-color: rgb(249, 215, 131); /* Bakgrundsfärg */
           border: 2px solid rgb(249, 215, 131); /* Ram */
           padding: 20px; /* Inre utfyllnad */
@@ -1146,6 +1180,31 @@ header {
             
           }
 
+          @media (min-width: 576px) {
+            
+            height: 333px; /* Höjden på lådan */
+            
+            img {
+              margin-top: 28px;
+              margin-bottom: 44px;
+  
+            } 
+            
+            h3 {
+              color: #191919;
+              font-family: 'DM Sans', sans-serif;
+              font-size: 22px;
+              font-weight: 900;
+  
+            }
+  
+            p {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #191919;
+            }
+          }
         }
       }
 
