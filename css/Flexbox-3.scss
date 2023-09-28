@@ -1346,12 +1346,13 @@ header {
       }
         
   .text-and-img {
-    display: flex;
-    align-items: flex-start; /* Justera till vänster i kolumnlayout */
-    margin-left: 0px;
+    display: grid;
+    margin-left: -25px;
+    margin-bottom: 15px;
   
     img {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
+      max-width: 50px;
     }
 
 
@@ -1359,7 +1360,7 @@ header {
       margin-left: 24px;
       color: #191919;
       font-family: 'DM Sans', sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 900;    
     }
 
@@ -1367,7 +1368,7 @@ header {
       margin-left: 24px;
       color: #7a7979;
       font-family: 'Inter', sans-serif;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       white-space: nowrap;
     }
@@ -1375,9 +1376,13 @@ header {
       display: flex;
       align-items: flex-start; /* Justera till vänster i kolumnlayout */
       margin-left: 0px;
+      margin-left: 0px;
+    margin-bottom: 0px;
+    border: none;
     
       img {
         margin-bottom: 30px;
+        max-width: none;
       }
   
   

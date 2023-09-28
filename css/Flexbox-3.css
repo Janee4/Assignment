@@ -1181,25 +1181,26 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 .why-choose-us-part5 .container .left .text-and-img {
-  display: flex;
-  align-items: flex-start; /* Justera till vänster i kolumnlayout */
-  margin-left: 0px;
+  display: grid;
+  margin-left: -25px;
+  margin-bottom: 15px;
 }
 .why-choose-us-part5 .container .left .text-and-img img {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  max-width: 50px;
 }
 .why-choose-us-part5 .container .left .text-and-img h3 {
   margin-left: 24px;
   color: #191919;
   font-family: "DM Sans", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
 }
 .why-choose-us-part5 .container .left .text-and-img p {
   margin-left: 24px;
   color: #7a7979;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -1208,9 +1209,13 @@ header .container .menu .main-menu .btn-login i {
     display: flex;
     align-items: flex-start; /* Justera till vänster i kolumnlayout */
     margin-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border: none;
   }
   .why-choose-us-part5 .container .left .text-and-img img {
     margin-bottom: 30px;
+    max-width: none;
   }
   .why-choose-us-part5 .container .left .text-and-img h3 {
     margin-left: 24px;
