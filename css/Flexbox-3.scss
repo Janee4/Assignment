@@ -1100,10 +1100,10 @@ header {
         border: 2px solid rgb(255, 255, 255); /* Ram */
         padding: 20px; /* Inre utfyllnad */
         margin: 0 15px;
-         position: relative;
+        position: relative;
         img {
-            margin-top: 28px;
-            margin-bottom: 44px;
+          margin-top: 20px;
+          margin-bottom: 30px;
 
           } 
           
@@ -1112,6 +1112,7 @@ header {
           font-family: 'DM Sans', sans-serif;
           font-size: 20px;
           font-weight: 900;
+          
 
           }
 
@@ -1129,8 +1130,8 @@ header {
             height: 40px;
             width: 40px;
             border-radius: 25px;
-            margin-left: 200px;
-            margin-top: -20px;
+            margin-left: 220px;
+            margin-top: 10px;
             z-index: 1;
             
               i {
@@ -1169,8 +1170,6 @@ header {
             margin-left: 200px;
             margin-top: 18px;
             
-            
-        
               i {
                 position: absolute;
                 color: white;
@@ -1192,8 +1191,8 @@ header {
           padding: 20px; /* Inre utfyllnad */
           margin: 0 15px;
           img {
-            margin-top: 28px;
-            margin-bottom: 44px;
+            margin-top: 20px;
+            margin-bottom: 30px;
 
           } 
           
@@ -1212,27 +1211,31 @@ header {
           color: #191919;
           }
 
-          .btn-go-to {
+          .btn-yellow-box {
             position: absolute;
-            background-color: #191919;
-            border: solid 1px black;
+            background-color: #ffffff;
+            border: solid 1px rgb(255, 255, 255);
             color: #191919; /*Textens färg */
             height: 40px;
             width: 40px;
             border-radius: 25px;
-            margin-left: 200px;
-            margin-top: -20px;
+            margin-left: 220px;
+            margin-top: 10px;
             z-index: 1;
             
-              i {
-                position: absolute;
-                color: white;
-                margin-left: 15px;
-                margin-top: 10px;
-                font-size: 1em;
-                font-weight: 390;
-              }
+        
+            i {
+              position: absolute;
+              color: rgb(0, 0, 0);
+              margin-left: 15px;
+              margin-top: 10px;
+              font-size: 1em;
+              font-weight: 400;
+              transform: translate(-20%, -0%); /* Centrera ikonen helt och hållet */
+             
+            }
           }
+        
 
           @media (min-width: 576px) {
             

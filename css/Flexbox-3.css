@@ -959,8 +959,8 @@ header .container .menu .main-menu .btn-login i {
 .we-provide-part4 .container .boxes .box-1 img,
 .we-provide-part4 .container .boxes .box-3 img,
 .we-provide-part4 .container .boxes .box-4 img {
-  margin-top: 28px;
-  margin-bottom: 44px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .we-provide-part4 .container .boxes .box-1 h3,
 .we-provide-part4 .container .boxes .box-3 h3,
@@ -988,8 +988,8 @@ header .container .menu .main-menu .btn-login i {
   height: 40px;
   width: 40px;
   border-radius: 25px;
-  margin-left: 200px;
-  margin-top: -20px;
+  margin-left: 220px;
+  margin-top: 10px;
   z-index: 1;
 }
 .we-provide-part4 .container .boxes .box-1 .btn-go-to i,
@@ -1060,8 +1060,8 @@ header .container .menu .main-menu .btn-login i {
   margin: 0 15px;
 }
 .we-provide-part4 .container .boxes .box-2 img {
-  margin-top: 28px;
-  margin-bottom: 44px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .we-provide-part4 .container .boxes .box-2 h3 {
   color: #191919;
@@ -1075,25 +1075,26 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 400;
   color: #191919;
 }
-.we-provide-part4 .container .boxes .box-2 .btn-go-to {
+.we-provide-part4 .container .boxes .box-2 .btn-yellow-box {
   position: absolute;
-  background-color: #191919;
-  border: solid 1px black;
+  background-color: #ffffff;
+  border: solid 1px rgb(255, 255, 255);
   color: #191919; /*Textens färg */
   height: 40px;
   width: 40px;
   border-radius: 25px;
-  margin-left: 200px;
-  margin-top: -20px;
+  margin-left: 220px;
+  margin-top: 10px;
   z-index: 1;
 }
-.we-provide-part4 .container .boxes .box-2 .btn-go-to i {
+.we-provide-part4 .container .boxes .box-2 .btn-yellow-box i {
   position: absolute;
-  color: white;
+  color: rgb(0, 0, 0);
   margin-left: 15px;
   margin-top: 10px;
   font-size: 1em;
-  font-weight: 390;
+  font-weight: 400;
+  transform: translate(-20%, 0%); /* Centrera ikonen helt och hållet */
 }
 @media (min-width: 576px) {
   .we-provide-part4 .container .boxes .box-2 {
