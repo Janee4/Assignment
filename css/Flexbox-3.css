@@ -370,7 +370,6 @@ header .container .menu .main-menu .btn-login i {
 
 .showcase-2 {
   margin-left: -10px;
-  margin-bottom: -400px;
 }
 @media (min-width: 576px) {
   .showcase-2 {
@@ -542,22 +541,16 @@ header .container .menu .main-menu .btn-login i {
     font-weight: 400;
   }
 }
-.showcase-2 .container .right .financial-advice {
-  margin-top: 40px;
-}
-.showcase-2 .container .right .financial-advice img {
-  margin-bottom: 30px;
-}
 .showcase-2 .container .right .financial-advice h2 {
-  font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
-  font-weight: 900;
-  font-size: 22px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   color: #191919;
 }
 .showcase-2 .container .right .financial-advice p {
   color: rgb(94, 94, 93);
   font-family: "Inter", sans-serif; /*Textsnitt */
-  font-size: 16px; /*storleken på texten */
+  font-size: 13px; /*storleken på texten */
   font-weight: 400;
 }
 @media (min-width: 576px) {
@@ -576,24 +569,34 @@ header .container .menu .main-menu .btn-login i {
     font-weight: 400;
   }
 }
-.showcase-2 .container .right .risk-management {
-  margin-left: 62px;
-  margin-top: 40px;
-}
-.showcase-2 .container .right .risk-management img {
-  margin-bottom: 30px;
-}
 .showcase-2 .container .right .risk-management h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
-  font-weight: 900;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 18px;
   color: #191919;
 }
 .showcase-2 .container .right .risk-management p {
   color: rgb(94, 94, 93);
   font-family: "Inter", sans-serif; /*Textsnitt */
-  font-size: 16px; /*storleken på texten */
+  font-size: 13px; /*storleken på texten */
   font-weight: 400;
+}
+@media (min-width: 576px) {
+  .showcase-2 .container .right .risk-management {
+    margin-top: 40px;
+    margin-left: 62px;
+  }
+  .showcase-2 .container .right .risk-management img {
+    margin-bottom: 30px;
+  }
+  .showcase-2 .container .right .risk-management h2 {
+    font-weight: 900;
+    font-size: 22px;
+  }
+  .showcase-2 .container .right .risk-management p {
+    font-size: 16px; /*storleken på texten */
+    font-weight: 400;
+  }
 }
 
 .part-3 {
