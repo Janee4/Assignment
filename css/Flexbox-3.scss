@@ -1014,19 +1014,22 @@ header {
                 }
           }
 
-
-  .we-provide-part4 {
-    background-color: rgb(240, 239, 233);
-    // margin-right: 30px;
-    position: relative;
+//@media (min-width: 576px) {}
+.we-provide-part4 {
+  background-color: rgb(240, 239, 233);
+  // margin-right: 30px;
+  position: relative;
     .thin-line {
-      // border: solid 1px black;
-      position: absolute;
-      // margin-left: 844px;
-      z-index: 1;
-      bottom: 0;
-      right: 0;
-      overflow: hidden;
+      display: none;
+     
+      @media (min-width: 576px) { 
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+        display: block;
+      }
     }
     
     .container {
@@ -1035,31 +1038,41 @@ header {
     position: relative;
     padding-bottom: 100px;
     
-      
-    
-
       .main-text {
         margin-left: 14px;
-        margin-top: 120px;
+        margin-top: 30px;
         position: absolute;
         p {
-          color: rgb(249, 77, 28);
-          font-family: 'Inter', sans-serif;
-          font-size: 18px;
-          font-weight: 500;
-
+          display: none;
         }
 
         h2 {
         font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
-        font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
-        font-size: 45px;
+        font-weight: 600; /*kolla design mallen och hämta från fonts.google.com */
+        font-size: 30px;
         color: #191919;
         }
 
-      }
-      
+        @media (min-width: 576px) {
+          margin-left: 14px;
+          margin-top: 120px;
+          position: absolute;
+          p {
+            color: rgb(249, 77, 28);
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            display: block;
+          }
+  
+          h2 {
+          font-size: 45px;
+          font-weight: 700; 
+          color: #191919;
+
         }
+     }  
+   }
 
     .boxes {
       display: flex;
@@ -1137,6 +1150,7 @@ header {
       }
 
       }
+    }
     
     
   

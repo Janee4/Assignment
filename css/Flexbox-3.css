@@ -878,11 +878,17 @@ header .container .menu .main-menu .btn-login i {
   position: relative;
 }
 .we-provide-part4 .thin-line {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
+  display: none;
+}
+@media (min-width: 576px) {
+  .we-provide-part4 .thin-line {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    display: block;
+  }
 }
 .we-provide-part4 .container {
   border: solid 1px rgb(240, 239, 233);
@@ -892,30 +898,46 @@ header .container .menu .main-menu .btn-login i {
 }
 .we-provide-part4 .container .main-text {
   margin-left: 14px;
-  margin-top: 120px;
+  margin-top: 30px;
   position: absolute;
 }
 .we-provide-part4 .container .main-text p {
-  color: rgb(249, 77, 28);
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+  display: none;
 }
 .we-provide-part4 .container .main-text h2 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-  font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
-  font-size: 45px;
+  font-weight: 600; /*kolla design mallen och hämta från fonts.google.com */
+  font-size: 30px;
   color: #191919;
 }
-.we-provide-part4 .boxes {
+@media (min-width: 576px) {
+  .we-provide-part4 .container .main-text {
+    margin-left: 14px;
+    margin-top: 120px;
+    position: absolute;
+  }
+  .we-provide-part4 .container .main-text p {
+    color: rgb(249, 77, 28);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+  }
+  .we-provide-part4 .container .main-text h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #191919;
+  }
+}
+.we-provide-part4 .container .boxes {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 314px;
 }
-.we-provide-part4 .boxes .box-1,
-.we-provide-part4 .boxes .box-3,
-.we-provide-part4 .boxes .box-4 {
+.we-provide-part4 .container .boxes .box-1,
+.we-provide-part4 .container .boxes .box-3,
+.we-provide-part4 .container .boxes .box-4 {
   width: 308px; /* Bredden på lådan */
   height: 333px; /* Höjden på lådan */
   background-color: rgb(255, 255, 255); /* Bakgrundsfärg */
@@ -923,29 +945,29 @@ header .container .menu .main-menu .btn-login i {
   padding: 20px; /* Inre utfyllnad */
   margin: 0 15px;
 }
-.we-provide-part4 .boxes .box-1 img,
-.we-provide-part4 .boxes .box-3 img,
-.we-provide-part4 .boxes .box-4 img {
+.we-provide-part4 .container .boxes .box-1 img,
+.we-provide-part4 .container .boxes .box-3 img,
+.we-provide-part4 .container .boxes .box-4 img {
   margin-top: 28px;
   margin-bottom: 44px;
 }
-.we-provide-part4 .boxes .box-1 h3,
-.we-provide-part4 .boxes .box-3 h3,
-.we-provide-part4 .boxes .box-4 h3 {
+.we-provide-part4 .container .boxes .box-1 h3,
+.we-provide-part4 .container .boxes .box-3 h3,
+.we-provide-part4 .container .boxes .box-4 h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 900;
 }
-.we-provide-part4 .boxes .box-1 p,
-.we-provide-part4 .boxes .box-3 p,
-.we-provide-part4 .boxes .box-4 p {
+.we-provide-part4 .container .boxes .box-1 p,
+.we-provide-part4 .container .boxes .box-3 p,
+.we-provide-part4 .container .boxes .box-4 p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #191919;
 }
-.we-provide-part4 .boxes .box-2 {
+.we-provide-part4 .container .boxes .box-2 {
   width: 308px; /* Bredden på lådan */
   height: 333px; /* Höjden på lådan */
   background-color: rgb(249, 215, 131); /* Bakgrundsfärg */
@@ -953,17 +975,17 @@ header .container .menu .main-menu .btn-login i {
   padding: 20px; /* Inre utfyllnad */
   margin: 0 15px;
 }
-.we-provide-part4 .boxes .box-2 img {
+.we-provide-part4 .container .boxes .box-2 img {
   margin-top: 28px;
   margin-bottom: 44px;
 }
-.we-provide-part4 .boxes .box-2 h3 {
+.we-provide-part4 .container .boxes .box-2 h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 900;
 }
-.we-provide-part4 .boxes .box-2 p {
+.we-provide-part4 .container .boxes .box-2 p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
