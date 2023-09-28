@@ -1100,7 +1100,8 @@ header {
         border: 2px solid rgb(255, 255, 255); /* Ram */
         padding: 20px; /* Inre utfyllnad */
         margin: 0 15px;
-          img {
+         position: relative;
+        img {
             margin-top: 28px;
             margin-bottom: 44px;
 
@@ -1120,7 +1121,27 @@ header {
           font-weight: 400;
           color: #191919;
           }
-
+          .btn-go-to {
+            position: absolute;
+            background-color: #191919;
+            border: solid 1px black;
+            color: #191919; /*Textens färg */
+            height: 40px;
+            width: 40px;
+            border-radius: 25px;
+            margin-left: 200px;
+            margin-top: -20px;
+            z-index: 1;
+            
+              i {
+                position: absolute;
+                color: white;
+                margin-left: 15px;
+                margin-top: 10px;
+                font-size: 1em;
+                font-weight: 390;
+              }
+          }
           @media (min-width: 576px) {
             height: 333px;         
           img {
@@ -1134,11 +1155,32 @@ header {
           }
 
           p {
-          
           font-size: 16px;
           font-weight: 400;
-          
-          }     
+          }  
+          .btn-go-to {
+            position: absolute;
+            background-color: #191919;
+            border: solid 1px black;
+            color: #191919; /*Textens färg */
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            margin-left: 200px;
+            margin-top: 18px;
+            
+            
+        
+              i {
+                position: absolute;
+                color: white;
+                margin-left: 20px;
+                margin-top: 15px;
+                font-size: 1.2em;
+                font-weight: 390;
+                transform: translate(-20%, -0%); /* Centrera ikonen helt och hållet */
+              }
+          }   
        }
     }
 
@@ -1170,8 +1212,26 @@ header {
           color: #191919;
           }
 
-          a {
+          .btn-go-to {
+            position: absolute;
+            background-color: #191919;
+            border: solid 1px black;
+            color: #191919; /*Textens färg */
+            height: 40px;
+            width: 40px;
+            border-radius: 25px;
+            margin-left: 200px;
+            margin-top: -20px;
+            z-index: 1;
             
+              i {
+                position: absolute;
+                color: white;
+                margin-left: 15px;
+                margin-top: 10px;
+                font-size: 1em;
+                font-weight: 390;
+              }
           }
 
           @media (min-width: 576px) {
