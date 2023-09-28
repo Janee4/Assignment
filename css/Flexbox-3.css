@@ -859,11 +859,18 @@ header .container .menu .main-menu .btn-login i {
 }
 .part-3 .content-3-right .intro-video-paragraph {
   position: absolute;
-  margin-left: 280px;
-  margin-top: 125px;
+  margin-left: 195px;
+  margin-top: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.7em;
+}
+@media (min-width: 576px) {
+  .part-3 .content-3-right .intro-video-paragraph {
+    margin-left: 280px;
+    margin-top: 125px;
+    font-size: 0.8em;
+  }
 }
 
 .we-provide-part4 {
