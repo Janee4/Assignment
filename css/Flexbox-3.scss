@@ -1540,15 +1540,13 @@ header {
 
 .team-members-7 {
 background-color: rgb(240, 208, 130);
-height: 1005px;
+height: 1100px;
   .container {
     
     .title-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 95px;
-      padding-top: 150px;
+      align-items: start;
+      margin-bottom: 10px;
+      padding-top: 20px;
 
       @media (min-width: 576px) {
         display: flex;
@@ -1563,14 +1561,12 @@ height: 1005px;
         p {
           display: none;
         }
-      
-      
+    
         h2 {
           font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
           font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
           font-size: 30px;
           color: #191919;
-
         }
 
         // .no-break {
@@ -1589,16 +1585,12 @@ height: 1005px;
             font-size: 18px;
           }
         
-        
           h2 {
             font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
             font-size: 45px;
           }
         }
-        
-
        }
-
 
       .btn-browse-team {
         display: none;
@@ -1631,34 +1623,39 @@ height: 1005px;
           background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
           border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
           color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
-            }
-        }
         }
       }
     }
+  }
+}
   
     .section-team-members {
-     
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 31px;
-      margin-top: 121px;
+      grid-template-columns: 1fr;
+      margin-top: 40px;
+      
+      @media (min-width: 576px) { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 31px;
+        margin-top: 121px;
+      }
+
       .members-name-and-proffesion {
+        margin-top: 50px;
         .img-member {
           img {
-           
-          }
 
+          }
         }
-        
 
         h4 {
           font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
           font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
           font-size: 22px;
           color: #191919;
-          margin-top: 29px;
-          
+          margin-top: 15px;
+  
         }
 
         p {
@@ -1671,10 +1668,30 @@ height: 1005px;
         a {
         
         }
+        
+        @media (min-width: 576px) {
+          margin-top: 0;
 
+          h4 {
+            font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+            font-size: 22px;
+            margin-top: 29px;
+            
+          }
+  
+          p {
+            color: #191919;
+            font-family: 'Inter', sans-serif; /*Textsnitt */
+            font-size: 16px; /*storleken på texten */
+            font-weight: 500; /*hur stark färgen blir */
+          }
+  
+          a {
+          
+          } 
       }
-
-      }
+   }
+}
     
   .circles {
     display: grid;
@@ -1710,7 +1727,7 @@ height: 1005px;
   height: 840px;
   
   .container {
-    padding: 200px 120px 70px 120px;
+    padding: 200px 120px 100px 120px;
     background-color: #ffffff;
     text-align: center;
     

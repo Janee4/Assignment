@@ -1340,14 +1340,12 @@ header .container .menu .main-menu .btn-login i {
 
 .team-members-7 {
   background-color: rgb(240, 208, 130);
-  height: 1005px;
+  height: 1100px;
 }
 .team-members-7 .container .title-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 95px;
-  padding-top: 150px;
+  align-items: start;
+  margin-bottom: 10px;
+  padding-top: 20px;
 }
 @media (min-width: 576px) {
   .team-members-7 .container .title-container {
@@ -1414,23 +1412,49 @@ header .container .menu .main-menu .btn-login i {
 }
 .team-members-7 .container .section-team-members {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  -moz-column-gap: 31px;
-       column-gap: 31px;
-  margin-top: 121px;
+  grid-template-columns: 1fr;
+  margin-top: 40px;
+}
+@media (min-width: 576px) {
+  .team-members-7 .container .section-team-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -moz-column-gap: 31px;
+         column-gap: 31px;
+    margin-top: 121px;
+  }
+}
+.team-members-7 .container .section-team-members .members-name-and-proffesion {
+  margin-top: 50px;
 }
 .team-members-7 .container .section-team-members .members-name-and-proffesion h4 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
   font-size: 22px;
   color: #191919;
-  margin-top: 29px;
+  margin-top: 15px;
 }
 .team-members-7 .container .section-team-members .members-name-and-proffesion p {
   color: #191919;
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 16px; /*storleken på texten */
   font-weight: 500; /*hur stark färgen blir */
+}
+@media (min-width: 576px) {
+  .team-members-7 .container .section-team-members .members-name-and-proffesion {
+    margin-top: 0;
+  }
+  .team-members-7 .container .section-team-members .members-name-and-proffesion h4 {
+    font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+    font-size: 22px;
+    margin-top: 29px;
+  }
+  .team-members-7 .container .section-team-members .members-name-and-proffesion p {
+    color: #191919;
+    font-family: "Inter", sans-serif; /*Textsnitt */
+    font-size: 16px; /*storleken på texten */
+    font-weight: 500; /*hur stark färgen blir */
+  }
 }
 .team-members-7 .container .circles {
   display: grid;
@@ -1459,7 +1483,7 @@ header .container .menu .main-menu .btn-login i {
   height: 840px;
 }
 .what-our-client-says-8 .container {
-  padding: 200px 120px 70px 120px;
+  padding: 200px 120px 100px 120px;
   background-color: #ffffff;
   text-align: center;
 }
