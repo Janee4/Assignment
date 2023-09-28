@@ -631,8 +631,8 @@ header .container .menu .main-menu .btn-login i {
 .part-3 {
   margin-bottom: 100px;
   margin-left: -240px;
-  background-color: #fcf9ea;
-  padding: 20px;
+  background-color: #ffffff;
+  padding: 30px;
 }
 @media (min-width: 576px) {
   .part-3 {
@@ -640,6 +640,7 @@ header .container .menu .main-menu .btn-login i {
     margin-bottom: 100px;
     margin-left: -240px;
     background-color: #ffffff;
+    padding: 0;
   }
 }
 @media (min-width: 576px) {
@@ -828,17 +829,33 @@ header .container .menu .main-menu .btn-login i {
 }
 .part-3 .content-3-right .btn-video {
   position: absolute;
-  margin-left: 220px;
-  margin-top: 112px;
+  margin-left: 150px;
+  margin-top: 5px;
   border: solid 1.5px #191919;
-  height: 45px;
-  width: 45px;
-  border-radius: 22.5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
   background-color: #ffffff;
 }
 .part-3 .content-3-right .btn-video i {
-  margin: 9px; /*skapar avstånd mellan ikonen (pilen) och texten */
-  font-size: 0.6em; /*storlek på ikonen */
+  margin: 6px 10px 9px 7px; /*skapar avstånd mellan ikonen (pilen) och texten */
+  font-size: 0.55em; /*storlek på ikonen */
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .part-3 .content-3-right .btn-video {
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 112px;
+    border: solid 1.5px #191919;
+    height: 45px;
+    width: 45px;
+    border-radius: 22.5px;
+  }
+  .part-3 .content-3-right .btn-video i {
+    margin: 9px; /*skapar avstånd mellan ikonen (pilen) och texten */
+    font-size: 0.6em; /*storlek på ikonen */
+  }
 }
 .part-3 .content-3-right .intro-video-paragraph {
   position: absolute;
