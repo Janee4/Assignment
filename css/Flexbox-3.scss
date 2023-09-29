@@ -1873,14 +1873,14 @@ height: 1100px;
 
         .name-profession {
           margin-left: 90px;
-          margin-top: -390px;
+          margin-top: -400px;
           position: absolute;
           z-index: 1;
 
           h4 {
             font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
             font-weight: 700;
-            font-size: 20px; 
+            font-size: 18px; 
             margin-bottom: -20px;
             
 
@@ -1888,7 +1888,7 @@ height: 1100px;
           p {
             color: rgb(249, 77, 28);
             font-family: 'Inter', sans-serif; /*Textsnitt */
-            font-size: 14px; /*storleken på texten */
+            font-size: 13px; /*storleken på texten */
             font-weight: 400;
           }
 
@@ -1900,18 +1900,14 @@ height: 1100px;
             margin-bottom: 68px;
 
           h4 {
-            font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
             font-weight: 700;
             font-size: 20px; 
             margin-bottom: -20px;
-            
-
           }
+
           p {
-            color: rgb(249, 77, 28);
-            font-family: 'Inter', sans-serif; /*Textsnitt */
             font-size: 14px; /*storleken på texten */
-           font-weight: 400;
+            font-weight: 400;
           }
           
           } 
