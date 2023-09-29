@@ -1495,13 +1495,44 @@ header .container .menu .main-menu .btn-login i {
   height: 840px;
 }
 .what-our-client-says-8 .container {
-  padding: 200px 120px 100px 120px;
   background-color: #ffffff;
   text-align: center;
 }
+@media (min-width: 576px) {
+  .what-our-client-says-8 .container {
+    padding: 200px 120px 100px 120px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+}
 .what-our-client-says-8 .container .section-title {
-  margin-top: -80px;
   margin-bottom: 80px;
+}
+.what-our-client-says-8 .container .section-title p {
+  display: none;
+}
+.what-our-client-says-8 .container .section-title h2 {
+  font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
+  font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+  font-size: 45px;
+  color: #191919;
+}
+@media (min-width: 576px) {
+  .what-our-client-says-8 .container .section-title {
+    margin-top: -80px;
+    margin-bottom: 80px;
+  }
+  .what-our-client-says-8 .container .section-title p {
+    display: block;
+    color: rgb(249, 77, 28);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .what-our-client-says-8 .container .section-title h2 {
+    font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+    font-size: 45px;
+  }
 }
 .what-our-client-says-8 .container .total-comments {
   display: flex;

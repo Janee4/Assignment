@@ -1729,27 +1729,56 @@ height: 1100px;
 }
 }
 }
-
+//@media (min-width: 576px) { }
 .what-our-client-says-8 {
   background-color: rgb(240, 208, 130);
   height: 840px;
   
   .container {
-    padding: 200px 120px 100px 120px;
+    // padding: 200px 120px 100px 120px;
     background-color: #ffffff;
     text-align: center;
+
+    @media (min-width: 576px) { 
+      padding: 200px 120px 100px 120px;
+      background-color: #ffffff;
+      text-align: center;
+    }
     
     
     .section-title {
-      margin-top: -80px;
+
       margin-bottom: 80px;
       p {
-
+        display: none;
       }
+    
+    
       h2 {
-
+        font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
+        font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+        font-size: 45px;
+        color: #191919;
       }
 
+      @media (min-width: 576px) { 
+      margin-top: -80px;
+      margin-bottom: 80px;
+
+      p {
+        display: block;
+        color: rgb(249, 77, 28);
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    
+    
+      h2 {
+        font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+        font-size: 45px;
+      }
+      }
      }
 
      .total-comments {
