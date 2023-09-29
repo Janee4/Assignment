@@ -1506,6 +1506,7 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 .what-our-client-says-8 .container .section-title {
+  margin-top: 20px;
   margin-bottom: 80px;
 }
 .what-our-client-says-8 .container .section-title p {
@@ -1514,7 +1515,7 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .section-title h2 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
-  font-size: 45px;
+  font-size: 30px;
   color: #191919;
 }
 @media (min-width: 576px) {
@@ -1535,11 +1536,17 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 .what-our-client-says-8 .container .total-comments {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
+  display: grid;
   background-color: #ffffff;
-  margin-right: 50px;
+}
+@media (min-width: 576px) {
+  .what-our-client-says-8 .container .total-comments {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-right: 50px;
+  }
 }
 .what-our-client-says-8 .container .total-comments .rating-1 {
   text-align: start;
@@ -1561,9 +1568,26 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .total-comments .rating-1 .img-name-profession {
   display: flex;
 }
+@media (min-width: 576px) {
+  .what-our-client-says-8 .container .total-comments .rating-1 .img-name-profession {
+    display: flex;
+  }
+}
+.what-our-client-says-8 .container .total-comments .three-images {
+  position: absolute;
+}
 .what-our-client-says-8 .container .total-comments .three-images img {
   width: 70px;
   height: 70px;
+}
+@media (min-width: 576px) {
+  .what-our-client-says-8 .container .total-comments .three-images {
+    position: relative;
+  }
+  .what-our-client-says-8 .container .total-comments .three-images img {
+    width: 70px;
+    height: 70px;
+  }
 }
 .what-our-client-says-8 .container .total-comments .name-profession {
   margin-left: 18px;
