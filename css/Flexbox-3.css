@@ -1359,7 +1359,7 @@ header .container .menu .main-menu .btn-login i {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 95px;
-    padding-top: 150px;
+    padding-top: 60px;
   }
 }
 .team-members-7 .container .title-container .section-title {
@@ -1444,6 +1444,12 @@ header .container .menu .main-menu .btn-login i {
 }
 .team-members-7 .container .section-team-members .members-name-and-proffesion {
   margin-top: 50px;
+  margin-left: 30px;
+}
+@media (min-width: 576px) {
+  .team-members-7 .container .section-team-members .members-name-and-proffesion {
+    margin-left: 0px;
+  }
 }
 .team-members-7 .container .section-team-members .members-name-and-proffesion h4 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
@@ -1505,6 +1511,11 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 {
   background-color: rgb(240, 208, 130);
   height: 1800px;
+}
+@media (min-width: 576px) {
+  .what-our-client-says-8 {
+    height: 900px;
+  }
 }
 .what-our-client-says-8 .container {
   background-color: #ffffff;

@@ -1558,7 +1558,7 @@ height: 1100px;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 95px;
-        padding-top: 150px;
+        padding-top: 60px;
 
       }
 
@@ -1658,6 +1658,11 @@ height: 1100px;
 
       .members-name-and-proffesion {
         margin-top: 50px;
+        margin-left: 30px;
+        
+        @media (min-width: 576px) {
+        margin-left: 0px;
+        }
         .img-member {
           img {
 
@@ -1743,6 +1748,10 @@ height: 1100px;
 .what-our-client-says-8 {
   background-color: rgb(240, 208, 130);
   height: 1800px;
+
+  @media (min-width: 576px) { 
+    height: 900px;
+  }
   
   .container {
     // padding: 200px 120px 100px 120px;
