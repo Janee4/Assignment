@@ -1340,7 +1340,7 @@ header .container .menu .main-menu .btn-login i {
 
 .team-members-7 {
   background-color: rgb(240, 208, 130);
-  height: 2400px;
+  height: 2500px;
 }
 @media (min-width: 576px) {
   .team-members-7 {
@@ -1507,7 +1507,7 @@ header .container .menu .main-menu .btn-login i {
 }
 .what-our-client-says-8 .container .section-title {
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 150px;
 }
 .what-our-client-says-8 .container .section-title p {
   display: none;
@@ -1515,7 +1515,7 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .section-title h2 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
-  font-size: 30px;
+  font-size: 35px;
   color: #191919;
 }
 @media (min-width: 576px) {
@@ -1561,7 +1561,7 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: -60px;
 }
 .what-our-client-says-8 .container .total-comments .rating-1 p {
-  padding-top: 20px;
+  padding-top: 15px;
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 14px; /*storleken på texten */
   font-weight: 400;
@@ -1662,7 +1662,7 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 400; /*här får vi tjockare text */
   font-size: 15px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
   border-radius: 30px;
-  padding: 17px 30px;
+  padding: 12px 25px;
 }
 .what-our-client-says-8 .container .btn-black i {
   margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
