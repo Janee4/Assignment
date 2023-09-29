@@ -1563,8 +1563,13 @@ height: 1100px;
       }
 
       .section-title{
+        text-align: center;
         p {
-          display: none;
+          // display: none;
+            color: rgb(249, 77, 28);
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
         }
     
         h2 {
@@ -1582,6 +1587,7 @@ height: 1100px;
       @media (min-width: 576px) {
           
         .section-title {
+          text-align: start;
           p {
             display: block;
             color: rgb(249, 77, 28);
@@ -1593,6 +1599,10 @@ height: 1100px;
           h2 {
             font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
             font-size: 45px;
+
+            br {
+              display: none;
+            }
           }
         }
        }

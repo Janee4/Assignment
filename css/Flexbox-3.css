@@ -1362,8 +1362,14 @@ header .container .menu .main-menu .btn-login i {
     padding-top: 150px;
   }
 }
+.team-members-7 .container .title-container .section-title {
+  text-align: center;
+}
 .team-members-7 .container .title-container .section-title p {
-  display: none;
+  color: rgb(249, 77, 28);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 .team-members-7 .container .title-container .section-title h2 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
@@ -1372,6 +1378,9 @@ header .container .menu .main-menu .btn-login i {
   color: #191919;
 }
 @media (min-width: 576px) {
+  .team-members-7 .container .title-container .section-title {
+    text-align: start;
+  }
   .team-members-7 .container .title-container .section-title p {
     display: block;
     color: rgb(249, 77, 28);
@@ -1382,6 +1391,9 @@ header .container .menu .main-menu .btn-login i {
   .team-members-7 .container .title-container .section-title h2 {
     font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
     font-size: 45px;
+  }
+  .team-members-7 .container .title-container .section-title h2 br {
+    display: none;
   }
 }
 .team-members-7 .container .title-container .btn-browse-team {
