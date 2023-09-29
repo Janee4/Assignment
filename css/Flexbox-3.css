@@ -1538,7 +1538,7 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .total-comments {
   display: grid;
   background-color: #ffffff;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .total-comments {
@@ -1558,14 +1558,36 @@ header .container .menu .main-menu .btn-login i {
   height: 16px;
   font-size: 18px;
   margin-right: -3px;
+  margin-bottom: -60px;
 }
 .what-our-client-says-8 .container .total-comments .rating-1 p {
   padding-top: 20px;
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 14px; /*storleken på texten */
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
   line-height: 2;
+}
+@media (min-width: 576px) {
+  .what-our-client-says-8 .container .total-comments .rating-1 {
+    text-align: start;
+    position: static;
+  }
+  .what-our-client-says-8 .container .total-comments .rating-1 span {
+    color: rgb(249, 77, 28); /* Färg på aktiverade stjärnor */
+    height: 16px;
+    font-size: 18px;
+    margin-right: -3px;
+    margin-bottom: 0px;
+  }
+  .what-our-client-says-8 .container .total-comments .rating-1 p {
+    padding-top: 20px;
+    font-family: "Inter", sans-serif; /*Textsnitt */
+    font-size: 14px; /*storleken på texten */
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 2;
+  }
 }
 .what-our-client-says-8 .container .total-comments .rating-1 .img-name-profession {
   display: flex;
@@ -1578,7 +1600,7 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .total-comments .three-images {
   position: absolute;
   z-index: 1;
-  margin-top: -270px;
+  margin-top: -405px;
 }
 .what-our-client-says-8 .container .total-comments .three-images img {
   width: 70px;
@@ -1596,9 +1618,10 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 .what-our-client-says-8 .container .total-comments .name-profession {
-  margin-left: 18px;
-  margin-top: 5px;
-  margin-bottom: 68px;
+  margin-left: 90px;
+  margin-top: -390px;
+  position: absolute;
+  z-index: 1;
 }
 .what-our-client-says-8 .container .total-comments .name-profession h4 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
@@ -1611,6 +1634,27 @@ header .container .menu .main-menu .btn-login i {
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 14px; /*storleken på texten */
   font-weight: 400;
+}
+@media (min-width: 576px) {
+  .what-our-client-says-8 .container .total-comments .name-profession {
+    z-index: 0;
+    position: static;
+    margin-left: 18px;
+    margin-top: 5px;
+    margin-bottom: 68px;
+  }
+  .what-our-client-says-8 .container .total-comments .name-profession h4 {
+    font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: -20px;
+  }
+  .what-our-client-says-8 .container .total-comments .name-profession p {
+    color: rgb(249, 77, 28);
+    font-family: "Inter", sans-serif; /*Textsnitt */
+    font-size: 14px; /*storleken på texten */
+    font-weight: 400;
+  }
 }
 .what-our-client-says-8 .container .btn-black {
   background-color: #191919;
