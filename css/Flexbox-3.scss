@@ -1732,7 +1732,7 @@ height: 1100px;
 //@media (min-width: 576px) { }
 .what-our-client-says-8 {
   background-color: rgb(240, 208, 130);
-  height: 840px;
+  height: 1800px;
   
   .container {
     // padding: 200px 120px 100px 120px;
@@ -1782,7 +1782,7 @@ height: 1100px;
      .total-comments {
       display: grid;
       background-color: #ffffff;
-      
+      margin-top: 200px;
       
       @media (min-width: 576px) { 
         display: flex;
@@ -1790,6 +1790,7 @@ height: 1100px;
         justify-content: space-between;
         background-color: #ffffff;
         margin-right: 50px;
+        margin-top: 0;
 
       }
         .rating-1 {
@@ -1826,6 +1827,9 @@ height: 1100px;
 
         .three-images {
           position: absolute;
+          z-index: 1;
+          margin-top: -270px;
+          
           
           img {
             width: 70px;
@@ -1833,7 +1837,10 @@ height: 1100px;
           }
 
           @media (min-width: 576px) {
-            position: relative;
+            position: static;
+            z-index: 0;
+            margin-top: 0px;
+
             img {
               width: 70px;
               height: 70px;

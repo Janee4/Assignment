@@ -1492,7 +1492,7 @@ header .container .menu .main-menu .btn-login i {
 
 .what-our-client-says-8 {
   background-color: rgb(240, 208, 130);
-  height: 840px;
+  height: 1800px;
 }
 .what-our-client-says-8 .container {
   background-color: #ffffff;
@@ -1538,6 +1538,7 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .total-comments {
   display: grid;
   background-color: #ffffff;
+  margin-top: 200px;
 }
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .total-comments {
@@ -1546,6 +1547,7 @@ header .container .menu .main-menu .btn-login i {
     justify-content: space-between;
     background-color: #ffffff;
     margin-right: 50px;
+    margin-top: 0;
   }
 }
 .what-our-client-says-8 .container .total-comments .rating-1 {
@@ -1575,6 +1577,8 @@ header .container .menu .main-menu .btn-login i {
 }
 .what-our-client-says-8 .container .total-comments .three-images {
   position: absolute;
+  z-index: 1;
+  margin-top: -270px;
 }
 .what-our-client-says-8 .container .total-comments .three-images img {
   width: 70px;
@@ -1582,7 +1586,9 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .total-comments .three-images {
-    position: relative;
+    position: static;
+    z-index: 0;
+    margin-top: 0px;
   }
   .what-our-client-says-8 .container .total-comments .three-images img {
     width: 70px;
