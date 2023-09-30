@@ -1750,7 +1750,7 @@ height: 1100px;
 //@media (min-width: 576px) { }
 .what-our-client-says-8 {
   background-color: rgb(240, 208, 130);
-  height: 1200px;
+  height: 1150px;
 
   @media (min-width: 576px) { 
     height: 900px;
@@ -1945,11 +1945,14 @@ height: 1100px;
      }
      .all-recent-projects-div {
       margin-bottom: 50px;
-      
+      position: relative;
       .btn-black {
         position: absolute;
-        margin-top: -110px;
-        background-color: #191919;
+        margin-top: -60px;
+      
+        margin-left: -135px;
+        
+        background-color: #000000;
         border: solid 1px #191919;
         color: #ffffff; /*Textens färg */
         text-decoration: none; /*vi tar bort strecket under texten Login */
@@ -1957,7 +1960,7 @@ height: 1100px;
         font-weight: 400; /*här får vi tjockare text */
         font-size: 15px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
         border-radius: 30px;
-        padding: 10px 25px;
+        padding: 5px 80px 5px 80px;
   
   
             i {
