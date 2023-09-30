@@ -283,7 +283,7 @@ header .container .menu .main-menu .btn-login i {
 
 .showcase {
   background-color: #F0EFE9; /*samma färg som headern */
-  padding-left: 300px;
+  padding-left: 20px;
 }
 .showcase .container {
   display: flex;
@@ -400,8 +400,9 @@ header .container .menu .main-menu .btn-login i {
     background-color: #ffffff;
     border: solid 1.6px rgb(208, 208, 208);
     display: flex;
-    width: 1900px;
+    width: 1600px;
     height: 600px;
+    margin-left: -105px;
   }
 }
 .showcase-2 .container .container-2 .left {
