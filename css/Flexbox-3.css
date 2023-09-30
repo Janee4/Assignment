@@ -283,6 +283,7 @@ header .container .menu .main-menu .btn-login i {
 
 .showcase {
   background-color: #F0EFE9; /*samma färg som headern */
+  padding-left: 300px;
 }
 .showcase .container {
   display: flex;
@@ -368,12 +369,8 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 
-.showcase-2 {
-  margin-left: -10px;
-}
 @media (min-width: 576px) {
   .showcase-2 {
-    margin-right: 230px;
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -403,6 +400,8 @@ header .container .menu .main-menu .btn-login i {
     background-color: #ffffff;
     border: solid 1.6px rgb(208, 208, 208);
     display: flex;
+    width: 1900px;
+    height: 600px;
   }
 }
 .showcase-2 .container .container-2 .left {
@@ -630,7 +629,6 @@ header .container .menu .main-menu .btn-login i {
 
 .part-3 {
   margin-bottom: 100px;
-  margin-left: -240px;
   background-color: #ffffff;
   padding: 30px;
 }
