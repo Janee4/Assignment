@@ -2229,14 +2229,18 @@ header .container .menu .main-menu .btn-login i {
 .footer .container .left p {
   color: #b9b9b9;
   font-family: "Inter", sans-serif; /*Textsnitt */
-  font-size: 14px; /*storleken på texten */
+  font-size: 12px; /*storleken på texten */
   font-weight: 400;
   order: 1;
+}
+.footer .container .right {
+  margin-left: 60px;
+  margin-bottom: 20px;
 }
 .footer .container .right a {
   color: #ffffff;
   font-size: 1.3rem;
-  margin-right: 10px;
+  margin-right: 50px;
   order: 2;
 }
 @media (min-width: 576px) {
@@ -2248,17 +2252,12 @@ header .container .menu .main-menu .btn-login i {
     margin-right: 310px;
   }
   .footer .container .left p {
-    color: #b9b9b9;
-    font-family: "Inter", sans-serif; /*Textsnitt */
-    font-size: 14px; /*storleken på texten */
+    font-size: 14px;
     font-weight: 400;
   }
   .footer .container .right a {
     color: #ffffff;
     font-size: 1.3rem;
     margin-right: 10px;
-  }
-  .footer .container .right a:hover {
-    color: #d7d7d7;
   }
 }

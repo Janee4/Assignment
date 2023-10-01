@@ -2590,17 +2590,19 @@ height: 980px;
         p{
           color: #b9b9b9;
           font-family: 'Inter', sans-serif; /*Textsnitt */
-          font-size: 14px; /*storleken på texten */
+          font-size: 12px; /*storleken på texten */
           font-weight: 400;
           order: 1;
           
         }
       }
       .right {
+        margin-left: 60px;
+        margin-bottom: 20px;
         a {
           color: #ffffff;
           font-size: 1.3rem; 
-          margin-right: 10px;
+          margin-right: 50px;
           order: 2;
           
           }
@@ -2614,23 +2616,18 @@ height: 980px;
 
       .left {
         p{
-          color: #b9b9b9;
-          font-family: 'Inter', sans-serif; /*Textsnitt */
-          font-size: 14px; /*storleken på texten */
+          font-size: 14px; 
           font-weight: 400;
         }
       }
       .right {
+  
         a {
           color: #ffffff;
           font-size: 1.3rem; 
           margin-right: 10px;
-                          
-          &:hover { 
-          color: #d7d7d7;
-
-        }
-      }
+         }
+      
     }
 
     }
