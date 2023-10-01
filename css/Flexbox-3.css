@@ -1343,7 +1343,7 @@ header .container .menu .main-menu .btn-login i {
 @media (min-width: 576px) {
   .team-members-7 {
     background-color: rgb(240, 208, 130);
-    height: 1100px;
+    height: 980px;
   }
 }
 .team-members-7 .container .title-container {
@@ -1489,7 +1489,6 @@ header .container .menu .main-menu .btn-login i {
     grid-gap: 15px; /* Avstånd mellan cirklarna */
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 70px;
   }
 }
 .team-members-7 .container .circles .circle {
