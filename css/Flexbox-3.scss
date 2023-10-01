@@ -2030,9 +2030,6 @@ height: 980px;
         justify-content: center;
         align-items: center;
         justify-content: space-between;
-        padding-top: 115px;
-  
-
        }
         
       .section-title {
@@ -2276,62 +2273,81 @@ height: 980px;
       }
     }
     .circles {
-    
-      display: grid;
-        grid-template-columns: repeat(5, 10px); /* Skapar 4 kolumner med 100px vardera */
-        grid-gap: 15px; /* Avstånd mellan cirklarna */
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 70px;
-        
-        .circle {
-          width: 10px;
-          height: 10px;
-          background-color: #404a51;
-          opacity: 20%; /* Fyllningsfärg för cirklarna */
-          border-radius: 50%; /* Gör elementet till en cirkel */
-       
-        }
-        .circle-1 {
-          width: 10px;
-          height: 10px;
-          background-color: #191919;
-          border-radius: 50%;
-          
-        }
-    }
-    }
+      display: none;
 
+      @media (min-width: 576px) {
+          display: block;
+          display: grid;
+          grid-template-columns: repeat(5, 10px); /* Skapar 4 kolumner med 100px vardera */
+          grid-gap: 15px; /* Avstånd mellan cirklarna */
+          justify-content: center;
+          margin-top: 50px;
+          margin-bottom: 70px;
+          
+          .circle {
+            width: 10px;
+            height: 10px;
+            background-color: #404a51;
+            opacity: 20%; /* Fyllningsfärg för cirklarna */
+            border-radius: 50%; /* Gör elementet till en cirkel */
+          }
+
+          .circle-1 {
+            width: 10px;
+            height: 10px;
+            background-color: #191919;
+            border-radius: 50%;
+  
+          }
+
+        } 
+     }
+  }
+
+  // Section over black navigation
 .signup {
   background-color: #F0EFE9;
   height: 14rem;
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 100px;
+  
+  @media (min-width: 576px) {
+    background-color: #F0EFE9;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 0px;
+  }
 
   .m-detail {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    right:0;
-    // margin-left: 1700px;
-    // margin-top: 150px;
-    
+    display: none;
+    @media (min-width: 576px) { 
+      display: block;
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right:0;
+
     }
-  
+
+    }
   .container{
-    display: flex;
-    gap: 190px;
-    // position: relative;
-    // margin-left: 280px;
+    display: block;
+    @media (min-width: 576px) { 
+      display: flex;
+      gap: 190px;
+     }
     
+
     .left {
       h3 {
         font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
         font-weight: 800; /*kolla design mallen och hämta från fonts.google.com */
         font-size: 40px;
         color: #191919;
-        
       }
     }
 

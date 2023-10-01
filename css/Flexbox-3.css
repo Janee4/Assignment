@@ -1745,7 +1745,6 @@ header .container .menu .main-menu .btn-login i {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding-top: 115px;
   }
 }
 .article-and-news-8 .container .title-container .section-title {
@@ -1955,25 +1954,31 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 700;
 }
 .article-and-news-8 .circles {
-  display: grid;
-  grid-template-columns: repeat(5, 10px); /* Skapar 4 kolumner med 100px vardera */
-  grid-gap: 15px; /* Avstånd mellan cirklarna */
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  display: none;
 }
-.article-and-news-8 .circles .circle {
-  width: 10px;
-  height: 10px;
-  background-color: #404a51;
-  opacity: 20%; /* Fyllningsfärg för cirklarna */
-  border-radius: 50%; /* Gör elementet till en cirkel */
-}
-.article-and-news-8 .circles .circle-1 {
-  width: 10px;
-  height: 10px;
-  background-color: #191919;
-  border-radius: 50%;
+@media (min-width: 576px) {
+  .article-and-news-8 .circles {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(5, 10px); /* Skapar 4 kolumner med 100px vardera */
+    grid-gap: 15px; /* Avstånd mellan cirklarna */
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  .article-and-news-8 .circles .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #404a51;
+    opacity: 20%; /* Fyllningsfärg för cirklarna */
+    border-radius: 50%; /* Gör elementet till en cirkel */
+  }
+  .article-and-news-8 .circles .circle-1 {
+    width: 10px;
+    height: 10px;
+    background-color: #191919;
+    border-radius: 50%;
+  }
 }
 
 .signup {
@@ -1982,16 +1987,38 @@ header .container .menu .main-menu .btn-login i {
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 100px;
+}
+@media (min-width: 576px) {
+  .signup {
+    background-color: #F0EFE9;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 0px;
+  }
 }
 .signup .m-detail {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
+  display: none;
+}
+@media (min-width: 576px) {
+  .signup .m-detail {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+  }
 }
 .signup .container {
-  display: flex;
-  gap: 190px;
+  display: block;
+}
+@media (min-width: 576px) {
+  .signup .container {
+    display: flex;
+    gap: 190px;
+  }
 }
 .signup .container .left h3 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
