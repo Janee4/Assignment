@@ -2127,6 +2127,12 @@ header .container .menu .main-menu .btn-login i {
   -moz-column-gap: 7px;
        column-gap: 7px;
   row-gap: 10px;
+  margin-left: 10px;
+}
+@media (min-width: 576px) {
+  .black-navigation .container {
+    margin-left: 0px;
+  }
 }
 .black-navigation .container .crito {
   display: none;
@@ -2232,6 +2238,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 12px; /*storleken på texten */
   font-weight: 400;
   order: 1;
+  margin-left: 11px;
 }
 .footer .container .right {
   margin-left: 60px;
@@ -2254,10 +2261,12 @@ header .container .menu .main-menu .btn-login i {
   .footer .container .left p {
     font-size: 14px;
     font-weight: 400;
+    margin-left: 0;
   }
   .footer .container .right a {
     color: #ffffff;
     font-size: 1.3rem;
     margin-right: 10px;
+    margin-bottom: 0px;
   }
 }

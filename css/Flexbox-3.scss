@@ -2468,7 +2468,12 @@ height: 980px;
     position: relative;
     column-gap: 7px;
     row-gap: 10px;
-    // margin-left: 230px;
+    margin-left: 10px;
+    @media (min-width: 576px) { 
+      margin-left: 0px;
+    }
+
+
     .crito {
       display: none;
       @media (min-width: 576px) {
@@ -2593,6 +2598,7 @@ height: 980px;
           font-size: 12px; /*storleken på texten */
           font-weight: 400;
           order: 1;
+          margin-left: 11px;
           
         }
       }
@@ -2618,6 +2624,7 @@ height: 980px;
         p{
           font-size: 14px; 
           font-weight: 400;
+          margin-left: 0;
         }
       }
       .right {
@@ -2626,6 +2633,7 @@ height: 980px;
           color: #ffffff;
           font-size: 1.3rem; 
           margin-right: 10px;
+          margin-bottom: 0px;
          }
       
     }
