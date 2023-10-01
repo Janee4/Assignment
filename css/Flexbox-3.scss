@@ -2151,8 +2151,8 @@ height: 980px;
       .yellow-rectangle-3 {
         position: absolute;
         z-index: 1;
-        margin-left: 15px;
-        margin-top: 426px;
+        margin-left: 16px;
+        margin-top: 840px;
         .mars-13 {
           font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
             font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
@@ -2201,8 +2201,8 @@ height: 980px;
       .yellow-rectangle-2 {
         position: absolute;
         z-index: 1;
-        margin-left: 470px;
-        margin-top: 15px;
+        margin-left: 17px;
+        margin-top: 430px;
 
           .mars-17 {
             font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
@@ -2223,12 +2223,39 @@ height: 980px;
             margin-left: 5px;
           }
 
+          @media (min-width: 576px) {
+            position: absolute;
+            z-index: 1;
+            margin-left: 470px;
+            margin-top: 15px;
+    
+              .mars-17 {
+                font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
+                font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
+                font-size: 17px;
+                color: #191919;
+                position: absolute;
+                top: 17px;
+                left: 17px;
+                line-height: 20px;
+                &::first-line { /* Välj den första textraden */
+                  font-size: 20px; /* Ange en annan fontstorlek för den första raden ("25") */
+                  font-weight: 700;
+                }
+    
+              }
+              .day {
+                margin-left: 5px;
+              }
+
+           }
+
       }
    
       .yellow-rectangle-1 {
         position: absolute;
         z-index: 1;
-        margin-left: 15px;
+        margin-left: 17px;
         margin-top: 15px;
         
         .mars-25 {
