@@ -2059,6 +2059,7 @@ header .container .menu .main-menu .btn-login i {
 .signup .container .right .searchbar-plus-button .searchbar p {
   opacity: 50%;
   margin-top: 10px;
+  font-size: 15px;
 }
 @media (min-width: 576px) {
   .signup .container .right .searchbar-plus-button .searchbar {
@@ -2115,43 +2116,86 @@ header .container .menu .main-menu .btn-login i {
 
 .black-navigation {
   background-color: #0E1021;
-  height: 400px;
+  height: 300px;
   position: relative;
 }
 .black-navigation .container {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+  padding-top: 30px;
   position: relative;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  row-gap: 10px;
 }
 .black-navigation .container .crito {
-  margin-top: -10px;
+  display: none;
 }
-.black-navigation .container .crito img {
-  padding-bottom: 20px;
-}
-.black-navigation .container .crito p {
-  color: #b9b9b9;
+@media (min-width: 576px) {
+  .black-navigation .container .crito {
+    display: block;
+    margin-top: -10px;
+  }
+  .black-navigation .container .crito img {
+    padding-bottom: 20px;
+  }
+  .black-navigation .container .crito p {
+    color: #b9b9b9;
+  }
 }
 .black-navigation .container .small-titles {
   display: grid;
 }
+.black-navigation .container .small-titles .help {
+  margin-left: 5px;
+}
+.black-navigation .container .small-titles .link {
+  margin-right: -20px;
+  position: absolute;
+}
+.black-navigation .container .small-titles .company {
+  margin-left: -7px;
+}
 .black-navigation .container .small-titles h4 {
   color: #ffffff;
-  font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-  font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
-  font-size: 18px;
-  padding-bottom: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding-bottom: 15px;
 }
 .black-navigation .container .small-titles a {
   text-decoration: none;
   color: #b9b9b9;
-  font-family: "Inter", sans-serif; /*Textsnitt */
-  font-size: 14px; /*storleken på texten */
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   font-weight: 500;
 }
-.black-navigation .container .small-titles a:hover {
-  text-decoration: underline;
+@media (min-width: 576px) {
+  .black-navigation .container .small-titles {
+    display: grid;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .black-navigation .container .small-titles .help {
+    margin-left: 0px;
+  }
+  .black-navigation .container .small-titles .link {
+    margin-left: 0px;
+    position: static;
+  }
+  .black-navigation .container .small-titles h4 {
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .black-navigation .container .small-titles a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .black-navigation .container .small-titles a:hover {
+    text-decoration: underline;
+  }
 }
 .black-navigation .grey-lines {
   position: absolute;
@@ -2159,28 +2203,62 @@ header .container .menu .main-menu .btn-login i {
   right: 0;
   bottom: 0;
 }
+@media (min-width: 576px) {
+  .black-navigation .grey-lines {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+  }
+}
 
 .footer {
   background-color: #0E1021;
   border-top: solid 1px #707070;
+  display: flex;
+}
+@media (min-width: 576px) {
+  .footer {
+    display: block;
+  }
 }
 .footer .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 310px;
+  flex-direction: column-reverse;
 }
 .footer .container .left p {
   color: #b9b9b9;
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 14px; /*storleken på texten */
   font-weight: 400;
+  order: 1;
 }
 .footer .container .right a {
   color: #ffffff;
   font-size: 1.3rem;
   margin-right: 10px;
+  order: 2;
 }
-.footer .container .right a:hover {
-  color: #d7d7d7;
+@media (min-width: 576px) {
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 310px;
+  }
+  .footer .container .left p {
+    color: #b9b9b9;
+    font-family: "Inter", sans-serif; /*Textsnitt */
+    font-size: 14px; /*storleken på texten */
+    font-weight: 400;
+  }
+  .footer .container .right a {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+  .footer .container .right a:hover {
+    color: #d7d7d7;
+  }
 }

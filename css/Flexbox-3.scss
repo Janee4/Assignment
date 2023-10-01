@@ -2385,6 +2385,8 @@ height: 980px;
         p {
           opacity: 50%;
           margin-top: 10px;
+          font-size: 15px;
+
         }
         @media (min-width: 576px) {  
           border: 1px solid white;
@@ -2456,34 +2458,54 @@ height: 980px;
 
 .black-navigation {
   background-color: #0E1021;
-  height: 400px;
+  height: 300px;
   position: relative;
   
   .container {
     display: flex;
     justify-content: space-around;
-    padding-top: 100px;
+    padding-top: 30px;
     position: relative;
+    column-gap: 7px;
+    row-gap: 10px;
     // margin-left: 230px;
     .crito {
-      margin-top: -10px;
-      img {
-        padding-bottom: 20px;
-      }
-      p {
-        color: #b9b9b9;
+      display: none;
+      @media (min-width: 576px) {
+        display: block;
+        margin-top: -10px;
+        img {
+          padding-bottom: 20px;
+        }
+        p {
+          color: #b9b9b9;
+        }
       }
     }
 
       .small-titles {
         display: grid;
+
+
+        .help {
+          margin-left: 5px;
+        }
+
+        .link {
+         margin-right: -20px;
+         position: absolute;
+        }
+
+        .company {
+          margin-left: -7px ;
+        }
         
         h4{
           color: #ffffff;
-          font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
-          font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
-          font-size: 18px;
-          padding-bottom: 20px;
+          font-family: 'DM Sans', sans-serif;
+          font-weight: 700; 
+          font-size: 14px;
+          padding-bottom: 15px;
          
 
         }
@@ -2491,16 +2513,48 @@ height: 980px;
         a {
           text-decoration: none;
           color: #b9b9b9;
-          font-family: 'Inter', sans-serif; /*Textsnitt */
-          font-size: 14px; /*storleken på texten */
+          font-family: 'Inter', sans-serif;
+          font-size: 12px; 
           font-weight: 500;
-          
-
-          &:hover {
-            text-decoration: underline;
-          }
+         
         }
+        @media (min-width:576px) {
+             display: grid;
+             column-gap: 0;
+             .help {
+              margin-left: 0px;
+            }
+    
+            .link {
+              margin-left: 0px;
+              position: static;
+            }
 
+            .company {
+
+
+            }
+        
+            h4{
+              font-weight: 700; 
+              font-size: 18px;
+              padding-bottom: 20px;
+              
+
+            }
+
+            a {
+              text-decoration: none;
+              font-size: 14px; 
+              font-weight: 500;
+              
+
+              &:hover {
+                text-decoration: underline;
+              }
+           }
+
+}
       }
     }
     .grey-lines {
@@ -2508,40 +2562,78 @@ height: 980px;
       z-index: 1;
       right: 0;
       bottom: 0;
+      // display: none;
       
+      @media (min-width:576px) {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+      }
+
     }
 }
 
 .footer {
   background-color: #0E1021;
   border-top: solid 1px #707070;
+  display: flex;
+  @media (min-width:576px) { 
+    display: block;
+  }
   
   .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 310px;
-    
-  .left {
-    p{
-      color: #b9b9b9;
-      font-family: 'Inter', sans-serif; /*Textsnitt */
-      font-size: 14px; /*storleken på texten */
-      font-weight: 400;
+    flex-direction: column-reverse;
+      .left {
+        
+        p{
+          color: #b9b9b9;
+          font-family: 'Inter', sans-serif; /*Textsnitt */
+          font-size: 14px; /*storleken på texten */
+          font-weight: 400;
+          order: 1;
+          
+        }
+      }
+      .right {
+        a {
+          color: #ffffff;
+          font-size: 1.3rem; 
+          margin-right: 10px;
+          order: 2;
+          
+          }
     }
-  }
-  .right {
-    a {
-      color: #ffffff;
-      font-size: 1.3rem; 
-      margin-right: 10px;
-                      
-      &:hover { 
-      color: #d7d7d7;
+    @media (min-width:576px) { 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 310px;
+
+      .left {
+        p{
+          color: #b9b9b9;
+          font-family: 'Inter', sans-serif; /*Textsnitt */
+          font-size: 14px; /*storleken på texten */
+          font-weight: 400;
+        }
+      }
+      .right {
+        a {
+          color: #ffffff;
+          font-size: 1.3rem; 
+          margin-right: 10px;
+                          
+          &:hover { 
+          color: #d7d7d7;
+
+        }
+      }
+    }
 
     }
-  }
-}
   }
 }
     
