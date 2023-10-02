@@ -2429,3 +2429,14 @@ header .mini-nav-bar .container .second-row h1 {
   font-size: 45px;
   color: #191919;
 }
+
+.main-content .three-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 140px;
+}
+.main-content .three-boxes .box {
+  border: solid 1px black;
+  padding: 0px 50px 15px 50px;
+}
