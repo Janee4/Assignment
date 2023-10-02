@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- Header section -->
-<header> <!--Header och div fungerar exakt likdant, bara olika namn--> 
+  <header> <!--Header och div fungerar exakt likdant, bara olika namn--> 
     <div class="container">
       <a class="crito" href="flexbox-2.html"><img src="images/Logo.svg" alt="crito logotype"></a>
       <button class="menu-bars"><i class="fa-solid fa-bars-staggered"></i></button>
@@ -511,7 +511,7 @@
     <img src="images/grey-lines.svg" alt="">
   </div>
 </section>
-
+</main>
 <!--footer-->
 <footer class="footer">
   <div class="container">
@@ -530,7 +530,65 @@
   </div>
 </footer>
 
-</main>
+<!--Contact-->
+<section class="contact-section">
+  <header> 
+    <div class="container">
+      <a class="crito" href="flexbox-2.html"><img src="images/Logo.svg" alt="crito logotype"></a>
+      <button class="menu-bars"><i class="fa-solid fa-bars-staggered"></i></button>
+        <div class="menu"> 
+            <div class="top-menu"> <!--Vi har två delar längst upp, den ena består av kontakt information
+            (tel nummer, email, adress) och den andra består av länkar till sociala medier-->
+                <div class="contact-information">
+                    <div class="content-box">
+                        <i class="fa-regular fa-phone-volume"></i>
+                         + 46 (8) 121 470 50 
+                    </div>
+                    <div class="content-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        info@crito.com 
+                    </div>
+                    <div class="content-box last">
+                        <i class="fa-solid fa-location-dot"></i>
+                         Sveavägen 31, 111 34 STOCKHOLM
+                    </div>
+                </div>
+                <div class="social-media"> <!-- Vi skapar en klass som inte ligger i en annan klass, så då kan vi referera till den separat i scss dokumentet-->
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div> 
+            </div>
+            <div class="main-menu"> 
+                <nav>
+                    <a class="active" href="flexbox-2.html">Home</a>
+                    <a href="home.html">Service</a>
+                    <a href="home.html">News</a>
+                    <a href="home.html">Contact</a>
+                </nav>  <!--Vi skapar en nav som innebär navigering, vi hade likaväl kunna skapa en div tag, men 
+                       det blir lättare att tänka "okej det här är min navigering" och navigeringen ska göra att den tar användaren
+                      från ett ställe till ett annat via länkar, i vårt fall tar den användaren till "home", "service", "news"och "contact"-->
+                <a class="btn-yellow btn-login" id="login" href="login.html">Login <i class="fa-regular fa-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="mini-nav-bar">
+      <div class="container">
+      <div class="first-row">
+        <p>Home</p>
+      <p>Contact</p>
+    </div>
+    <div class="second-row">
+      <h1>Let's Connect</h1>
+    </div>
+    </div>
+  </div>
+</header>
+</section>
+
+
+<div style="height: 2000px;"></div>
 </body>
 </html>
 
