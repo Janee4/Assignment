@@ -2864,7 +2864,7 @@ header {
     margin-top: 140px;
     .box {
       border: solid 1px black;
-      padding: 30px 100px 30px 100px;
+      padding: 40px 100px 30px 100px;
       display: flex;
       position: relative;
       
@@ -2890,6 +2890,7 @@ header {
           font-family: 'Inter', sans-serif;
           font-size: 14px;
           font-weight: 400;
+          line-height: 0.5 ;
       }
     }
 
