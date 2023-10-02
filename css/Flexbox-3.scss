@@ -193,18 +193,10 @@ header {
           }
         }
         .menu { 
-            display: none;/*Här säger vi att när sidan öppnas i en mobil med (en viss skärmstorlek" 
-            du får bestämma den själv men våran är anpassad för mobil just nu (tror jag) så vill vi att i vår meny (där det står "contact information" och "menu"
-            så vill vi att ingenting visas (obs! bara när det är tex på en telefon eller vad
-            vi väljer att denna inställningen/stylingen ska gälla för*/
-            /*border: 1px solid black;  sätter en ram runt denna för att se hur långt den sträcker sig (tas bort sen, men
-            jag gör den till en kommentar så att man ser hur man ska tänka */
-            flex: 1; /* nu gör vi så att allt i .menu (contact information, social media och menu) sträcker sig längre och
-            tar upp mer utrymme, den tar upp hela utrymmet från logotypen till andra sidan*/
+            display: none;
+            flex: 1;
 
-            @media (min-width: 992px) { /* här säger vi åt datorn att när skärmen är
-            minst 992px så vill vi att vi visar innehållet i denna klassen som vi tidigare
-            dolde med "display: none; tills det att den når upp till 992px" */
+            @media (min-width: 992px) {
             display: block;
             }
 
