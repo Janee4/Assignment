@@ -2893,10 +2893,72 @@ header {
           line-height: 0.5 ;
       }
     }
+  }
 
   }
 
-}
+  //big form
+
+  .big-form {
+
+    .container {
+      background-color: #F0EFE9;
+      width: 1038px;
+      height: 700px;
+      margin-left: 434px;
+      margin-top: 50px;
+      
+      .title{
+        padding-top: 90px;
+        padding-bottom: 25px;
+        text-align: center;
+      }
+    
+        .form-1 {
+          border-radius: 25px; /* Rundade kanter */
+          padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
+          font-size: 16px; /* Ange textstorlek */
+          border: none;
+          background-color: rgb(255, 255, 255);
+          margin: 10px 50px 10px 50px;
+  
+          #name {
+            padding: 10px 20px 10px 20px;
+    
+          }
+    
+        }
+    
+        .form-2 {
+          border-radius: 25px; /* Rundade kanter */
+          padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
+          font-size: 16px; /* Ange textstorlek */
+          border: none;
+          background-color: rgb(255, 255, 255);
+          margin: 10px 50px 10px 50px;
+          #email-2 {
+    
+          }
+        }
+        
+        .form-3 {
+          border-radius: 25px; /* Rundade kanter */
+          padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
+          font-size: 16px; /* Ange textstorlek */
+          border: none;
+          background-color: rgb(255, 255, 255);
+          height: 300px;
+          margin-top: 10px;
+          margin: 10px 50px 10px 50px;
+          #message {
+            border: none;
+          }
+    
+        }
+
+    }
+    
+  }
     
    
     
