@@ -2300,15 +2300,11 @@ header .container .menu {
   }
 }
 header .container .menu .top-menu {
-  display: flex; /*Här skickar vi texterna bredvid varandra */
+  display: flex;
   justify-content: end;
-  /*border: 1px solid black; Vi sätter en ram runt för att se hur långt texten sträcker sig (görs till en 
-  kommentar sen då den ska tas bort när man sett hur långt den sträcker sig och tar sedan bort den*/
-  border-bottom: 1px solid #DAD9D3; /*Här har vi lagt bordern och 
-padding för att få bordern att gå ut hela vägen*/
+  border-bottom: 1px solid #DAD9D3;
   padding-bottom: 10px;
-  align-items: center; /* om inte denna finns så kommer contact information biten att vara i en annan nivå i förhållande
-till social-media ikonerna. Align items centrerar dem i mitten av boxen vertikalt. */
+  align-items: center;
   margin-bottom: 80px;
 }
 @media (min-width: 1200px) {
@@ -2322,6 +2318,7 @@ header .container .menu .top-menu .contact-information {
 }
 @media (min-width: 1200px) {
   header .container .menu .top-menu .contact-information {
+    display: flex;
     justify-content: space-between;
   }
 }
@@ -2362,14 +2359,10 @@ dem att ändra färg. */
   color: #666666;
 }
 header .container .menu .main-menu {
-  display: flex; /*Så att varje text "home", "service" etc kan sättas bredvid varandra */
-  justify-content: space-between; /*För att separera gruppen "home, service, news och contact" från "login"
-notera att home, service etc alla ligger inom en nav tag och räknas som en grupp, och login ligger utanför och räknas
-som en grupp. space-between egenskapen kommer då inte ske mellan "home", "service" etc då de räknas som 
-en grupp och då kommer space-between att skapa mellanrum mellan grupp 1 och 2 så att ena hamnar längst till
-höger och den andra till vänster */
-  align-items: center; /*centrerar båda grupperna så att de ligger i samma höjd vertikalt i förhållande till varandra. */
-  padding-bottom: 70px; /*flyttar ner båda grupperna*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 70px;
   margin-top: -50px;
 }
 header .container .menu .main-menu nav a {
@@ -2380,20 +2373,30 @@ header .container .menu .main-menu nav a {
   position: relative;
   margin-bottom: 20px;
 }
-header .container .menu .main-menu nav a.active { /*När den är active så blir den fet stilad */
-  font-weight: 500;
-}
-header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
-  content: "";
-  position: absolute; /*Lär vi oss sen */
-  font-weight: 500;
-  height: 2px;
-  width: 15px;
-  background-color: #191919;
-  left: 50%;
-  bottom: 3px;
-  transform: translate(calc(50% - 15px)); /*Lär vi oss sen */
-  text-decoration: underline;
+@media (min-width: 576px) {
+  header .container .menu .main-menu nav a {
+    display: inline-block;
+    color: #191919; /*färg på länkarna*/
+    text-decoration: none; /*tar bort linjen under text-länken */
+    margin-right: 35px; /*separerar länkarna ifrån varandra */
+    position: relative;
+    margin-bottom: 20px;
+  }
+  header .container .menu .main-menu nav a.active { /*När den är active så blir den fet stilad */
+    font-weight: 500;
+  }
+  header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
+    content: "";
+    position: absolute;
+    font-weight: 500;
+    height: 2px;
+    width: 15px;
+    background-color: #191919;
+    left: 50%;
+    bottom: 3px;
+    transform: translate(calc(50% - 15px));
+    text-decoration: underline;
+  }
 }
 header .container .menu .main-menu .btn-login { /*Om du kollar högre upp i filen så ser vi att knapparna Learn more och get consulting har en del css egenskaper, alla dessa gäller för login knappen också, förutom det vi lägger till här då vi lagt till en extra klass på login knappen i html filen. */
   padding-top: 10px;
@@ -2404,4 +2407,25 @@ header .container .menu .main-menu .btn-login { /*Om du kollar högre upp i file
 }
 header .container .menu .main-menu .btn-login i {
   margin: 10px;
+}
+header .mini-nav-bar .container {
+  display: inline-block;
+  padding-left: 610px;
+}
+header .mini-nav-bar .container .first-row {
+  display: flex;
+  gap: 30px;
+  padding-left: 65px;
+}
+header .mini-nav-bar .container .first-row p {
+  color: #191919;
+  font-family: "Inter", sans-serif; /*Textsnitt */
+  font-size: 14px; /*storleken på texten */
+  font-weight: 400; /*hur stark färgen blir */
+}
+header .mini-nav-bar .container .second-row h1 {
+  font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
+  font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+  font-size: 45px;
+  color: #191919;
 }
