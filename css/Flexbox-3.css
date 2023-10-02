@@ -2422,12 +2422,12 @@ header .container .menu .main-menu .btn-login i {
 }
 header .mini-nav-bar .container {
   display: inline-block;
-  padding-left: 610px;
+  padding-left: 800px;
 }
 header .mini-nav-bar .container .first-row {
   display: flex;
   gap: 30px;
-  padding-left: 65px;
+  padding-left: 80px;
 }
 header .mini-nav-bar .container .first-row p {
   color: #191919;
@@ -2450,5 +2450,25 @@ header .mini-nav-bar .container .second-row h1 {
 }
 .main-content .three-boxes .box {
   border: solid 1px black;
-  padding: 0px 50px 15px 50px;
+  padding: 30px 100px 30px 100px;
+  display: flex;
+  position: relative;
+}
+.main-content .three-boxes .box .img img {
+  margin-left: -80px;
+  margin-top: -2px;
+  width: 25%;
+  height: 25%;
+  position: absolute;
+}
+.main-content .three-boxes .box h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.main-content .three-boxes .box p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
