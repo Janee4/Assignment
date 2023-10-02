@@ -2039,32 +2039,44 @@ header .container .menu .main-menu .btn-login i {
     align-items: center;
   }
 }
-.signup .container .right .searchbar-plus-button .searchbar {
-  border: 1px solid rgb(168, 168, 168);
-  padding: 0px 20px;
-  display: flex;
-  background-color: #ffffff;
+.signup .container .right .searchbar-plus-button .searchbox {
+  display: inline-block;
+  border-radius: 0px;
   margin-right: 20px;
-  gap: 50px;
-  border-radius: 15px;
 }
-.signup .container .right .searchbar-plus-button .searchbar p {
-  opacity: 50%;
-  margin-top: 10px;
-  font-size: 15px;
+.signup .container .right .searchbar-plus-button .searchbox input {
+  border: none;
+}
+.signup .container .right .searchbar-plus-button .searchbox #email {
+  padding: 0px; /* Lägg till lite utrymme runt texten */
+  font-size: 16px; /* Ange textstorlek */
+}
+.signup .container .right .searchbar-plus-button .searchbox #email::-moz-placeholder {
+  color: #999; /* Grå färg för plachållartexten */
+  font-style: italic; /* Kursiv stil för plachållartexten */
+}
+.signup .container .right .searchbar-plus-button .searchbox #email::placeholder {
+  color: #999; /* Grå färg för plachållartexten */
+  font-style: italic; /* Kursiv stil för plachållartexten */
 }
 @media (min-width: 576px) {
-  .signup .container .right .searchbar-plus-button .searchbar {
-    border: 1px solid white;
-    padding: 2px 80px;
+  .signup .container .right .searchbar-plus-button .searchbox {
     display: flex;
-    margin-right: 20px;
-    gap: 50px;
-    border-radius: 50px;
+    border-radius: 25px;
   }
-  .signup .container .right .searchbar-plus-button .searchbar p {
-    opacity: 50%;
-    margin-top: 10px;
+  .signup .container .right .searchbar-plus-button .searchbox #email {
+    border-radius: 25px; /* Rundade kanter */
+    padding: 10px 50px 10px 30px; /* Lägg till lite utrymme runt texten */
+    font-size: 16px; /* Ange textstorlek */
+    border: none;
+  }
+  .signup .container .right .searchbar-plus-button .searchbox #email::-moz-placeholder {
+    color: #999; /* Grå färg för plachållartexten */
+    font-style: italic; /* Kursiv stil för plachållartexten */
+  }
+  .signup .container .right .searchbar-plus-button .searchbox #email::placeholder {
+    color: #999; /* Grå färg för plachållartexten */
+    font-style: italic; /* Kursiv stil för plachållartexten */
   }
 }
 .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe {

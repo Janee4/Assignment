@@ -2363,37 +2363,46 @@ height: 980px;
           display: flex;
           justify-content: center;
           align-items: center;
-
         }
 
-      .searchbar {
-        border: 1px solid rgb(168, 168, 168);
-        padding: 0px 20px;
-        display: flex;
-        background-color: #ffffff;
-        margin-right: 20px;
-        gap: 50px;
-        border-radius: 15px;
-        p {
-          opacity: 50%;
-          margin-top: 10px;
-          font-size: 15px;
-
-        }
-        @media (min-width: 576px) {  
-          border: 1px solid white;
-          padding: 2px 80px;
-          display: flex;
+        .searchbox {
+          display: inline-block;
+          border-radius: 0px;
           margin-right: 20px;
-          gap: 50px;
-          border-radius: 50px;
-          p {
-            opacity: 50%;
-            margin-top: 10px;
+
+          input {
+            border: none;
           }
 
+            #email {
+              // border-radius: 10%; /* Rundade kanter */
+              padding: 0px; /* Lägg till lite utrymme runt texten */
+              font-size: 16px; /* Ange textstorlek */
+            }
+            #email::placeholder {
+              color: #999; /* Grå färg för plachållartexten */
+              font-style: italic; /* Kursiv stil för plachållartexten */
+            }
+           
+            @media (min-width: 576px) {  
+              display: flex;
+              border-radius: 25px;
+             
+              #email {
+                border-radius: 25px; /* Rundade kanter */
+                padding: 10px 50px 10px 30px; /* Lägg till lite utrymme runt texten */
+                font-size: 16px; /* Ange textstorlek */
+                border: none;
+                
+              }
+              #email::placeholder {
+                color: #999; /* Grå färg för plachållartexten */
+                font-style: italic; /* Kursiv stil för plachållartexten */
+              }
+
+              
+          }   
         }
-      }
       .btn-subscribe {
         
         .subscribe {
@@ -2856,9 +2865,8 @@ header {
     .box {
       border: solid 1px black;
       padding: 0px 50px 15px 50px;
-      img {
-
-      }
+      // display: flex;
+    
 
       h4 {
 
