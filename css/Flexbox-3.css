@@ -1562,6 +1562,7 @@ header .container .menu .main-menu .btn-login i {
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
     margin-right: 50px;
     margin-top: 0;
@@ -1684,7 +1685,6 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .all-recent-projects-div .btn-black {
   position: absolute;
   margin-top: -60px;
-  margin-left: -135px;
   background-color: #000000;
   border: solid 1px #191919;
   color: #ffffff; /*Textens färg */
