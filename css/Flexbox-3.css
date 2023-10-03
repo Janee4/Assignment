@@ -2172,9 +2172,6 @@ header .container .menu .main-menu .btn-login i {
     color: #b9b9b9;
   }
 }
-.black-navigation .container .small-titles {
-  display: grid;
-}
 .black-navigation .container .small-titles .help {
   margin-left: 5px;
 }
@@ -2190,7 +2187,7 @@ header .container .menu .main-menu .btn-login i {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 .black-navigation .container .small-titles a {
   text-decoration: none;

@@ -2504,7 +2504,8 @@ height: 980px;
     }
 
       .small-titles {
-        display: grid;
+        // display: grid;
+        
 
 
         .help {
@@ -2525,7 +2526,7 @@ height: 980px;
           font-family: 'DM Sans', sans-serif;
           font-weight: 700; 
           font-size: 14px;
-          padding-bottom: 15px;
+          padding-bottom: 5px;
          
 
         }
@@ -3151,7 +3152,6 @@ header {
             font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
             border-radius: 30px;
             margin-left: 85px;
-            
             
             
               i {
