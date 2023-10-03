@@ -367,6 +367,9 @@ header .container .menu .main-menu .btn-login i {
     margin-bottom: 0;
   }
 }
+.showcase-2 .container {
+  /* */
+}
 .showcase-2 .container .logo-section {
   background-color: rgb(255, 255, 255);
   display: none;
@@ -437,29 +440,31 @@ header .container .menu .main-menu .btn-login i {
     margin-bottom: 50px;
   }
 }
-.showcase-2 .container .container-2 .left .btn-yellow {
+.showcase-2 .container .container-2 .left .btn-learn-yellow {
   display: none;
 }
 @media (min-width: 576px) {
-  .showcase-2 .container .container-2 .left .btn-yellow {
-    text-decoration: none; /*vi tar bort strecket under texten Login */
-    padding: 0px 155px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
-    font-weight: 400; /*här får vi tjockare text */
-    font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
-    margin-bottom: 217px;
-    margin-left: 0px;
-    border-radius: 30px;
+  .showcase-2 .container .container-2 .left .btn-learn-yellow {
+    display: block;
     background-color: #F9D783;
     border: solid 1px #F9D783;
     color: #191919; /*Textens färg */
-    display: block;
-    align-items: center;
+    text-decoration: none; /*vi tar bort strecket under texten Login */
+    padding: 10px 160px 10px 160px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+    font-weight: 500; /*här får vi tjockare text */
+    font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
+    border-radius: 30px;
   }
-}
-.showcase-2 .container .container-2 .left .btn-yellow i {
-  margin-left: 10px;
-  margin-bottom: 25px; /*skapar avstånd mellan ikonen (pilen) och texten */
-  font-size: 0.9em;
+  .showcase-2 .container .container-2 .left .btn-learn-yellow i {
+    margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+  .showcase-2 .container .container-2 .left .btn-learn-yellow:hover {
+    background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
+    border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
+    color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
+  }
 }
 .showcase-2 .container .right {
   display: grid;
@@ -2482,7 +2487,7 @@ header .container .menu .main-menu .btn-login i {
 .big-form .container {
   background-color: #F0EFE9;
   width: 1038px;
-  height: 700px;
+  height: 800px;
   margin-left: 434px;
   margin-top: 50px;
 }
@@ -2497,7 +2502,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 16px; /* Ange textstorlek */
   border: none;
   background-color: rgb(255, 255, 255);
-  margin: 10px 50px 10px 50px;
+  margin: 10px 100px 10px 100px;
 }
 .big-form .container .form-1 input {
   border: none;
@@ -2511,7 +2516,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 16px; /* Ange textstorlek */
   border: none;
   background-color: rgb(255, 255, 255);
-  margin: 10px 50px 10px 50px;
+  margin: 10px 100px 10px 100px;
 }
 .big-form .container .form-2 input {
   border: none;
@@ -2524,8 +2529,29 @@ header .container .menu .main-menu .btn-login i {
   background-color: rgb(255, 255, 255);
   height: 300px;
   margin-top: 10px;
-  margin: 10px 50px 10px 50px;
+  margin: 10px 100px 10px 100px;
 }
 .big-form .container .form-3 input {
   border: none;
+}
+.big-form .container .btn .btn-send-message {
+  background-color: #F9D783;
+  border: solid 1px #F9D783;
+  color: #191919; /*Textens färg */
+  text-decoration: none; /*vi tar bort strecket under texten Login */
+  padding: 10px 337px 10px 337px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+  font-weight: 500; /*här får vi tjockare text */
+  font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
+  border-radius: 30px;
+  margin-left: 85px;
+}
+.big-form .container .btn .btn-send-message i {
+  margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.big-form .container .btn .btn-send-message:hover {
+  background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
+  border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
+  color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
 }
