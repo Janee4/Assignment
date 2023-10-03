@@ -2486,8 +2486,8 @@ header .container .menu .main-menu .btn-login i {
   border: solid 1px grey;
   padding: 10px 20px 0px 20px;
   display: block;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #F0EFE9;
+  border-radius: 5px;
 }
 .main-content .three-boxes .box .img img {
   display: flex;
@@ -2523,6 +2523,7 @@ header .container .menu .main-menu .btn-login i {
     position: relative;
     margin-right: 0px;
     background-color: #ffffff;
+    border-radius: 0;
   }
   .main-content .three-boxes .box .img img {
     margin-left: -80px;
@@ -2556,7 +2557,7 @@ header .container .menu .main-menu .btn-login i {
   height: 700px;
   margin-top: 0px;
   border-radius: 25px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 576px) {
   .big-form .container {
@@ -2589,8 +2590,8 @@ header .container .menu .main-menu .btn-login i {
   font-size: 16px;
   border: none;
   background-color: rgb(255, 255, 255);
-  margin: 10px 10px 10px 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 10px 10px 20px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .big-form .container .form-1 input {
   border: none;
@@ -2621,8 +2622,8 @@ header .container .menu .main-menu .btn-login i {
   font-size: 16px; /* Ange textstorlek */
   border: none;
   background-color: rgb(255, 255, 255);
-  margin: 10px 10px 10px 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
+  margin: 10px 10px 30px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Skugga med 10px spridning och 50% opacitet */
 }
 .big-form .container .form-2 input {
   border: none;
@@ -2650,7 +2651,7 @@ header .container .menu .main-menu .btn-login i {
   height: 170px;
   margin-top: 10px;
   margin: 10px 10px 10px 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Skugga med 10px spridning och 50% opacitet */
 }
 .big-form .container .form-3 input {
   border: none;
