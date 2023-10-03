@@ -2470,7 +2470,28 @@ height: 980px;
 }
 
 }
-
+.map {
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 390px;
+    }
+  }
+  @media (min-width: 576px) { 
+    max-width: auto;
+    .container {
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        
+      }
+    }
+  }
+  
+}
 .black-navigation {
   background-color: #0E1021;
   height: 300px;

@@ -2136,6 +2136,26 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 
+.map .container {
+  display: flex;
+  justify-content: center;
+}
+.map .container img {
+  max-width: 390px;
+}
+@media (min-width: 576px) {
+  .map {
+    max-width: auto;
+  }
+  .map .container {
+    display: flex;
+    justify-content: center;
+  }
+  .map .container img {
+    max-width: 100%;
+  }
+}
+
 .black-navigation {
   background-color: #0E1021;
   height: 300px;
