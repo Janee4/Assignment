@@ -2487,7 +2487,7 @@ header .container .menu .main-menu .btn-login i {
 .big-form .container {
   background-color: #F0EFE9;
   width: 1038px;
-  height: 800px;
+  height: 780px;
   margin-left: 434px;
   margin-top: 50px;
 }
@@ -2534,12 +2534,15 @@ header .container .menu .main-menu .btn-login i {
 .big-form .container .form-3 input {
   border: none;
 }
+.big-form .container .btn {
+  margin-top: 25px;
+}
 .big-form .container .btn .btn-send-message {
   background-color: #F9D783;
   border: solid 1px #F9D783;
   color: #191919; /*Textens färg */
   text-decoration: none; /*vi tar bort strecket under texten Login */
-  padding: 10px 337px 10px 337px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+  padding: 12px 337px 12px 337px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
   font-weight: 500; /*här får vi tjockare text */
   font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
   border-radius: 30px;
