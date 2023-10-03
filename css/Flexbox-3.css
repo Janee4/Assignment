@@ -2049,28 +2049,36 @@ header .container .menu .main-menu .btn-login i {
 }
 .signup .container .right .searchbar-plus-button .searchbox {
   display: inline-block;
-  border-radius: 0px;
-  margin-right: 20px;
+  margin-right: 10px;
+  border-radius: 25px;
 }
 .signup .container .right .searchbar-plus-button .searchbox input {
-  border: none;
+  border: solid 1px rgb(192, 192, 192);
+  text-align: center;
+  font-size: 5px;
 }
 .signup .container .right .searchbar-plus-button .searchbox #email {
-  padding: 0px; /* Lägg till lite utrymme runt texten */
+  border-radius: 25px; /* Rundade kanter */
+  padding: 8px 8px 8px 0;
   font-size: 16px; /* Ange textstorlek */
 }
 .signup .container .right .searchbar-plus-button .searchbox #email::-moz-placeholder {
   color: #999; /* Grå färg för plachållartexten */
   font-style: italic; /* Kursiv stil för plachållartexten */
+  font-size: 15px;
 }
 .signup .container .right .searchbar-plus-button .searchbox #email::placeholder {
   color: #999; /* Grå färg för plachållartexten */
   font-style: italic; /* Kursiv stil för plachållartexten */
+  font-size: 15px;
 }
 @media (min-width: 576px) {
   .signup .container .right .searchbar-plus-button .searchbox {
     display: flex;
     border-radius: 25px;
+  }
+  .signup .container .right .searchbar-plus-button .searchbox input {
+    border: none;
   }
   .signup .container .right .searchbar-plus-button .searchbox #email {
     border-radius: 25px; /* Rundade kanter */
@@ -2081,10 +2089,12 @@ header .container .menu .main-menu .btn-login i {
   .signup .container .right .searchbar-plus-button .searchbox #email::-moz-placeholder {
     color: #999; /* Grå färg för plachållartexten */
     font-style: italic; /* Kursiv stil för plachållartexten */
+    font-size: 17px;
   }
   .signup .container .right .searchbar-plus-button .searchbox #email::placeholder {
     color: #999; /* Grå färg för plachållartexten */
     font-style: italic; /* Kursiv stil för plachållartexten */
+    font-size: 17px;
   }
 }
 .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe {
@@ -2109,7 +2119,7 @@ header .container .menu .main-menu .btn-login i {
     border: solid 1px #F9D783;
     color: #191919; /*Textens färg */
     text-decoration: none; /*vi tar bort strecket under texten Login */
-    padding: 17px 30px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+    padding: 15px 28px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
     font-weight: 500; /*här får vi tjockare text */
     font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
     border-radius: 30px;
@@ -2135,14 +2145,16 @@ header .container .menu .main-menu .btn-login i {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
-  -moz-column-gap: 107px;
-       column-gap: 107px;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
   row-gap: 10px;
   margin-left: 10px;
 }
 @media (min-width: 576px) {
   .black-navigation .container {
     margin-left: auto;
+    -moz-column-gap: 107px;
+         column-gap: 107px;
   }
 }
 .black-navigation .container .crito {

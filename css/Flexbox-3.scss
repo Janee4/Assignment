@@ -2375,26 +2375,33 @@ height: 980px;
 
         .searchbox {
           display: inline-block;
-          border-radius: 0px;
-          margin-right: 20px;
+          margin-right: 10px;
+          border-radius: 25px;
 
           input {
-            border: none;
+            border: solid 1px rgb(192, 192, 192);
+            text-align: center;
+            font-size: 5px;
           }
 
             #email {
-              // border-radius: 10%; /* Rundade kanter */
-              padding: 0px; /* Lägg till lite utrymme runt texten */
+              border-radius: 25px; /* Rundade kanter */
+              padding: 8px 8px 8px 0;
               font-size: 16px; /* Ange textstorlek */
             }
             #email::placeholder {
               color: #999; /* Grå färg för plachållartexten */
               font-style: italic; /* Kursiv stil för plachållartexten */
+              font-size: 15px;
             }
            
             @media (min-width: 576px) {  
               display: flex;
               border-radius: 25px;
+
+              input {
+                border: none;
+              }
              
               #email {
                 border-radius: 25px; /* Rundade kanter */
@@ -2406,9 +2413,8 @@ height: 980px;
               #email::placeholder {
                 color: #999; /* Grå färg för plachållartexten */
                 font-style: italic; /* Kursiv stil för plachållartexten */
-              }
-
-              
+                font-size: 17px;
+              }  
           }   
         }
       .btn-subscribe {
@@ -2435,7 +2441,7 @@ height: 980px;
               border: solid 1px #F9D783 ;
               color: #191919; /*Textens färg */
               text-decoration: none; /*vi tar bort strecket under texten Login */
-              padding: 17px 30px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
+              padding: 15px 28px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
               font-weight: 500; /*här får vi tjockare text */
               font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
               border-radius: 30px;
@@ -2474,11 +2480,12 @@ height: 980px;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-    column-gap: 107px;
+    column-gap: 7px;
     row-gap: 10px;
     margin-left: 10px;
     @media (min-width: 576px) { 
       margin-left:auto;
+      column-gap: 107px;    
     }
 
 
