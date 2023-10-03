@@ -2470,7 +2470,7 @@ header .container .menu .main-menu .btn-login i {
 
 .main-content {
   background-color: #F0EFE9;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 @media (min-width: 576px) {
   .main-content {
@@ -2551,11 +2551,12 @@ header .container .menu .main-menu .btn-login i {
 }
 
 .big-form .container {
-  background-color: #F0EFE9;
+  background-color: #ffffff;
   width: 390px;
   height: 700px;
-  margin-top: 60px;
+  margin-top: 0px;
   border-radius: 25px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 576px) {
   .big-form .container {
@@ -2564,12 +2565,18 @@ header .container .menu .main-menu .btn-login i {
     height: 670px;
     margin-top: 60px;
     border-radius: 0px;
+    box-shadow: none;
   }
 }
 .big-form .container .title {
-  padding-top: 90px;
+  padding-top: 25px;
   padding-bottom: 25px;
   text-align: center;
+}
+@media (min-width: 576px) {
+  .big-form .container .title {
+    padding-top: 90px;
+  }
 }
 .big-form .container .title h2 {
   font-family: "DM Sans", sans-serif;
@@ -2577,13 +2584,13 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 700;
 }
 .big-form .container .form-1 {
-  border-radius: 25px; /* Rundade kanter */
-  padding: 10px 10px 10px 20px; /* Lägg till lite utrymme runt texten */
-  font-size: 16px; /* Ange textstorlek */
+  border-radius: 25px;
+  padding: 10px 10px 10px 20px;
+  font-size: 16px;
   border: none;
   background-color: rgb(255, 255, 255);
   margin: 10px 10px 10px 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .big-form .container .form-1 input {
   border: none;
