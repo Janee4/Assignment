@@ -2471,12 +2471,11 @@ height: 980px;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-    position: relative;
     column-gap: 7px;
     row-gap: 10px;
     margin-left: 10px;
     @media (min-width: 576px) { 
-      margin-left: 0px;
+      margin-left:auto;
     }
 
 
@@ -2596,6 +2595,7 @@ height: 980px;
   .container {
     display: flex;
     flex-direction: column-reverse;
+    
       .left {
         
         p{
@@ -2607,6 +2607,7 @@ height: 980px;
           margin-left: 11px;
           
         }
+
       }
       .right {
         margin-left: 60px;
@@ -2624,7 +2625,7 @@ height: 980px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin-right: 310px;
+      margin: auto;
 
       .left {
         p{
@@ -2831,23 +2832,27 @@ header {
           
 .mini-nav-bar {
   background-color: #F0EFE9;
+  text-align: center;
+  height: 150px;
+  
+  
   .container{
-    display: inline-block;
-    padding-left: 800px;
     width: 100%;
    max-width: 1200px; /* Ändra detta värde till det du vill ha för maximal bredd */
-   margin: 0 auto;
+   margin: auto;
+   text-align: center;
+   
     
    .first-row {
       display: flex;
       gap: 30px;
-      padding-left: 80px;
+      justify-content: center;
+
       p {
         color: #191919;
         font-family: 'Inter', sans-serif; /*Textsnitt */
         font-size: 14px; /*storleken på texten */
         font-weight: 400; /*hur stark färgen blir */
-
       }
     }
 
@@ -2857,6 +2862,7 @@ header {
         font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
         font-size: 45px;
         color: #191919;
+        
       }
     }
   }

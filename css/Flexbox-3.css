@@ -2132,7 +2132,6 @@ header .container .menu .main-menu .btn-login i {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
-  position: relative;
   -moz-column-gap: 7px;
        column-gap: 7px;
   row-gap: 10px;
@@ -2140,7 +2139,7 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .black-navigation .container {
-    margin-left: 0px;
+    margin-left: auto;
   }
 }
 .black-navigation .container .crito {
@@ -2265,7 +2264,7 @@ header .container .menu .main-menu .btn-login i {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 310px;
+    margin: auto;
   }
   .footer .container .left p {
     font-size: 14px;
@@ -2426,18 +2425,19 @@ header .container .menu .main-menu .btn-login i {
 
 .mini-nav-bar {
   background-color: #F0EFE9;
+  text-align: center;
+  height: 150px;
 }
 .mini-nav-bar .container {
-  display: inline-block;
-  padding-left: 800px;
   width: 100%;
   max-width: 1200px; /* Ändra detta värde till det du vill ha för maximal bredd */
-  margin: 0 auto;
+  margin: auto;
+  text-align: center;
 }
 .mini-nav-bar .container .first-row {
   display: flex;
   gap: 30px;
-  padding-left: 80px;
+  justify-content: center;
 }
 .mini-nav-bar .container .first-row p {
   color: #191919;
