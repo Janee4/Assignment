@@ -3019,9 +3019,11 @@ header {
           border: none;
           background-color: rgb(255, 255, 255);
           margin: 10px 10px 10px 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
           
           input {
             border: none;
+            
           }
           #name {
             padding: 10px 20px 10px 20px;
@@ -3035,7 +3037,7 @@ header {
             border: none;
             background-color: rgb(255, 255, 255);
             margin: 10px 100px 10px 100px;
-            
+            box-shadow: none;
             input {
               border: none;
             }
@@ -3053,6 +3055,8 @@ header {
           border: none;
           background-color: rgb(255, 255, 255);
           margin: 10px 10px 10px 10px;    
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
+          
           input {
             border: none;
           }
@@ -3066,6 +3070,7 @@ header {
             border: none;
             background-color: rgb(255, 255, 255);
             margin: 10px 100px 10px 100px;
+            box-shadow: none;
             
             input {
               border: none;
@@ -3083,6 +3088,7 @@ header {
           height: 170px;
           margin-top: 10px;
           margin: 10px 10px 10px 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
           
           input {
             border: none;
@@ -3100,6 +3106,7 @@ header {
             height: 170px;
             margin-top: 10px;
             margin: 10px 100px 10px 100px;
+            box-shadow: none;
             
             input {
               border: none;

@@ -2583,6 +2583,7 @@ header .container .menu .main-menu .btn-login i {
   border: none;
   background-color: rgb(255, 255, 255);
   margin: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
 }
 .big-form .container .form-1 input {
   border: none;
@@ -2598,6 +2599,7 @@ header .container .menu .main-menu .btn-login i {
     border: none;
     background-color: rgb(255, 255, 255);
     margin: 10px 100px 10px 100px;
+    box-shadow: none;
   }
   .big-form .container .form-1 input {
     border: none;
@@ -2613,6 +2615,7 @@ header .container .menu .main-menu .btn-login i {
   border: none;
   background-color: rgb(255, 255, 255);
   margin: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
 }
 .big-form .container .form-2 input {
   border: none;
@@ -2625,6 +2628,7 @@ header .container .menu .main-menu .btn-login i {
     border: none;
     background-color: rgb(255, 255, 255);
     margin: 10px 100px 10px 100px;
+    box-shadow: none;
   }
   .big-form .container .form-2 input {
     border: none;
@@ -2639,6 +2643,7 @@ header .container .menu .main-menu .btn-login i {
   height: 170px;
   margin-top: 10px;
   margin: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Skugga med 10px spridning och 50% opacitet */
 }
 .big-form .container .form-3 input {
   border: none;
@@ -2653,6 +2658,7 @@ header .container .menu .main-menu .btn-login i {
     height: 170px;
     margin-top: 10px;
     margin: 10px 100px 10px 100px;
+    box-shadow: none;
   }
   .big-form .container .form-3 input {
     border: none;
