@@ -2470,33 +2470,66 @@ header .container .menu .main-menu .btn-login i {
 .main-content .three-boxes {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 80px;
+  gap: 0px;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 .main-content .three-boxes .box {
-  border: solid 1.6px rgb(208, 208, 208);
-  padding: 40px 100px 30px 100px;
+  border: solid 1px grey;
+  padding: 10px 40px 0px 40px;
   display: flex;
-  position: relative;
+  margin-right: 10px;
 }
 .main-content .three-boxes .box .img img {
-  margin-left: -80px;
-  margin-top: -2px;
-  width: 25%;
-  height: 25%;
+  margin-left: -30px;
+  width: 25px;
+  height: 25px;
   position: absolute;
 }
 .main-content .three-boxes .box h4 {
   font-family: "DM Sans", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .main-content .three-boxes .box p {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 0.5;
+  display: none;
+}
+@media (min-width: 576px) {
+  .main-content .three-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+    margin-left: 0px;
+  }
+  .main-content .three-boxes .box {
+    border: solid 1.6px rgb(208, 208, 208);
+    padding: 40px 100px 30px 100px;
+    display: flex;
+    position: relative;
+    margin-right: 0px;
+  }
+  .main-content .three-boxes .box .img img {
+    margin-left: -80px;
+    margin-top: -2px;
+    width: 25%;
+    height: 25%;
+    position: absolute;
+  }
+  .main-content .three-boxes .box h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .main-content .three-boxes .box p {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0.5;
+  }
 }
 
 .big-form .container {
