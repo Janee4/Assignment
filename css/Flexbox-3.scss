@@ -480,7 +480,7 @@ header {
             
               .left {
                 background-color:#ffffff;
-                margin-bottom: 40px;
+                margin-bottom: 60px;
                 
                 @media (min-width: 576px) {
                   padding-left: 115px;
@@ -488,14 +488,19 @@ header {
                 }
                     
                 p {
-                  display: none; 
                   
-                  @media (min-width: 576px) {
-                    font-family: 'Inter', sans-serif; /*Textsnitt */
-                    font-size: 18px; /*storleken på texten */
+                  font-family: 'Inter', sans-serif; /*Textsnitt */
+                    font-size: 16px; /*storleken på texten */
                     font-weight: 500;
                     color: rgb(249, 77, 28);
+                    margin-top: 15px;
+                    text-align: center;
+                  
+                  @media (min-width: 576px) {
+                    font-size: 18px; 
+                    font-weight: 500;
                     margin-top: 60px;
+                    text-align: start;
                     display: block;
                   }
                 }
@@ -503,10 +508,10 @@ header {
                 h2 {
                   font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
                   font-weight: 700;
-                  font-size: 20px; 
-                  margin-bottom: 20px;
+                  font-size: 27px; 
+                  margin-bottom: 40px;
                   text-align: center;
-                  margin-top: 30px;
+                  margin-top: 10px;
 
                   @media (min-width: 576px) {
                     font-size: 45px; 
@@ -846,13 +851,18 @@ header {
         
         .about-company-paragraph {
           display: none;
-
-          @media (min-width: 576px) {
-            color: rgb(249, 77, 28);
+          color: rgb(249, 77, 28);
             margin-top: -5px;
             font-family: 'Inter', sans-serif;
             font-weight: 500;
+            font-size: 14px;
             display: block;
+
+          @media (min-width: 576px) {
+            margin-top: -5px;
+            font-weight: 500;
+            display: block;
+            font-size: 16px;
           }
           
         }
@@ -860,7 +870,7 @@ header {
         h2 {
           font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
           font-weight: 800;
-          font-size: 20px;
+          font-size: 22px;
           text-align: start;
 
           br {
@@ -1045,6 +1055,7 @@ header {
         margin-bottom: 20px;
         position: absolute;
         text-align: center;
+        padding-top: 20px;
         p {
           
           color: rgb(249, 77, 28);
@@ -1068,6 +1079,7 @@ header {
           margin-top: 120px;
           position: absolute;
           text-align: start;
+          padding-top: 0px;
           p {
             color: rgb(249, 77, 28);
             font-family: 'Inter', sans-serif;
@@ -1089,7 +1101,7 @@ header {
       display: grid;
       justify-content: center;
       align-items: center;
-      margin-top: 150px;
+      margin-top: 200px;
       row-gap: 50px;
       // margin-bottom: 223px;
 
@@ -1295,7 +1307,7 @@ header {
           }
            //@media (min-width: 576px) {}
 .why-choose-us-part5 {
-  margin-top: 4rem;
+  margin-top: 30px;
   position: relative;
 
   @media (min-width: 576px) {
@@ -1312,10 +1324,11 @@ header {
           margin-left: 30px;
 
             .title {
+              padding-top: 20px;
               p {
               color: rgb(249, 77, 28);
               font-family: 'Inter', sans-serif;
-              font-size: 14px;
+              font-size: 16px;
               font-weight: 500;
               text-align: center;
               }
@@ -1339,6 +1352,7 @@ header {
           margin-left: 100px;
 
           .title {
+            padding-top: 0px;
             
             p {
               display: block;
@@ -1346,6 +1360,7 @@ header {
               font-family: 'Inter', sans-serif;
               font-size: 18px;
               font-weight: 500;
+              text-align: start;
               
             }
 
@@ -1353,6 +1368,7 @@ header {
               font-size: 45px;
               font-weight: 900;
               margin-bottom: 55px;
+              text-align: start;
               
               br {
                 display: block;

@@ -403,7 +403,7 @@ header .container .menu .main-menu .btn-login i {
 }
 .showcase-2 .container .container-2 .left {
   background-color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left {
@@ -412,25 +412,29 @@ header .container .menu .main-menu .btn-login i {
   }
 }
 .showcase-2 .container .container-2 .left p {
-  display: none;
+  font-family: "Inter", sans-serif; /*Textsnitt */
+  font-size: 16px; /*storleken på texten */
+  font-weight: 500;
+  color: rgb(249, 77, 28);
+  margin-top: 15px;
+  text-align: center;
 }
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left p {
-    font-family: "Inter", sans-serif; /*Textsnitt */
-    font-size: 18px; /*storleken på texten */
+    font-size: 18px;
     font-weight: 500;
-    color: rgb(249, 77, 28);
     margin-top: 60px;
+    text-align: start;
     display: block;
   }
 }
 .showcase-2 .container .container-2 .left h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
   font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 27px;
+  margin-bottom: 40px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left h2 {
@@ -720,20 +724,25 @@ header .container .menu .main-menu .btn-login i {
 }
 .part-3 .content-3-right .about-company-paragraph {
   display: none;
+  color: rgb(249, 77, 28);
+  margin-top: -5px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
 }
 @media (min-width: 576px) {
   .part-3 .content-3-right .about-company-paragraph {
-    color: rgb(249, 77, 28);
     margin-top: -5px;
-    font-family: "Inter", sans-serif;
     font-weight: 500;
     display: block;
+    font-size: 16px;
   }
 }
 .part-3 .content-3-right h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
   text-align: start;
 }
 .part-3 .content-3-right h2 br {
@@ -897,6 +906,7 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: 20px;
   position: absolute;
   text-align: center;
+  padding-top: 20px;
 }
 .we-provide-part4 .container .main-text p {
   color: rgb(249, 77, 28);
@@ -917,6 +927,7 @@ header .container .menu .main-menu .btn-login i {
     margin-top: 120px;
     position: absolute;
     text-align: start;
+    padding-top: 0px;
   }
   .we-provide-part4 .container .main-text p {
     color: rgb(249, 77, 28);
@@ -935,7 +946,7 @@ header .container .menu .main-menu .btn-login i {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 200px;
   row-gap: 50px;
 }
 @media (min-width: 576px) {
@@ -1131,7 +1142,7 @@ header .container .menu .main-menu .btn-login i {
 }
 
 .why-choose-us-part5 {
-  margin-top: 4rem;
+  margin-top: 30px;
   position: relative;
 }
 @media (min-width: 576px) {
@@ -1148,10 +1159,13 @@ header .container .menu .main-menu .btn-login i {
   margin-top: -29px;
   margin-left: 30px;
 }
+.why-choose-us-part5 .container .left .title {
+  padding-top: 20px;
+}
 .why-choose-us-part5 .container .left .title p {
   color: rgb(249, 77, 28);
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   text-align: center;
 }
@@ -1171,17 +1185,22 @@ header .container .menu .main-menu .btn-login i {
     margin-top: -29px;
     margin-left: 100px;
   }
+  .why-choose-us-part5 .container .left .title {
+    padding-top: 0px;
+  }
   .why-choose-us-part5 .container .left .title p {
     display: block;
     color: rgb(249, 77, 28);
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: 500;
+    text-align: start;
   }
   .why-choose-us-part5 .container .left .title h2 {
     font-size: 45px;
     font-weight: 900;
     margin-bottom: 55px;
+    text-align: start;
   }
   .why-choose-us-part5 .container .left .title h2 br {
     display: block;
