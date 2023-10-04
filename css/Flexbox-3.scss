@@ -1777,7 +1777,7 @@ height: 980px;
 //@media (min-width: 576px) { }
 .what-our-client-says-8 {
   background-color: rgb(240, 208, 130);
-  height: 1150px;
+  height: 1200px;
 
   @media (min-width: 576px) { 
     height: 900px;
@@ -1797,9 +1797,12 @@ height: 980px;
     
     .section-title {
       margin-top: 20px;
-      margin-bottom: 150px;
+      margin-bottom: 170px;
       p {
-        display: none;
+        color: rgb(249, 77, 28);
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
       }
 
       h2 {
