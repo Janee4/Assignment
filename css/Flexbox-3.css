@@ -893,17 +893,22 @@ header .container .menu .main-menu .btn-login i {
   padding-bottom: 100px;
 }
 .we-provide-part4 .container .main-text {
-  margin-left: 51px;
-  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
   position: absolute;
+  text-align: center;
 }
 .we-provide-part4 .container .main-text p {
-  display: none;
+  color: rgb(249, 77, 28);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
 }
 .we-provide-part4 .container .main-text h2 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 800; /*kolla design mallen och hämta från fonts.google.com */
-  font-size: 25px;
+  font-size: 30px;
   color: #191919;
 }
 @media (min-width: 576px) {
@@ -911,6 +916,7 @@ header .container .menu .main-menu .btn-login i {
     margin-left: 14px;
     margin-top: 120px;
     position: absolute;
+    text-align: start;
   }
   .we-provide-part4 .container .main-text p {
     color: rgb(249, 77, 28);
@@ -1143,7 +1149,11 @@ header .container .menu .main-menu .btn-login i {
   margin-left: 30px;
 }
 .why-choose-us-part5 .container .left .title p {
-  display: none;
+  color: rgb(249, 77, 28);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
 }
 .why-choose-us-part5 .container .left .title h2 {
   color: #191919;
@@ -1151,6 +1161,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 25px;
   font-weight: 800;
   margin-bottom: 55px;
+  text-align: center;
 }
 .why-choose-us-part5 .container .left .title h2 br {
   display: none;

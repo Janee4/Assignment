@@ -1016,10 +1016,10 @@ header {
                 }
           }
 
-//@media (min-width: 576px) {}
+
 .we-provide-part4 {
   background-color: rgb(240, 239, 233);
-  // margin-right: 30px;
+ 
   position: relative;
     .thin-line {
       display: none;
@@ -1041,24 +1041,33 @@ header {
     padding-bottom: 100px;
     
       .main-text {
-        margin-left: 51px;
-        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 20px;
         position: absolute;
+        text-align: center;
         p {
-          display: none;
+          
+          color: rgb(249, 77, 28);
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            
         }
 
         h2 {
         font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
         font-weight: 800; /*kolla design mallen och hämta från fonts.google.com */
-        font-size: 25px;
+        font-size: 30px;
         color: #191919;
+        
         }
 
         @media (min-width: 576px) {
           margin-left: 14px;
           margin-top: 120px;
           position: absolute;
+          text-align: start;
           p {
             color: rgb(249, 77, 28);
             font-family: 'Inter', sans-serif;
@@ -1304,7 +1313,11 @@ header {
 
             .title {
               p {
-                display: none; 
+              color: rgb(249, 77, 28);
+              font-family: 'Inter', sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              text-align: center;
               }
   
               h2 {
@@ -1313,6 +1326,7 @@ header {
                 font-size: 25px;
                 font-weight: 800;
                 margin-bottom: 55px;
+                text-align: center;
 
                 br {
                   display: none;
