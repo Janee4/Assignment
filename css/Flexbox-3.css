@@ -2101,6 +2101,7 @@ header .container .menu .main-menu .btn-login i {
   border: solid 1px rgb(192, 192, 192);
   text-align: center;
   font-size: 5px;
+  outline: none;
 }
 .signup .container .right .searchbar-plus-button .searchbox #email {
   border-radius: 25px; /* Rundade kanter */
@@ -2667,6 +2668,7 @@ header .container .menu .main-menu .btn-login i {
 }
 .big-form .container .form-1 input {
   border: none;
+  outline: none;
 }
 .big-form .container .form-1 #name {
   padding: 10px 20px 10px 20px;
@@ -2683,6 +2685,7 @@ header .container .menu .main-menu .btn-login i {
   }
   .big-form .container .form-1 input {
     border: none;
+    outline: none;
   }
   .big-form .container .form-1 #name {
     padding: 10px 20px 10px 20px;
@@ -2699,6 +2702,7 @@ header .container .menu .main-menu .btn-login i {
 }
 .big-form .container .form-2 input {
   border: none;
+  outline: none;
 }
 @media (min-width: 576px) {
   .big-form .container .form-2 {
@@ -2712,6 +2716,7 @@ header .container .menu .main-menu .btn-login i {
   }
   .big-form .container .form-2 input {
     border: none;
+    outline: none;
   }
 }
 .big-form .container .form-3 {
@@ -2727,6 +2732,7 @@ header .container .menu .main-menu .btn-login i {
 }
 .big-form .container .form-3 input {
   border: none;
+  outline: none;
 }
 @media (min-width: 576px) {
   .big-form .container .form-3 {
@@ -2742,6 +2748,7 @@ header .container .menu .main-menu .btn-login i {
   }
   .big-form .container .form-3 input {
     border: none;
+    outline: none;
   }
 }
 .big-form .container .btn {

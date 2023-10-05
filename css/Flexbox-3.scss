@@ -218,8 +218,7 @@ header {
                 margin-right: 5px;
                 font-size: 1.2em;/*när man skriver "1em" så betyder det
                 att ge mig samma storlek som min parent, vilket blir 15px i detta fallet, skriver
-                man 1.2 så blir det lite större än parentsens storlek osv. */
-                
+                man 1.2 så blir det lite större än parentsens storlek osv. */ 
               }
 
               &.last { /*för att targeta klassen last som
@@ -227,92 +226,83 @@ header {
               sätta dit ett "&" */ 
                 border: none; /* nu tar vi bort den sista ram sidan på just denna klassen specifikt */   
               }
+            }
+          }
+
+        .social-media {
+          #linked { /*skapar ett id för att just sista linkedin ikonen ska ligga
+          sida vid sida med borderns slut*/
+          margin-right: 0;
+          }
+
+          a {
+            color: #191919;
+            font-size: 1.3rem; /*Man vill inte ha för små ikoner för att de ska gå att trycka på rem
+            utgår från font sizen i html och body delen, och 1,3 rem betyder att öka upp med 30%
+            från det vi satt i html och body delen vilket är 16 px (tror det betyder det)*/ 
+            margin-right: 10px;
+          
+            &:hover { /*När vi drar med musen över ikonerna så kommer
+            dem att ändra färg. */
+            color: #666666;
+            }
+          }
+        }   
+      }
+
+    .main-menu {
+      display: flex; /*Så att varje text "home", "service" etc kan sättas bredvid varandra */
+      justify-content: space-between; /*För att separera gruppen "home, service, news och contact" från "login"
+      notera att home, service etc alla ligger inom en nav tag och räknas som en grupp, och login ligger utanför och räknas
+      som en grupp. space-between egenskapen kommer då inte ske mellan "home", "service" etc då de räknas som 
+      en grupp och då kommer space-between att skapa mellanrum mellan grupp 1 och 2 så att ena hamnar längst till
+      höger och den andra till vänster */
+      align-items: center; /*centrerar båda grupperna så att de ligger i samma höjd vertikalt i förhållande till varandra. */
+      padding-bottom: 70px; /*flyttar ner båda grupperna*/
+      margin-top: -50px;
+      nav {
+        a {
+          display: inline-block;
+          color: #191919; /*färg på länkarna*/
+          text-decoration: none; /*tar bort linjen under text-länken */
+          margin-right: 35px; /*separerar länkarna ifrån varandra */
+          position: relative;
+          margin-bottom: 20px;
+
+          &.active { /*När den är active så blir den fet stilad */
+            font-weight: 500;
+          }
+
+          &.active::after,
+          &:hover::after {
+            content: '';
+            position: absolute; /*Lär vi oss sen */
+            font-weight: 500;
+            height: 2px;
+            width: 15px;
+            background-color: #191919;
+            left: 50%;
+            bottom: 3px;
+            transform: translate((calc(50% - 15px))); /*Lär vi oss sen */
+          text-decoration: underline;
+          }   
+        }
+      }
+  
+        .btn-login { /*Om du kollar högre upp i filen så ser vi att knapparna Learn more och get consulting har en del css egenskaper, alla dessa gäller för login knappen också, förutom det vi lägger till här då vi lagt till en extra klass på login knappen i html filen. */
+          padding-top: 10px;
+          padding-left: 30px;
+          border-radius: 30px;
+          width: 135px;
+          height: 50px;
+
+          i {
+            margin: 10px;      
           }
         }
-
-    .social-media {
-    #linked { /*skapar ett id för att just sista linkedin ikonen ska ligga
-      sida vid sida med borderns slut*/
-      margin-right: 0;
-    }
-
-    a {
-      color: #191919;
-      font-size: 1.3rem; /*Man vill inte ha för små ikoner för att de ska gå att trycka på rem
-      utgår från font sizen i html och body delen, och 1,3 rem betyder att öka upp med 30%
-      från det vi satt i html och body delen vilket är 16 px (tror det betyder det)*/ 
-      margin-right: 10px;
-    
-        &:hover { /*När vi drar med musen över ikonerna så kommer
-        dem att ändra färg. */
-        color: #666666;
-        }
-      
-      }
-      
-    
-    
-    }  
-    
-  }
-  .main-menu {
-    display: flex; /*Så att varje text "home", "service" etc kan sättas bredvid varandra */
-    justify-content: space-between; /*För att separera gruppen "home, service, news och contact" från "login"
-    notera att home, service etc alla ligger inom en nav tag och räknas som en grupp, och login ligger utanför och räknas
-    som en grupp. space-between egenskapen kommer då inte ske mellan "home", "service" etc då de räknas som 
-    en grupp och då kommer space-between att skapa mellanrum mellan grupp 1 och 2 så att ena hamnar längst till
-    höger och den andra till vänster */
-    align-items: center; /*centrerar båda grupperna så att de ligger i samma höjd vertikalt i förhållande till varandra. */
-    padding-bottom: 70px; /*flyttar ner båda grupperna*/
-    margin-top: -50px;
-    nav {
-      a {
-        display: inline-block;
-        color: #191919; /*färg på länkarna*/
-        text-decoration: none; /*tar bort linjen under text-länken */
-        margin-right: 35px; /*separerar länkarna ifrån varandra */
-        position: relative;
-        margin-bottom: 20px;
-
-        &.active { /*När den är active så blir den fet stilad */
-          font-weight: 500;
-        }
-
-        &.active::after,
-        &:hover::after {
-          content: '';
-          position: absolute; /*Lär vi oss sen */
-          font-weight: 500;
-          height: 2px;
-          width: 15px;
-          background-color: #191919;
-          left: 50%;
-          bottom: 3px;
-          transform: translate((calc(50% - 15px))); /*Lär vi oss sen */
-        text-decoration: underline;
-        }
-        
       }
     }
-  .btn-login { /*Om du kollar högre upp i filen så ser vi att knapparna Learn more och get consulting har en del css egenskaper, alla dessa gäller för login knappen också, förutom det vi lägger till här då vi lagt till en extra klass på login knappen i html filen. */
-    padding-top: 10px;
-    // padding-bottom: 20px;
-    padding-left: 30px;
-    border-radius: 30px;
-    width: 135px;
-    height: 50px;
-
-      i {
-        margin: 10px;
-        
-
-      }
-    
   }
-    
-}
-}
-}
 } 
 
 .showcase {
@@ -336,7 +326,7 @@ header {
       left: -310px;
       display: block;
       }
-      }
+    }
         .content {
           text-align: center; /*vi centrerar texten så länge vi håller oss under 1400px */
       
@@ -2400,6 +2390,7 @@ height: 980px;
             border: solid 1px rgb(192, 192, 192);
             text-align: center;
             font-size: 5px;
+            outline: none;
           }
 
             #email {
@@ -3084,7 +3075,7 @@ header {
           
           input {
             border: none;
-            
+            outline: none;
           }
           #name {
             padding: 10px 20px 10px 20px;
@@ -3101,6 +3092,7 @@ header {
             box-shadow: none;
             input {
               border: none;
+              outline: none;
             }
           #name {
             padding: 10px 20px 10px 20px;
@@ -3120,6 +3112,7 @@ header {
           
           input {
             border: none;
+            outline: none;
           }
           #email-2 {
             
@@ -3135,6 +3128,7 @@ header {
             
             input {
               border: none;
+              outline: none;
             }
            }
 
@@ -3153,6 +3147,7 @@ header {
           
           input {
             border: none;
+            outline: none;
           }
           #message {
             
@@ -3171,6 +3166,7 @@ header {
             
             input {
               border: none;
+              outline: none;
             }
 
           }
