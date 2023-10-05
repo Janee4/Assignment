@@ -490,11 +490,11 @@ header {
               font-weight: 700;
             }
           
-            &:hover { 
-              background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
-              border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
-              color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
-             }
+              &:hover { 
+                background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
+                border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
+                color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
+              }
             }   
           } 
         }
@@ -518,6 +518,7 @@ header {
         
           .business-advice {
             margin-left: 13px;
+            
             img {
               margin-bottom: 10px;
             }
@@ -552,8 +553,7 @@ header {
                 p {
                   font-size: 16px; /*storleken på texten */
                   font-weight: 400;
-                }
-                    
+                }       
               }
             }
               
@@ -600,6 +600,7 @@ header {
 
               .financial-advice {
                 margin-left: 13px;
+                
                 img {
                   margin-bottom: 10px;
                 }
@@ -617,74 +618,71 @@ header {
                   font-size: 13px; /*storleken på texten */
                   font-weight: 400;        
                 }
-                @media (min-width: 576px) {
-                  margin-top: 40px;
-                  margin-left: 0px;
                 
-                  img {
-                    margin-bottom: 30px;
-                  }
-            
-                  h2 {
-                  font-weight: 900;
-                  font-size: 22px;
-                  }
-            
-                  p {
-                    font-size: 16px; /*storleken på texten */
-                    font-weight: 400;
-                  }   
-                }
-              }
-
-                  .risk-management {
-                    margin-left: 13px;
-                    img {
-                      margin-bottom: 10px;
-                    }
+                  @media (min-width: 576px) {
+                    margin-top: 40px;
+                    margin-left: 0px;
                   
-              h2 {
-                font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
-                font-weight: 600;
-                font-size: 18px;
-                color: #191919;     
-              }
-          
-              p {
-                color: rgb(94, 94, 93);
-                font-family: 'Inter', sans-serif; /*Textsnitt */
-                font-size: 13px; /*storleken på texten */
-                font-weight: 400;     
-              }
-
-              @media (min-width: 576px) {
-                margin-top: 40px;
-                margin-left: 62px;
-
-          
-                img {
-                  margin-bottom: 30px;
-                }
-          
-                h2 {
-                font-weight: 900;
-                font-size: 22px;
-                
-                }
-          
-                p {
-                  font-size: 16px; /*storleken på texten */
-                  font-weight: 400;
-                }
-                    
-                  }
+                    img {
+                      margin-bottom: 30px;
                     }
+              
+                    h2 {
+                    font-weight: 900;
+                    font-size: 22px;
+                    }
+              
+                    p {
+                      font-size: 16px; /*storleken på texten */
+                      font-weight: 400;
+                    }   
                   }
                 }
-              }
-            }
+
+                .risk-management {
+                  margin-left: 13px;
+                  img {
+                    margin-bottom: 10px;
+                  }
+                
+                  h2 {
+                    font-family: 'DM Sans', sans-serif; /*kolla design mallen och hämta från fonts.google.com */
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #191919;     
+                  }
+              
+                  p {
+                    color: rgb(94, 94, 93);
+                    font-family: 'Inter', sans-serif; /*Textsnitt */
+                    font-size: 13px; /*storleken på texten */
+                    font-weight: 400;     
+                  }
+
+                  @media (min-width: 576px) {
+                    margin-top: 40px;
+                    margin-left: 62px;
+
+                    img {
+                      margin-bottom: 30px;
+                    }
+              
+                    h2 {
+                    font-weight: 900;
+                    font-size: 22px;
+                    }
+              
+                    p {
+                      font-size: 16px; /*storleken på texten */
+                      font-weight: 400;
+                    }  
+                  }
+                }
+      }
+    }
+  }
+}
   
-//@media (min-width: 576px) {}
 .part-3 {
   margin-bottom: 100px;
   background-color: #ffffff;
