@@ -311,13 +311,13 @@ header .container .menu .main-menu .btn-login i {
 }
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-  font-weight: 900; /*kolla design mallen och hämta från fonts.google.com */
-  font-size: 35px; /*från design filen kan du se font sizen om du håller musen över siffran bredvid "bold" */
+  font-weight: 900;
+  font-size: 35px;
 }
 @media (min-width: 768px) {
   .showcase .container .content h1 {
-    font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-    font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
     font-size: 70px; /*från design filen kan du se font sizen om du håller musen över siffran bredvid "bold" */
   }
 }
@@ -329,8 +329,8 @@ header .container .menu .main-menu .btn-login i {
 .showcase .container p { /*så länge vi ligger under 768px så kommer dessa att gälla */
   font-size: 18px;
   padding-bottom: 40px; /*gäller även för @media 768px*/
-  padding-left: 10px; /*sätt padding-left: 0; på @media min width: 768px om du ej vill att dessa ska gälla för skalor över 768px */
-  padding-right: 10px; /*sätt padding-left: 0; på @media min width: 768px om du ej vill att dessa ska gälla för skalor över 768px */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   .showcase .container p {

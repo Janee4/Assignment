@@ -327,71 +327,65 @@ header {
       display: block;
       }
     }
-        .content {
-          text-align: center; /*vi centrerar texten så länge vi håller oss under 1400px */
-      
-            @media (min-width: 576px) {
-              padding-top: 80px;
-              padding-bottom: 80px;
+    .content {
+      text-align: center; /*vi centrerar texten så länge vi håller oss under 1400px */
+  
+      @media (min-width: 576px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
 
-            }
-
-            @media (min-width: 1200px) {
-              text-align: left;
+        @media (min-width: 1200px) {
+          text-align: left;
+        }
+  
+        h1 {
+          font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
+          font-weight: 900; 
+          font-size: 35px; 
         
-            }
-     
-            h1 {
-              font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
-              font-weight: 900; /*kolla design mallen och hämta från fonts.google.com */
-              font-size: 35px; /*från design filen kan du se font sizen om du håller musen över siffran bredvid "bold" */
-              // padding-bottom: 155px;
-            @media (min-width: 768px) {
-              font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
-              font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
-              font-size: 70px; /*från design filen kan du se font sizen om du håller musen över siffran bredvid "bold" */
-
-            }
-
-            @media (min-width: 1400px) {
-              font-size: 80px;
-
-            }
-        
-          }
+        @media (min-width: 768px) {
+          font-family: 'DM Sans', sans-serif; 
+          font-weight: 700; 
+          font-size: 70px; /*från design filen kan du se font sizen om du håller musen över siffran bredvid "bold" */
         }
 
-            p { /*så länge vi ligger under 768px så kommer dessa att gälla */
-              font-size: 18px;
-              padding-bottom: 40px;/*gäller även för @media 768px*/
-              padding-left: 10px; /*sätt padding-left: 0; på @media min width: 768px om du ej vill att dessa ska gälla för skalor över 768px */
-              padding-right: 10px;/*sätt padding-left: 0; på @media min width: 768px om du ej vill att dessa ska gälla för skalor över 768px */
+        @media (min-width: 1400px) {
+          font-size: 80px;
+        }
+      }
+    }
+        
+        p { /*så länge vi ligger under 768px så kommer dessa att gälla */
+          font-size: 18px;
+          padding-bottom: 40px;/*gäller även för @media 768px*/
+          padding-left: 10px; 
+          padding-right: 10px;
+        @media (min-width: 768px) { 
+          font-size: 20px; /*när vi kommer över 768px så blir texten 20px */
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
 
-            @media (min-width: 768px) { 
-              font-size: 20px; /*när vi kommer över 768px så blir texten 20px */
-              padding-left: 0;
-              padding-right: 0;
-            }
-          }
+        a {
+          display: block; /*så länge vi ligger under 576px så kommer knapparna att vara block element */
+          margin-bottom: 50px;
+          margin-right: 0px;
 
-              a {
-                display: block; /*så länge vi ligger under 576px så kommer knapparna att vara block element */
-                margin-bottom: 50px;
-                margin-right: 0px;
+        @media (min-width: 576px) {
+          display: inline-block; /*nu vill vi att de ska bli inline-element igen och sätta sig bredvid varandra */
+          margin-right: 10px;
+        } 
+      }
 
-              @media (min-width: 576px) {
-                display: inline-block; /*nu vill vi att de ska bli inline-element igen och sätta sig bredvid varandra */
-                margin-right: 10px;
-              } 
-            }
-
-            .man-img { 
-              display: none;
-             
-          
-              @media (min-width: 1200px) {
-                display: block;
-                margin-right: -50px; /*flytta bilden till höger */
+      .man-img { 
+        display: none;
+        
+    
+        @media (min-width: 1200px) {
+          display: block;
+          margin-right: -50px; /*flytta bilden till höger */
         }
       }
     }
