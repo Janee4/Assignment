@@ -2970,7 +2970,7 @@ header {
       display: block;
       // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       background-color: #F0EFE9; 
-      border-radius: 5px;
+      // border-radius: 5px;
         
       .img {
        img {
@@ -3242,24 +3242,17 @@ header {
   }
 
   .map {
-    
+  
     .container {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
       margin-top: 40px;
 
-      img {
-        width: 100%;
-        height: auto; /* Behåll bildens proportioner */
-        display: block;
-      }
-      
       @media (min-width: 576px) {
         margin-top: 80px;
-        max-width: 100%;
-        padding: 0;
+       width: 20;
+        img {
+   
         
+        }
       }
     }
    

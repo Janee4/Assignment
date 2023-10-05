@@ -16,61 +16,58 @@
    <body>
 <!--Contact-->
 
-  <header> 
-    <div class="container">
-      <a class="crito" href="flexbox-2.html"><img src="images/Logo.svg" alt="crito logotype"></a>
-      <button class="menu-bars"><i class="fa-solid fa-bars-staggered"></i></button>
-        <div class="menu"> 
-            <div class="top-menu"> <!--Vi har två delar längst upp, den ena består av kontakt information
-            (tel nummer, email, adress) och den andra består av länkar till sociala medier-->
-                <div class="contact-information">
-                    <div class="content-box">
-                        <i class="fa-regular fa-phone-volume"></i>
-                         + 46 (8) 121 470 50 
-                    </div>
-                    <div class="content-box">
-                        <i class="fa-regular fa-envelope"></i>
-                        info@crito.com 
-                    </div>
-                    <div class="content-box last">
-                        <i class="fa-solid fa-location-dot"></i>
-                         Sveavägen 31, 111 34 STOCKHOLM
-                    </div>
-                </div>
-                <div class="social-media"> <!-- Vi skapar en klass som inte ligger i en annan klass, så då kan vi referera till den separat i scss dokumentet-->
-                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-              </div> 
+<header> 
+  <div class="container">
+    <a class="crito" href="flexbox-2.html"><img src="images/Logo.svg" alt="crito logotype"></a>
+    <button class="menu-bars"><i class="fa-solid fa-bars-staggered"></i></button>
+      <div class="menu"> 
+        <div class="top-menu"> 
+          <div class="contact-information">
+            <div class="content-box">
+              <i class="fa-regular fa-phone-volume"></i>
+              + 46 (8) 121 470 50 
             </div>
-            <div class="main-menu"> 
-                <nav>
-                    <a class="active" href="flexbox-3.html">Home</a>
-                    <a href="home.html">Service</a>
-                    <a href="home.html">News</a>
-                    <a href="home.html">Contact</a>
-                </nav>  <!--Vi skapar en nav som innebär navigering, vi hade likaväl kunna skapa en div tag, men 
-                       det blir lättare att tänka "okej det här är min navigering" och navigeringen ska göra att den tar användaren
-                      från ett ställe till ett annat via länkar, i vårt fall tar den användaren till "home", "service", "news"och "contact"-->
-                <a class="btn-yellow btn-login" id="login" href="login.html">Login <i class="fa-regular fa-arrow-up-right"></i></a>
+            <div class="content-box">
+              <i class="fa-regular fa-envelope"></i>
+              info@crito.com 
             </div>
-        </div>
-    </div>
-  </header>
-    <!--mini navigation bar-->
-  <div class="mini-nav-bar">
-    <div class="container">
-      <div class="thin-line-showcase">
-        <img src="images/thin-line-showcase.svg" alt="">
+            <div class="content-box last">
+              <i class="fa-solid fa-location-dot"></i>
+              Sveavägen 31, 111 34 STOCKHOLM
+            </div>
+          </div>
+        <div class="social-media"> 
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div> 
       </div>
+      <div class="main-menu"> 
+        <nav>
+          <a class="active" href="flexbox-3.html">Home</a>
+          <a href="home.html">Service</a>
+          <a href="home.html">News</a>
+          <a href="home.html">Contact</a>
+        </nav> 
+        <a class="btn-yellow btn-login" id="login" href="login.html">Login <i class="fa-regular fa-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+    <!--mini navigation bar-->
+<div class="mini-nav-bar">
+  <div class="container">
+    <div class="thin-line-showcase">
+      <img src="images/thin-line-showcase.svg" alt="">
+    </div>
     <div class="first-row">
       <p>Home</p>
-    <p>Contact</p>
-  </div>
-  <div class="second-row">
-    <h1>Let's Connect</h1>
-  </div>
+      <p>Contact</p>
+    </div>
+    <div class="second-row">
+      <h1>Let's Connect</h1>
+    </div>
   </div>
 </div>
 
@@ -82,8 +79,8 @@
       </div>
       <div>
         <h4>Visit us</h4>
-      <p>Sveavägen 31</p>
-      <p>111 31 STOCKHOLM</p>
+        <p>Sveavägen 31</p>
+        <p>111 31 STOCKHOLM</p>
       </div>
     </div>
     <div class="box">
@@ -92,8 +89,8 @@
       </div>
       <div>
         <h4>Call us</h4>
-      <p>+46 (8) 121 470 50</p>
-      <p>+46 (8) 121 470 51</p>
+        <p>+46 (8) 121 470 50</p>
+        <p>+46 (8) 121 470 51</p>
       </div>
     </div>
     <div class="box">
@@ -108,6 +105,7 @@
     </div>
   </div>
 </section>
+
 <!--big form-->
 <section class="big-form">
   <div class="container">
@@ -116,19 +114,19 @@
     </div>
     <form class="form-1" id="name" action="#" method="post">
       <label for="name"></label>
-    <input type="text" placeholder="Name*">
+      <input type="text" placeholder="Name*">
     </form>
     <form class="form-2" id="email" action="#" method="post">
       <label for="email-2"></label>
-    <input type="text" placeholder="Email*">
+      <input type="text" placeholder="Email*">
     </form>
     <form class="form-3" id="message" action="#" method="post">
       <label for="message"></label>
-    <input type="text" placeholder="Your Message*">
+      <input type="text" placeholder="Your Message*">
     </form>
-  <div class="btn">
-    <a class=" btn-send-message" id="login" href="login.html">Send Message<i class="fa-regular fa-arrow-up-right"></i></a>
-  </div>
+    <div class="btn">
+      <a class=" btn-send-message" id="login" href="login.html">Send Message<i class="fa-regular fa-arrow-up-right"></i></a>
+    </div>
   </div>
 </section>
 
@@ -179,24 +177,20 @@
   </div>
 </section>
 
-
-
 <!--footer-->
-
 <footer class="footer">
   <div class="container">
-<div class="left">
-  <p>© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
-</div>
-<div class="right">
-  <div class="social-media"> <!-- Vi skapar en klass som inte ligger i en annan klass, så då kan vi referera till den separat i scss dokumentet-->
-    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-</div> 
-
-</div>
+    <div class="left">
+      <p>© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
+    </div>
+    <div class="right">
+      <div class="social-media"> <!-- Vi skapar en klass som inte ligger i en annan klass, så då kan vi referera till den separat i scss dokumentet-->
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div> 
+    </div>
   </div>
 </footer>
-   </body>
+</body>

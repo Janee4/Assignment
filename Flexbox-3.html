@@ -18,42 +18,40 @@
       <a class="crito" href="flexbox-2.html"><img src="images/Logo.svg" alt="crito logotype"></a>
       <button class="menu-bars"><i class="fa-solid fa-bars-staggered"></i></button>
         <div class="menu"> 
-            <div class="top-menu"> 
-                <div class="contact-information">
-                    <div class="content-box">
-                        <i class="fa-regular fa-phone-volume"></i>
-                         + 46 (8) 121 470 50 
-                    </div>
-                    <div class="content-box">
-                        <i class="fa-regular fa-envelope"></i>
-                        info@crito.com 
-                    </div>
-                    <div class="content-box last">
-                        <i class="fa-solid fa-location-dot"></i>
-                         Sveavägen 31, 111 34 STOCKHOLM
-                    </div>
-                </div>
-                <div class="social-media"> <!-- Vi skapar en klass som inte ligger i en annan klass, så då kan vi referera till den separat i scss dokumentet-->
-                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-              </div> 
+          <div class="top-menu"> 
+            <div class="contact-information">
+              <div class="content-box">
+                <i class="fa-regular fa-phone-volume"></i>
+                + 46 (8) 121 470 50 
+              </div>
+              <div class="content-box">
+                <i class="fa-regular fa-envelope"></i>
+                info@crito.com 
+              </div>
+              <div class="content-box last">
+                <i class="fa-solid fa-location-dot"></i>
+                Sveavägen 31, 111 34 STOCKHOLM
+              </div>
             </div>
-            <div class="main-menu"> 
-                <nav>
-                    <a class="active" href="flexbox-3.html">Home</a>
-                    <a href="home.html">Service</a>
-                    <a href="home.html">News</a>
-                    <a href="contact.html">Contact</a>
-                </nav>  <!--Vi skapar en nav som innebär navigering, vi hade likaväl kunna skapa en div tag, men 
-                       det blir lättare att tänka "okej det här är min navigering" och navigeringen ska göra att den tar användaren
-                      från ett ställe till ett annat via länkar, i vårt fall tar den användaren till "home", "service", "news"och "contact"-->
-                      <a class="btn-yellow btn-login" id="login" href="login.html">Login <i class="fa-regular fa-arrow-up-right"></i></a>
-            </div>
+          <div class="social-media"> 
+              <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a id="linked" href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div> 
         </div>
+        <div class="main-menu"> 
+          <nav>
+            <a class="active" href="flexbox-3.html">Home</a>
+            <a href="home.html">Service</a>
+            <a href="home.html">News</a>
+            <a href="home.html">Contact</a>
+          </nav> 
+          <a class="btn-yellow btn-login" id="login" href="login.html">Login <i class="fa-regular fa-arrow-up-right"></i></a>
+        </div>
+      </div>
     </div>
-</header>
+  </header>
 <main>
  <!-- Showcase section  -->
  <section class="showcase"> 
@@ -61,136 +59,126 @@
       <div class="thin-line-showcase">
         <img src="images/thin-line-showcase.svg" alt="">
       </div>
-        <div class="content">  <!--Lägg in all content delar i en separat div och img antingen i en separat div eller utanför content diven så att vi kan separera dem med space-between senare i scss-->
-            <h1>We Provide The Best Business Solutions</h1>
-            <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
-            <a class="btn-yellow" href="consulting.html">Get Consulting <i class="fa-regular fa-arrow-up-right"></i></a>
-            <a class="btn-transparent" href="services.html">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
-        </div>
-        <img class="man-img" src="images/Showcase.png" alt="showcase image of a man">
+      <div class="content">  <!--Lägg in all content delar i en separat div och img antingen i en separat div eller utanför content diven så att vi kan separera dem med space-between senare i scss-->
+        <h1>We Provide The Best Business Solutions</h1>
+        <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
+        <a class="btn-yellow" href="consulting.html">Get Consulting <i class="fa-regular fa-arrow-up-right"></i></a>
+        <a class="btn-transparent" href="services.html">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
+      </div>
+      <img class="man-img" src="images/Showcase.png" alt="showcase image of a man">
     </div>
 </section>
      
 <!--Showcase 2 section-->
 <section class="showcase-2">
-    <div class="container">
-        <div class="logo-section">
-            <img class="logo" src="images/Logos.png" alt="Logos">
-        </div>
-        <div class="container-2">
-            <div class="left">
-                <p>Features</p>
-                <h2>Our Accounting is<br> trusted by thousand<br> of companies</h2>
-                <a class="btn-learn-yellow" href="learnmore.html">Learn More<i class="fa-regular fa-arrow-up-right"></i></a>
-            </div>
-            <div class="right">
-                <div class="business-advice">
-                    <img src="images/business-icon.svg" alt="picture of handshake">
-                    <h2>Business Advice</h2>
-                    <p>Lorem ipsum, dolor sit amet<br>
-                    consectetur adipisicing elit.</p>
-                </div>
-                <div class="startup-business">
-                    <img src="images/startup-business-icon.svg" alt="picture of a glowing lamp icon with a man inside">
-                    <h2>Startup Business</h2>
-                    <p>Lorem ipsum, dolor sit amet<br>
-                    consectetur adipisicing elit.</p>
-                </div>
-                <div class="financial-advice">
-                    <img src="images/financial-advice-icon.svg" alt="picture of a diagram">
-                    <h2>Financial Advice</h2>
-                    <p>Lorem ipsum, dolor sit amet<br>
-                    consectetur adipisicing elit.</p> 
-                </div>
-                <div class="risk-management">
-                    <img src="images/risk-management-icon.svg" alt="picture of a box and a wheel">
-                    <h2>Risk Management</h2>
-                    <p>Lorem ipsum, dolor sit amet<br>
-                    consectetur adipisicing elit.</p>
-                </div>
-            </div>
+  <div class="container">
+    <div class="logo-section">
+      <img class="logo" src="images/Logos.png" alt="Logos">
+    </div>
+    <div class="container-2">
+      <div class="left">
+        <p>Features</p>
+        <h2>Our Accounting is<br> trusted by thousand<br> of companies</h2>
+        <a class="btn-learn-yellow" href="learnmore.html">Learn More<i class="fa-regular fa-arrow-up-right"></i></a>
       </div>
-</section>
+      <div class="right">
+        <div class="business-advice">
+          <img src="images/business-icon.svg" alt="picture of handshake">
+          <h2>Business Advice</h2>
+          <p>Lorem ipsum, dolor sit amet<br>
+          consectetur adipisicing elit.</p>
+        </div>
+        <div class="startup-business">
+          <img src="images/startup-business-icon.svg" alt="picture of a glowing lamp icon with a man inside">
+          <h2>Startup Business</h2>
+          <p>Lorem ipsum, dolor sit amet<br>
+          consectetur adipisicing elit.</p>
+        </div>
+        <div class="financial-advice">
+          <img src="images/financial-advice-icon.svg" alt="picture of a diagram">
+          <h2>Financial Advice</h2>
+          <p>Lorem ipsum, dolor sit amet<br>
+          consectetur adipisicing elit.</p> 
+        </div>
+        <div class="risk-management">
+          <img src="images/risk-management-icon.svg" alt="picture of a box and a wheel">
+          <h2>Risk Management</h2>
+          <p>Lorem ipsum, dolor sit amet<br>
+          consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
  
 <!--About company-->
 <section class="part-3">
   <div class="container">
     <div class="content-3-left">
-        <div class="woman-img">
-            <img src="images/woman.svg" alt="picture of a woman walking with a laptop in her hand">
-        </div>
-            <div class="blue-box"> <!--Skapa en låda separat ifrån bilden så att du kan förflytta dem separat i förhållande till varandra för att sedan överlappa boxen över bilden-->
-                <h3>Samantha Brown,</h3>
-                <p class="founder-paragraph">Founder</p>
-                <p class="lorem-paragraph">
-                "Lorem ipsum dolor sit amet consectetur<br> adipisicing elit."
-                </p>
-            </div>
-    </div>
-          <div class="content-3-right">
-            <p class="about-company-paragraph">About Company</p>
-            <h2>We Are Business<br> Consulting & Credit<br>Repair Experts</h2>
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam<br> officiis quas assumenda esse obcaecati? Ex esse error voluptates iurevel totam eos.
-            </p>
-            <p class="lorem lorem-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse<br>quasi incidunt adipisci accusantium libero provident voluptate amet.</p> 
-            <a class="btn-learnmore" href="learnmore.html">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
-            <button class="btn-video"><i class="fa-solid fa-play"></i>
-            </button>
-            <div>
-              <p class="intro-video-paragraph">Intro Video</p>
-            </div>
-          </div>
-            
-          </div>
+      <div class="woman-img">
+        <img src="images/woman.svg" alt="picture of a woman walking with a laptop in her hand">
       </div>
-    </section>
+      <div class="blue-box"> <!--Skapa en låda separat ifrån bilden så att du kan förflytta dem separat i förhållande till varandra för att sedan överlappa boxen över bilden-->
+        <h3>Samantha Brown,</h3>
+        <p class="founder-paragraph">Founder</p>
+        <p class="lorem-paragraph">
+        "Lorem ipsum dolor sit amet consectetur<br> adipisicing elit."</p>
+      </div>
+    </div>
+    <div class="content-3-right">
+      <p class="about-company-paragraph">About Company</p>
+      <h2>We Are Business<br> Consulting & Credit<br>Repair Experts</h2>
+      <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam<br> officiis quas assumenda esse obcaecati? Ex esse error voluptates iurevel totam eos.</p>
+      <p class="lorem lorem-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse<br>quasi incidunt adipisci accusantium libero provident voluptate amet.</p> 
+      <a class="btn-learnmore" href="learnmore.html">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
+      <button class="btn-video"><i class="fa-solid fa-play"></i></button>
+      <div>
+        <p class="intro-video-paragraph">Intro Video</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="we-provide-part4">
-    <div class="thin-line">
-        <img src="images/thin-line (2).svg" alt="">
-    </div>
-    <div class="container">
-      <div class="main-text">
-        <p>Our Services</p>
-        <h2>We Provide The Best<br>Service For Consulting</h2>
-    </div>        
-          <div class="boxes">
-              <div class="box-1">
-                <img src="images/line.svg" alt="line">
-                <h3>Business Advice</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-              <div class="box-2">
-                <img src="images/line.svg" alt="line">
-                <h3>Startup Business</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                <a class="btn-yellow-box" href=""><i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-                  <div class="box-3">
-                    <img src="images/line.svg" alt="line">
-                    <h3>Financial Advice</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="box-4">
-                    <img src="images/line.svg" alt="line">
-                    <h3>Risk Management</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                    <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  </div>
-                  <div class="centered-browse-services-button">
-                    <div class="button-under-boxes">
-                      <a class="btn-transparent" href="Browse-services.html">Browse Services <i class="fa-regular fa-arrow-up-right"></i></a>
-                    </div>
-                    
-                    </div>
+  <div class="thin-line">
+    <img src="images/thin-line (2).svg" alt="">
   </div>
-  
-
-                  
-                
+  <div class="container">
+    <div class="main-text">
+      <p>Our Services</p>
+      <h2>We Provide The Best<br>Service For Consulting</h2>
+    </div>        
+  <div class="boxes">
+    <div class="box-1">
+      <img src="images/line.svg" alt="line">
+      <h3>Business Advice</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+      <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="box-2">
+      <img src="images/line.svg" alt="line">
+      <h3>Startup Business</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+      <a class="btn-yellow-box" href=""><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="box-3">
+      <img src="images/line.svg" alt="line">
+      <h3>Financial Advice</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+      <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="box-4">
+      <img src="images/line.svg" alt="line">
+      <h3>Risk Management</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
+      <a class="btn-go-to" href=""><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+    <div class="centered-browse-services-button">
+      <div class="button-under-boxes">
+        <a class="btn-transparent" href="Browse-services.html">Browse Services <i class="fa-regular fa-arrow-up-right"></i></a>
+    </div>
+    </div>
+  </div>                  
 </section>
 
 <section class="why-choose-us-part5">
