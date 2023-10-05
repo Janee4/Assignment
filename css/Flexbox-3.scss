@@ -1487,22 +1487,21 @@ header {
         text-align: center; /*centrerar endast denna section title som vi har i project and case */
         padding-top: 70px;
         padding-bottom: 40px;
-        
-        
-        
-        @media (min-width: 768px) {
-          padding-top: 120px; /*skapar avstånd till toppen  */
-          padding-bottom: 90px;
-    
-        }
+       
         p {
           margin-bottom: 17px;
         }
 
         h2 {
-          
           margin-bottom: 40px;
         }
+         
+        @media (min-width: 768px) {
+          padding-top: 120px; /*skapar avstånd till toppen  */
+          padding-bottom: 90px;
+    
+        }
+      }
         
           .project-and-cases {
             display: grid;
@@ -1556,16 +1555,30 @@ header {
               }
             }  
          }
-        }
+        
 .all-recent-projects-div {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 90px;
-          
-                 }
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 100px; 
+  
+    .btn-black  {
+      padding: 10px 10px 10px 20px;
+    }
+    
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 150px 150px 0px; 
+      
+        .btn-black  {
+          padding: 10px 10px 10px 20px;
+        }
+    }
+  
+    }
   }
 }
 

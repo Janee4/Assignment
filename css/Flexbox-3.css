@@ -1298,41 +1298,41 @@ header .container .menu .main-menu .btn-login i {
   padding-top: 70px;
   padding-bottom: 40px;
 }
-@media (min-width: 768px) {
-  .project-and-case-6 .container .section-title {
-    padding-top: 120px; /*skapar avstånd till toppen  */
-    padding-bottom: 90px;
-  }
-}
 .project-and-case-6 .container .section-title p {
   margin-bottom: 17px;
 }
 .project-and-case-6 .container .section-title h2 {
   margin-bottom: 40px;
 }
-.project-and-case-6 .container .section-title .project-and-cases {
+@media (min-width: 768px) {
+  .project-and-case-6 .container .section-title {
+    padding-top: 120px; /*skapar avstånd till toppen  */
+    padding-bottom: 90px;
+  }
+}
+.project-and-case-6 .container .project-and-cases {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
-.project-and-case-6 .container .section-title .project-and-cases:hover .read-more {
+.project-and-case-6 .container .project-and-cases:hover .read-more {
   text-decoration: underline;
 }
 @media (min-width: 768px) {
-  .project-and-case-6 .container .section-title .project-and-cases {
+  .project-and-case-6 .container .project-and-cases {
     grid-template-columns: 1fr 1fr;
   }
 }
-.project-and-case-6 .container .section-title .project-and-cases article {
+.project-and-case-6 .container .project-and-cases article {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
 }
-.project-and-case-6 .container .section-title .project-and-cases article a img {
+.project-and-case-6 .container .project-and-cases article a img {
   width: 100%;
   height: auto; /*Elementet kommer att vara så högt som det behöver vara för att rymma sitt innehåll utan att du behöver specificera en exakt höjd. */
 }
-.project-and-case-6 .container .section-title .project-and-cases article h3 {
+.project-and-case-6 .container .project-and-cases article h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
@@ -1342,7 +1342,7 @@ header .container .menu .main-menu .btn-login i {
   border-bottom: solid 1px #DAD9D3;
   text-align: left;
 }
-.project-and-case-6 .container .section-title .project-and-cases article .read-more {
+.project-and-case-6 .container .project-and-cases article .read-more {
   padding: 15px;
   margin-right: 16px;
   display: block; /*efter som att a element är inline element, så kan de ej flyttas hur som helst då de endast tar upp den bredden den behöver. Därför omvandlar vi elementet till ett block element för att kunna flytta den i sidled */
@@ -1353,15 +1353,29 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 500;
   text-decoration: none;
 }
-.project-and-case-6 .container .section-title .project-and-cases article .read-more i {
+.project-and-case-6 .container .project-and-cases article .read-more i {
   margin-left: 3px;
 }
 .project-and-case-6 .container .all-recent-projects-div {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 90px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.project-and-case-6 .container .all-recent-projects-div .btn-black {
+  padding: 10px 10px 10px 20px;
+}
+@media (min-width: 576px) {
+  .project-and-case-6 .container .all-recent-projects-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 150px 150px 0px;
+  }
+  .project-and-case-6 .container .all-recent-projects-div .btn-black {
+    padding: 10px 10px 10px 20px;
+  }
 }
 
 .team-members-7 {
