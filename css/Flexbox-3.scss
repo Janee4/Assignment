@@ -13,7 +13,6 @@ html, body { /*All text blir till denna färg */
 
 
 .btn-black {
-  
   background-color: #191919;
   border: solid 1px #191919;
   color: #ffffff; /*Textens färg */
@@ -24,22 +23,18 @@ html, body { /*All text blir till denna färg */
   border-radius: 30px;
   padding: 16px 25px;
 
-      i {
-        margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
-        font-size: 0.9em;
-        font-weight: 500;
-        color: #ffffff;
-    
-      }
-    
-    
-      &:hover { /*fixa denna biten sen */
-    background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
+  i {
+    margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  &:hover { /*fixa denna biten sen */
+    background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svart */
     border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
     color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
-    
-      }
-  
+  }
 }
 
 .btn-yellow {
@@ -52,19 +47,17 @@ html, body { /*All text blir till denna färg */
   font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
   border-radius: 30px;
   
-  
-    i {
-      margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
-      font-size: 0.9em;
-      font-weight: 700;
-    }
-  
-    &:hover { 
-  background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
-  border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
-  color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
-  
-    }
+  i {
+    margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+
+  &:hover { 
+    background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
+    border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
+    color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
+  }
 }
 
 .btn-transparent {
@@ -76,74 +69,63 @@ html, body { /*All text blir till denna färg */
   font-weight: 500; /*här får vi tjockare text */
   font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
   border-radius: 30px;
-  
-  
-    i {
-      margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
-      font-size: 0.9em;
-      font-weight: 600;
-  
-    }
-    &:hover { 
-      background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
-      border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
-      color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
-  
-    }
+
+  i {
+    margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
+    font-size: 0.9em;
+    font-weight: 600;
   }
 
-  .btn-go-to {
+  &:hover { 
+    background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
+    border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
+    color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
+  }
+}
+
+.btn-go-to {
+  position: absolute;
+  background-color: #191919;
+  border: solid 1px black;
+  color: #191919; /*Textens färg */
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-left: 200px;
+  margin-top: 18px;
+
+  i {
     position: absolute;
-    background-color: #191919;
-    border: solid 1px black;
-    color: #191919; /*Textens färg */
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    margin-left: 200px;
-    margin-top: 18px;
-    
-    
-
-      i {
-        position: absolute;
-        color: white;
-        margin-left: 20px;
-        margin-top: 15px;
-        font-size: 1.2em;
-        font-weight: 390;
-        transform: translate(-20%, -0%); /* Centrera ikonen helt och hållet */
-        
-
-      }
+    color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 390;
+    transform: translate(-20%, -0%); /* Centrera ikonen helt och hållet */
   }
+}
 
-  .btn-yellow-box {
+.btn-yellow-box {
+  position: absolute;
+  background-color: #ffffff;
+  border: solid 1px rgb(255, 255, 255);
+  color: #191919; /*Textens färg */
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-left: 200px;
+  margin-top: 18px;
+
+  i {
     position: absolute;
-    background-color: #ffffff;
-    border: solid 1px rgb(255, 255, 255);
-    color: #191919; /*Textens färg */
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    margin-left: 200px;
-    margin-top: 18px;
-    
-    
-
-      i {
-        position: absolute;
-        color: rgb(0, 0, 0);
-        margin-left: 20px;
-        margin-top: 15px;
-        font-size: 1.2em;
-        font-weight: 400;
-        transform: translate(-20%, -0%); /* Centrera ikonen helt och hållet */
-        
-
-      }
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 400;
+    transform: translate(-20%, -0%); /* Centrera ikonen helt och hållet */
   }
-
+}
 
 .section-title {
   p {
@@ -152,7 +134,6 @@ html, body { /*All text blir till denna färg */
     font-weight: 500;
     font-size: 18px;
   }
-
 
   h2 {
     font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
@@ -167,180 +148,172 @@ header {
   padding: 16px;
   margin-bottom: -50px;
 
-      .container {
-        display: flex;
-        align-items: center; /*Här centrerar du sakerna i container
-        i detta faller flyttades bara meny ikonen, varför? */
-        justify-content: space-between; /*nu kommer bilden och ikonen separeras ifrån varandra
-        och gå åt varsitt håll. */
-        gap: 70px;
+  .container {
+    display: flex;
+    align-items: center; /*Här centrerar du sakerna i container
+    i detta faller flyttades bara meny ikonen, varför? */
+    justify-content: space-between; /*nu kommer bilden och ikonen separeras ifrån varandra
+    och gå åt varsitt håll. */
+    gap: 70px;
 
-          .crito {
-            margin-top: 0;
-            padding-bottom: 100px;
-            
+    .crito {
+      margin-top: 0;
+      padding-bottom: 100px;
+      }
+
+    .menu-bars {
+      border: none;
+      font-size: 25px;
+      background-color: transparent;
+      margin-bottom: 80px;
+
+      @media (min-width: 992px) {
+      display: none;
+      }
+    }
+
+    .menu { 
+    display: none;
+    flex: 1;
+
+    @media (min-width: 992px) {
+    display: block;
+    }
+
+      .top-menu {
+        display: flex;
+        justify-content: end;
+        border-bottom: 1px solid #DAD9D3; /*Här har vi lagt bordern och 
+        padding för att få bordern att gå ut hela vägen*/
+        padding-bottom: 10px;
+        align-items: center; /* om inte denna finns så kommer contact information biten att vara i en annan nivå i förhållande
+        till social-media ikonerna. Align items centrerar dem i mitten av boxen vertikalt. */
+        margin-bottom: 80px;
+    
+        @media (min-width: 1200px) { /*Närvi kommer över en 1200px så vill vi: */
+        justify-content: space-between; /*ha en space between så att sociala medier knapparna hamnar längst ut */
+        }
+
+        .contact-information {
+          display: none;
+          align-items: center;
+
+          @media (min-width: 1200px) { /*När vi kommer över en 1200px så vill vi: */
+            display: flex; /*vi vill att contact-information delen ska vara flexad, dvs att elementen sätter sig bredvid varandra.
+            hade man skrivit display:block; då hade de hamnat under varandra. */
+            justify-content: space-between; /*ha en space between så att sociala medier knapparna hamnar längst ut */
           }
 
-        .menu-bars {
-          border: none;
-          font-size: 25px;
-          background-color: transparent;
-          margin-bottom: 80px;
- 
-          @media (min-width: 992px) {
-            display: none;
+          .content-box {
+            padding-right: 30px; /*justerar hur långt ifrån texten den här
+            sidan av ramen ska vara*/
+            margin-right: 30px;
+            border-right: 1px solid #DAD9D3; /* skapar en sida
+            av en ram till höger om allt som finns i content-box klassen */
+            font-family: 'Inter', sans-serif; /*Textsnitt */
+            font-size: 15px; /*storleken på texten */
+            font-weight: 300; /*hur stark färgen blir */
 
+              i { /*egenskaper till ikonerna*/
+                margin-right: 5px;
+                font-size: 1.2em;/*när man skriver "1em" så betyder det
+                att ge mig samma storlek som min parent, vilket blir 15px i detta fallet, skriver
+                man 1.2 så blir det lite större än parentsens storlek osv. */
+                
+              }
+
+              &.last { /*för att targeta klassen last som
+              är i höjd med de andra klasserna "content-box" så måste du 
+              sätta dit ett "&" */ 
+                border: none; /* nu tar vi bort den sista ram sidan på just denna klassen specifikt */   
+              }
           }
         }
-        .menu { 
-            display: none;
-            flex: 1;
 
-            @media (min-width: 992px) {
-            display: block;
-            }
+    .social-media {
+    #linked { /*skapar ett id för att just sista linkedin ikonen ska ligga
+      sida vid sida med borderns slut*/
+      margin-right: 0;
+    }
 
-            .top-menu {
-                display: flex; /*Här skickar vi texterna bredvid varandra */
-                justify-content: end;
-                /*border: 1px solid black; Vi sätter en ram runt för att se hur långt texten sträcker sig (görs till en 
-                kommentar sen då den ska tas bort när man sett hur långt den sträcker sig och tar sedan bort den*/
+    a {
+      color: #191919;
+      font-size: 1.3rem; /*Man vill inte ha för små ikoner för att de ska gå att trycka på rem
+      utgår från font sizen i html och body delen, och 1,3 rem betyder att öka upp med 30%
+      från det vi satt i html och body delen vilket är 16 px (tror det betyder det)*/ 
+      margin-right: 10px;
+    
+        &:hover { /*När vi drar med musen över ikonerna så kommer
+        dem att ändra färg. */
+        color: #666666;
+        }
+      
+      }
+      
+    
+    
+    }  
+    
+  }
+  .main-menu {
+    display: flex; /*Så att varje text "home", "service" etc kan sättas bredvid varandra */
+    justify-content: space-between; /*För att separera gruppen "home, service, news och contact" från "login"
+    notera att home, service etc alla ligger inom en nav tag och räknas som en grupp, och login ligger utanför och räknas
+    som en grupp. space-between egenskapen kommer då inte ske mellan "home", "service" etc då de räknas som 
+    en grupp och då kommer space-between att skapa mellanrum mellan grupp 1 och 2 så att ena hamnar längst till
+    höger och den andra till vänster */
+    align-items: center; /*centrerar båda grupperna så att de ligger i samma höjd vertikalt i förhållande till varandra. */
+    padding-bottom: 70px; /*flyttar ner båda grupperna*/
+    margin-top: -50px;
+    nav {
+      a {
+        display: inline-block;
+        color: #191919; /*färg på länkarna*/
+        text-decoration: none; /*tar bort linjen under text-länken */
+        margin-right: 35px; /*separerar länkarna ifrån varandra */
+        position: relative;
+        margin-bottom: 20px;
 
-                border-bottom: 1px solid #DAD9D3; /*Här har vi lagt bordern och 
-                padding för att få bordern att gå ut hela vägen*/
-                padding-bottom: 10px;
-                align-items: center; /* om inte denna finns så kommer contact information biten att vara i en annan nivå i förhållande
-                till social-media ikonerna. Align items centrerar dem i mitten av boxen vertikalt. */
-                margin-bottom: 80px;
-                // padding-bottom: 30px;
-                @media (min-width: 1200px) { /*Närvi kommer över en 1200px så vill vi: */
-                  justify-content: space-between; /*ha en space between så att sociala medier knapparna hamnar längst ut */
-                }
+        &.active { /*När den är active så blir den fet stilad */
+          font-weight: 500;
+        }
 
+        &.active::after,
+        &:hover::after {
+          content: '';
+          position: absolute; /*Lär vi oss sen */
+          font-weight: 500;
+          height: 2px;
+          width: 15px;
+          background-color: #191919;
+          left: 50%;
+          bottom: 3px;
+          transform: translate((calc(50% - 15px))); /*Lär vi oss sen */
+        text-decoration: underline;
+        }
+        
+      }
+    }
+  .btn-login { /*Om du kollar högre upp i filen så ser vi att knapparna Learn more och get consulting har en del css egenskaper, alla dessa gäller för login knappen också, förutom det vi lägger till här då vi lagt till en extra klass på login knappen i html filen. */
+    padding-top: 10px;
+    // padding-bottom: 20px;
+    padding-left: 30px;
+    border-radius: 30px;
+    width: 135px;
+    height: 50px;
 
-                .contact-information {
-                  display: none;
-                    align-items: center;
+      i {
+        margin: 10px;
+        
 
-                    @media (min-width: 1200px) { /*När vi kommer över en 1200px så vill vi: */
-                      display: flex; /*vi vill att contact-information delen ska vara flexad, dvs att elementen sätter sig bredvid varandra.
-                      hade man skrivit display:block; då hade de hamnat under varandra. */
-                      justify-content: space-between; /*ha en space between så att sociala medier knapparna hamnar längst ut */
-                    }
-
-                   
-  
-
-                    .content-box {
-                        padding-right: 30px; /*justerar hur långt ifrån texten den här
-                        sidan av ramen ska vara*/
-                        margin-right: 30px;
-                        border-right: 1px solid #DAD9D3; /* skapar en sida
-                        av en ram till höger om allt som finns i content-box klassen */
-                        font-family: 'Inter', sans-serif; /*Textsnitt */
-                        font-size: 15px; /*storleken på texten */
-                        font-weight: 300; /*hur stark färgen blir */
-
-                            i { /*egenskaper till ikonerna*/
-                              margin-right: 5px;
-                              font-size: 1.2em;/*när man skriver "1em" så betyder det
-                              att ge mig samma storlek som min parent, vilket blir 15px i detta fallet, skriver
-                              man 1.2 så blir det lite större än parentsens storlek osv. */
-                              
-                            }
-
-                            &.last { /*för att targeta klassen last som
-                            är i höjd med de andra klasserna "content-box" så måste du 
-                            sätta dit ett "&" */ 
-                              border: none; /* nu tar vi bort den sista ram sidan på just denna klassen specifikt */   
-                            }
-
-                          }
-                        }
-                     .social-media {
-                      #linked { /*skapar ett id för att just sista linkedin ikonen ska ligga
-                        sida vid sida med borderns slut*/
-                        margin-right: 0;
-                      }
-
-                      a {
-                        color: #191919;
-                        font-size: 1.3rem; /*Man vill inte ha för små ikoner för att de ska gå att trycka på rem
-                        utgår från font sizen i html och body delen, och 1,3 rem betyder att öka upp med 30%
-                        från det vi satt i html och body delen vilket är 16 px (tror det betyder det)*/ 
-                        margin-right: 10px;
-                      
-                          &:hover { /*När vi drar med musen över ikonerna så kommer
-                          dem att ändra färg. */
-                          color: #666666;
-                          }
-                       
-                       }
-                       
-                     
-                      
-                     }  
-                     
-                    }
-                    .main-menu {
-                      display: flex; /*Så att varje text "home", "service" etc kan sättas bredvid varandra */
-                      justify-content: space-between; /*För att separera gruppen "home, service, news och contact" från "login"
-                      notera att home, service etc alla ligger inom en nav tag och räknas som en grupp, och login ligger utanför och räknas
-                      som en grupp. space-between egenskapen kommer då inte ske mellan "home", "service" etc då de räknas som 
-                      en grupp och då kommer space-between att skapa mellanrum mellan grupp 1 och 2 så att ena hamnar längst till
-                      höger och den andra till vänster */
-                      align-items: center; /*centrerar båda grupperna så att de ligger i samma höjd vertikalt i förhållande till varandra. */
-                      padding-bottom: 70px; /*flyttar ner båda grupperna*/
-                      margin-top: -50px;
-                      nav {
-                        a {
-                          display: inline-block;
-                          color: #191919; /*färg på länkarna*/
-                          text-decoration: none; /*tar bort linjen under text-länken */
-                          margin-right: 35px; /*separerar länkarna ifrån varandra */
-                          position: relative;
-                          margin-bottom: 20px;
-
-                          &.active { /*När den är active så blir den fet stilad */
-                            font-weight: 500;
-                          }
-
-                          &.active::after,
-                          &:hover::after {
-                            content: '';
-                            position: absolute; /*Lär vi oss sen */
-                            font-weight: 500;
-                            height: 2px;
-                            width: 15px;
-                            background-color: #191919;
-                            left: 50%;
-                            bottom: 3px;
-                            transform: translate((calc(50% - 15px))); /*Lär vi oss sen */
-                          text-decoration: underline;
-                          }
-                          
-                        }
-                      }
-                    .btn-login { /*Om du kollar högre upp i filen så ser vi att knapparna Learn more och get consulting har en del css egenskaper, alla dessa gäller för login knappen också, förutom det vi lägger till här då vi lagt till en extra klass på login knappen i html filen. */
-                      padding-top: 10px;
-                      // padding-bottom: 20px;
-                      padding-left: 30px;
-                      border-radius: 30px;
-                      width: 135px;
-                      height: 50px;
-
-                        i {
-                          margin: 10px;
-                          
-
-                        }
-                      
-                    }
-                      
-                  }
-                }
-              }
-             } 
+      }
+    
+  }
+    
+}
+}
+}
+} 
 
 .showcase {
   background-color:  #F0EFE9; /*samma färg som headern */
@@ -2525,13 +2498,11 @@ height: 980px;
     }
   }
   @media (min-width: 576px) { 
-    max-width: auto;
     .container {
       display: flex;
       justify-content: center;
       img {
-        max-width: 100%;
-        
+        max-width: 100vw;
       }
     }
   }

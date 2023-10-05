@@ -26,7 +26,7 @@ html, body { /*All text blir till denna färg */
   color: #ffffff;
 }
 .btn-black:hover { /*fixa denna biten sen */
-  background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
+  background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svart */
   border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
   color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
 }
@@ -166,10 +166,8 @@ header .container .menu {
   }
 }
 header .container .menu .top-menu {
-  display: flex; /*Här skickar vi texterna bredvid varandra */
+  display: flex;
   justify-content: end;
-  /*border: 1px solid black; Vi sätter en ram runt för att se hur långt texten sträcker sig (görs till en 
-  kommentar sen då den ska tas bort när man sett hur långt den sträcker sig och tar sedan bort den*/
   border-bottom: 1px solid #DAD9D3; /*Här har vi lagt bordern och 
 padding för att få bordern att gå ut hela vägen*/
   padding-bottom: 10px;
@@ -2191,15 +2189,12 @@ header .container .menu .main-menu .btn-login i {
   max-width: 390px;
 }
 @media (min-width: 576px) {
-  .map {
-    max-width: auto;
-  }
   .map .container {
     display: flex;
     justify-content: center;
   }
   .map .container img {
-    max-width: 100%;
+    max-width: 100vw;
   }
 }
 
