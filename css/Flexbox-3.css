@@ -1957,9 +1957,7 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .signup .container .left h3 {
-    font-weight: 800;
     font-size: 40px;
-    color: #191919;
     margin-bottom: 0px;
   }
 }
@@ -2010,35 +2008,29 @@ header .container .menu .main-menu .btn-login i {
     border: none;
   }
   .signup .container .right .searchbar-plus-button .searchbox #email {
-    border-radius: 25px; /* Rundade kanter */
     padding: 14px 80px 14px 40px; /* Lägg till lite utrymme runt texten */
-    font-size: 16px; /* Ange textstorlek */
     border: none;
   }
   .signup .container .right .searchbar-plus-button .searchbox #email::-moz-placeholder {
-    color: #999; /* Grå färg för plachållartexten */
-    font-style: italic; /* Kursiv stil för plachållartexten */
     font-size: 17px;
   }
   .signup .container .right .searchbar-plus-button .searchbox #email::placeholder {
-    color: #999; /* Grå färg för plachållartexten */
-    font-style: italic; /* Kursiv stil för plachållartexten */
     font-size: 17px;
   }
 }
 .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe {
   background-color: #F9D783;
   border: solid 1px #F9D783;
-  color: #191919; /*Textens färg */
-  text-decoration: none; /*vi tar bort strecket under texten Login */
-  padding: 10px 8px 12px 16px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
-  font-weight: 500; /*här får vi tjockare text */
-  font-size: 13px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
+  color: #191919;
+  text-decoration: none;
+  padding: 10px 8px 12px 16px;
+  font-weight: 500;
+  font-size: 13px;
   border-radius: 30px;
   border-color: #e2c67e;
 }
 .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe i {
-  margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
+  margin: 8px;
   font-size: 0.9em;
   font-weight: 700;
 }
@@ -2046,22 +2038,17 @@ header .container .menu .main-menu .btn-login i {
   .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe {
     background-color: #F9D783;
     border: solid 1px #F9D783;
-    color: #191919; /*Textens färg */
-    text-decoration: none; /*vi tar bort strecket under texten Login */
-    padding: 15px 28px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
-    font-weight: 500; /*här får vi tjockare text */
-    font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
+    color: #191919;
+    text-decoration: none;
+    padding: 15px 28px;
+    font-weight: 500;
+    font-size: 16px;
     border-radius: 30px;
   }
-  .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe i {
-    margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
-    font-size: 0.9em;
-    font-weight: 700;
-  }
   .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe:hover {
-    background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
-    border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
-    color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #F0EFE9;
   }
 }
 
