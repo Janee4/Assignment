@@ -1166,24 +1166,25 @@ header {
             }
           }
         }
-      }
-    }
-    
-    .centered-browse-services-button {
-      position: relative;
-      
-      .button-under-boxes {
-        display: flex;
-        justify-content: center;
-        margin-top: 48px;
-        
-        .btn-transparent {
-          font-family: 'Inter', sans-serif;
-          font-size: 16px;
-          font-weight: 500;
+        .centered-browse-services-button {
+          position: relative;
+          
+          .button-under-boxes {
+            display: flex;
+            justify-content: center;
+            margin-top: 48px;
+            
+            .btn-transparent {
+              font-family: 'Inter', sans-serif;
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
         }
       }
     }
+    
+    
 
 .why-choose-us-part5 {
   margin-top: 30px;
@@ -1192,68 +1193,62 @@ header {
   @media (min-width: 576px) {
     margin-right: 185px;
     margin-top: 4rem;
-    position: relative;
   }
-            
-    .container {
-      display: flex;
 
-        .left {
-          margin-top: -29px;
-          margin-left: 30px;
+  .container {
+    display: flex;
 
-            .title {
-              padding-top: 20px;
-              p {
-              color: rgb(249, 77, 28);
-              font-family: 'Inter', sans-serif;
-              font-size: 16px;
-              font-weight: 500;
-              text-align: center;
-              }
-  
-              h2 {
-                color: #191919;
-                font-family: 'DM Sans', sans-serif;
-                font-size: 25px;
-                font-weight: 800;
-                margin-bottom: 55px;
-                text-align: center;
+    .left {
+      margin-top: -29px;
+      margin-left: 30px;
 
-                br {
-                  display: none;
-                }
-              }
-            }
+      .title {
+        padding-top: 20px;
+        margin-right: -35px;
+        
+        p {
+          color: rgb(249, 77, 28);
+          font-family: 'Inter', sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          text-align: center;
+        }
 
-        @media (min-width: 576px) {
-          margin-top: -29px;
-          margin-left: 100px;
+        h2 {
+          color: #191919;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 25px;
+          font-weight: 800;
+          margin-bottom: 55px;
+          text-align: center;
+        
+          br {
+            display: none;
+          }
+        }
+      }
 
-          .title {
-            padding-top: 0px;
-            
-            p {
+      @media (min-width: 576px) {
+      margin-left: 100px;
+
+        .title {
+          padding-top: 0px;
+          margin-right: 0;
+          p {
+            font-size: 18px;
+            text-align: start;
+          }
+
+          h2 { 
+            font-size: 45px;
+            font-weight: 900;
+            text-align: start;
+
+            br {
               display: block;
-              color: rgb(249, 77, 28);
-              font-family: 'Inter', sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              text-align: start;
-              
             }
-
-            h2 { 
-              font-size: 45px;
-              font-weight: 900;
-              margin-bottom: 55px;
-              text-align: start;
-              
-              br {
-                display: block;
-              }
-            }
-         }
+          }
+        }
       }
         
   .text-and-img {
@@ -1265,7 +1260,6 @@ header {
       margin-bottom: 15px;
       max-width: 50px;
     }
-
 
     h3 {
       margin-left: 24px;
@@ -1283,40 +1277,35 @@ header {
       font-weight: 400;
       white-space: nowrap;
     }
+
     @media (min-width: 576px) {
       display: flex;
       align-items: flex-start; /* Justera till vänster i kolumnlayout */
       margin-left: 0px;
       margin-left: 0px;
-    margin-bottom: 0px;
-    border: none;
+      margin-bottom: 0px;
+      border: none;
     
       img {
         margin-bottom: 30px;
         max-width: none;
       }
   
-  
       h3 {
-        margin-left: 24px;
-        font-size: 20px;
-        font-weight: 900;    
+        font-size: 20px;  
       }
   
       p {
-        margin-left: 24px;
         font-size: 16px;
-        font-weight: 400;
         white-space: nowrap;
       }
-
     }
   } 
 }
         
-.right {
-  position: relative;
-  padding-right: 554px;
+    .right {
+      position: relative;
+      padding-right: 554px;
 
       .beige-box {
         display: none;
@@ -1329,7 +1318,6 @@ header {
       @media (min-width: 576px) {
         position: relative;
         padding-right: 554px;
-        
         
         .beige-box {
           display: block;
@@ -1352,7 +1340,7 @@ header {
           left: 230px; /* Justera horisontell position */
           overflow: hidden;
           display: block;
-          }
+        }
       }
     }
   }   

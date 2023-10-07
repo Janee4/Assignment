@@ -1088,16 +1088,15 @@ header .container .menu .main-menu .btn-login i {
     font-size: 16px;
   }
 }
-
-.centered-browse-services-button {
+.we-provide-part4 .container .centered-browse-services-button {
   position: relative;
 }
-.centered-browse-services-button .button-under-boxes {
+.we-provide-part4 .container .centered-browse-services-button .button-under-boxes {
   display: flex;
   justify-content: center;
   margin-top: 48px;
 }
-.centered-browse-services-button .button-under-boxes .btn-transparent {
+.we-provide-part4 .container .centered-browse-services-button .button-under-boxes .btn-transparent {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1111,7 +1110,6 @@ header .container .menu .main-menu .btn-login i {
   .why-choose-us-part5 {
     margin-right: 185px;
     margin-top: 4rem;
-    position: relative;
   }
 }
 .why-choose-us-part5 .container {
@@ -1123,6 +1121,7 @@ header .container .menu .main-menu .btn-login i {
 }
 .why-choose-us-part5 .container .left .title {
   padding-top: 20px;
+  margin-right: -35px;
 }
 .why-choose-us-part5 .container .left .title p {
   color: rgb(249, 77, 28);
@@ -1144,24 +1143,19 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .why-choose-us-part5 .container .left {
-    margin-top: -29px;
     margin-left: 100px;
   }
   .why-choose-us-part5 .container .left .title {
     padding-top: 0px;
+    margin-right: 0;
   }
   .why-choose-us-part5 .container .left .title p {
-    display: block;
-    color: rgb(249, 77, 28);
-    font-family: "Inter", sans-serif;
     font-size: 18px;
-    font-weight: 500;
     text-align: start;
   }
   .why-choose-us-part5 .container .left .title h2 {
     font-size: 45px;
     font-weight: 900;
-    margin-bottom: 55px;
     text-align: start;
   }
   .why-choose-us-part5 .container .left .title h2 br {
@@ -1206,14 +1200,10 @@ header .container .menu .main-menu .btn-login i {
     max-width: none;
   }
   .why-choose-us-part5 .container .left .text-and-img h3 {
-    margin-left: 24px;
     font-size: 20px;
-    font-weight: 900;
   }
   .why-choose-us-part5 .container .left .text-and-img p {
-    margin-left: 24px;
     font-size: 16px;
-    font-weight: 400;
     white-space: nowrap;
   }
 }
