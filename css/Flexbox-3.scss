@@ -938,26 +938,26 @@ header {
 
 .we-provide-part4 {
   background-color: rgb(240, 239, 233);
- 
   position: relative;
-    .thin-line {
-      display: none;
-     
-      @media (min-width: 576px) { 
-        position: absolute;
-        z-index: 1;
-        bottom: 0;
-        right: 0;
-        overflow: hidden;
-        display: block;
-      }
+  
+  .thin-line {
+    display: none;
+
+    @media (min-width: 576px) { 
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    display: block;
     }
+  }
     
     .container {
-    border: solid 1px rgb(240, 239, 233);
-    background-color: rgb(240, 239, 233);
-    position: relative;
-    padding-bottom: 100px;
+      border: solid 1px rgb(240, 239, 233);
+      background-color: rgb(240, 239, 233);
+      position: relative;
+      padding-bottom: 100px;
     
       .main-text {
         margin-left: 20px;
@@ -965,87 +965,74 @@ header {
         position: absolute;
         text-align: center;
         padding-top: 20px;
+        
         p {
-          
           color: rgb(249, 77, 28);
-            font-family: 'Inter', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            display: block;
-            
+          font-family: 'Inter', sans-serif;
+          font-size: 16px;
+          font-weight: 500;   
         }
 
         h2 {
-        font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
-        font-weight: 800; /*kolla design mallen och hämta från fonts.google.com */
-        font-size: 30px;
-        color: #191919;
+          font-family: 'DM Sans', sans-serif;
+          font-weight: 800; 
+          font-size: 30px;
+          color: #191919;
         
         }
 
         @media (min-width: 576px) {
           margin-left: 14px;
           margin-top: 120px;
-          position: absolute;
           text-align: start;
           padding-top: 0px;
+          
           p {
-            color: rgb(249, 77, 28);
-            font-family: 'Inter', sans-serif;
             font-size: 18px;
-            font-weight: 500;
-            display: block;
           }
   
           h2 {
           font-size: 45px;
-          font-weight: 700; 
-          color: #191919;
-
-        }
-     }  
-   }
-
-    .boxes {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      margin-top: 200px;
-      row-gap: 50px;
-      // margin-bottom: 223px;
-
-      @media (min-width: 576px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 314px;
-        row-gap: 0px;
-        
+          font-weight: 700;
+          }
+        }  
       }
 
-      .box-1,
-      .box-3, 
-      .box-4 {
-        width: 308px; /* Bredden på lådan */
-        height: 250px; /* Höjden på lådan */
-        background-color: rgb(255, 255, 255); /* Bakgrundsfärg */
-        border: 2px solid rgb(255, 255, 255); /* Ram */
-        padding: 20px; /* Inre utfyllnad */
-        margin: 0 15px;
-        position: relative;
-        img {
-          margin-top: 20px;
-          margin-bottom: 30px;
+      .boxes {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        row-gap: 50px;
 
+        @media (min-width: 576px) {
+          display: flex;
+          margin-top: 314px;
+          row-gap: 0px;
+          
+        }
+
+        .box-1,
+        .box-3, 
+        .box-4 {
+          width: 308px; /* Bredden på lådan */
+          height: 250px; /* Höjden på lådan */
+          background-color: rgb(255, 255, 255); /* Bakgrundsfärg */
+          border: 2px solid rgb(255, 255, 255); /* Ram */
+          padding: 20px; /* Inre utfyllnad */
+          margin: 0 15px;
+          position: relative;
+          
+          img {
+            margin-top: 20px;
+            margin-bottom: 30px;
           } 
-          
+            
           h3 {
-          color: #191919;
-          font-family: 'DM Sans', sans-serif;
-          font-size: 20px;
-          font-weight: 900;
-          
-
+            color: #191919;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 900;
           }
 
           p {
@@ -1054,6 +1041,7 @@ header {
           font-weight: 400;
           color: #191919;
           }
+
           .btn-go-to {
             position: absolute;
             background-color: #191919;
@@ -1066,54 +1054,49 @@ header {
             margin-top: 10px;
             z-index: 1;
             
-              i {
-                position: absolute;
-                color: white;
-                margin-left: 15px;
-                margin-top: 10px;
-                font-size: 1em;
-                font-weight: 390;
-              }
-          }
-          @media (min-width: 576px) {
-            height: 333px;         
-          img {
-            margin-top: 28px;
-            margin-bottom: 44px;
-          } 
-          
-          h3 {
-          font-size: 22px;
-          font-weight: 900;
+            i {
+              position: absolute;
+              color: white;
+              margin-left: 15px;
+              margin-top: 10px;
+              font-size: 1em;
+              font-weight: 390;
+            }
           }
 
-          p {
-          font-size: 16px;
-          font-weight: 400;
-          }  
-          .btn-go-to {
-            position: absolute;
-            background-color: #191919;
-            border: solid 1px black;
-            color: #191919; /*Textens färg */
-            height: 50px;
-            width: 50px;
-            border-radius: 25px;
-            margin-left: 200px;
-            margin-top: 18px;
-            
+          @media (min-width: 576px) {
+            height: 333px;   
+
+            img {
+              margin-top: 28px;
+              margin-bottom: 44px;
+            } 
+          
+            h3 {
+              font-size: 22px;
+              font-weight: 900;
+            }
+
+            p {
+              font-size: 16px;
+              font-weight: 400;
+            } 
+             
+            .btn-go-to {
+              height: 50px;
+              width: 50px;
+              margin-left: 200px;
+              margin-top: 18px;
+              
               i {
-                position: absolute;
-                color: white;
                 margin-left: 20px;
                 margin-top: 15px;
                 font-size: 1.2em;
-                font-weight: 390;
                 transform: translate(-20%, -0%); /* Centrera ikonen helt och hållet */
               }
-          }   
-       }
-    }
+            }   
+          }
+        }
 
         .box-2 {
           width: 308px; /* Bredden på lådan */
@@ -1122,10 +1105,10 @@ header {
           border: 2px solid rgb(249, 215, 131); /* Ram */
           padding: 20px; /* Inre utfyllnad */
           margin: 0 15px;
+          
           img {
             margin-top: 20px;
             margin-bottom: 30px;
-
           } 
           
           h3 {
@@ -1133,14 +1116,13 @@ header {
             font-family: 'DM Sans', sans-serif;
             font-size: 20px;
             font-weight: 900;
-
           }
 
           p {
-          font-family: 'Inter', sans-serif;
-          font-size: 14px;
-          font-weight: 400;
-          color: #191919;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #191919;
           }
 
           .btn-yellow-box {
@@ -1155,7 +1137,6 @@ header {
             margin-top: 10px;
             z-index: 1;
             
-        
             i {
               position: absolute;
               color: rgb(0, 0, 0);
@@ -1164,57 +1145,46 @@ header {
               font-size: 1em;
               font-weight: 400;
               transform: translate(-20%, -0%); /* Centrera ikonen helt och hållet */
-             
             }
           }
         
-
-          @media (min-width: 576px) {
-            
-            height: 333px; /* Höjden på lådan */
-            
-            img {
-              margin-top: 28px;
-              margin-bottom: 44px;
-            } 
-            
-            h3 {
-              font-size: 22px;
-              font-weight: 900;
-
-            }
-  
-            p {
-            font-size: 16px;
-            font-weight: 400;
+            @media (min-width: 576px) {
+              height: 333px; /* Höjden på lådan */
+              
+              img {
+                margin-top: 28px;
+                margin-bottom: 44px;
+              } 
+              
+              h3 {
+                font-size: 22px;
+              }
+    
+              p {
+              font-size: 16px;
+              }
             }
           }
         }
       }
     }
-  }
     
-    
-  
+    .centered-browse-services-button {
+      position: relative;
+      
+      .button-under-boxes {
+        display: flex;
+        justify-content: center;
+        margin-top: 48px;
+        
+        .btn-transparent {
+          font-family: 'Inter', sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
 
-  
-          .centered-browse-services-button {
-            position: relative;
-            .button-under-boxes {
-                  display: flex;
-                  justify-content: center;
-                  margin-top: 48px;
-              .btn-transparent {
-                  font-family: 'Inter', sans-serif;
-                  font-size: 16px;
-                  font-weight: 500;
-                
-                
-              }
-            }
-            
-          }
-           //@media (min-width: 576px) {}
 .why-choose-us-part5 {
   margin-top: 30px;
   position: relative;

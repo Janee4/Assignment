@@ -894,11 +894,10 @@ header .container .menu .main-menu .btn-login i {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  display: block;
 }
 .we-provide-part4 .container .main-text h2 {
-  font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-  font-weight: 800; /*kolla design mallen och hämta från fonts.google.com */
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
   font-size: 30px;
   color: #191919;
 }
@@ -906,21 +905,15 @@ header .container .menu .main-menu .btn-login i {
   .we-provide-part4 .container .main-text {
     margin-left: 14px;
     margin-top: 120px;
-    position: absolute;
     text-align: start;
     padding-top: 0px;
   }
   .we-provide-part4 .container .main-text p {
-    color: rgb(249, 77, 28);
-    font-family: "Inter", sans-serif;
     font-size: 18px;
-    font-weight: 500;
-    display: block;
   }
   .we-provide-part4 .container .main-text h2 {
     font-size: 45px;
     font-weight: 700;
-    color: #191919;
   }
 }
 .we-provide-part4 .container .boxes {
@@ -933,8 +926,6 @@ header .container .menu .main-menu .btn-login i {
 @media (min-width: 576px) {
   .we-provide-part4 .container .boxes {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 314px;
     row-gap: 0px;
   }
@@ -1023,25 +1014,17 @@ header .container .menu .main-menu .btn-login i {
   .we-provide-part4 .container .boxes .box-1 .btn-go-to,
   .we-provide-part4 .container .boxes .box-3 .btn-go-to,
   .we-provide-part4 .container .boxes .box-4 .btn-go-to {
-    position: absolute;
-    background-color: #191919;
-    border: solid 1px black;
-    color: #191919; /*Textens färg */
     height: 50px;
     width: 50px;
-    border-radius: 25px;
     margin-left: 200px;
     margin-top: 18px;
   }
   .we-provide-part4 .container .boxes .box-1 .btn-go-to i,
   .we-provide-part4 .container .boxes .box-3 .btn-go-to i,
   .we-provide-part4 .container .boxes .box-4 .btn-go-to i {
-    position: absolute;
-    color: white;
     margin-left: 20px;
     margin-top: 15px;
     font-size: 1.2em;
-    font-weight: 390;
     transform: translate(-20%, 0%); /* Centrera ikonen helt och hållet */
   }
 }
@@ -1100,11 +1083,9 @@ header .container .menu .main-menu .btn-login i {
   }
   .we-provide-part4 .container .boxes .box-2 h3 {
     font-size: 22px;
-    font-weight: 900;
   }
   .we-provide-part4 .container .boxes .box-2 p {
     font-size: 16px;
-    font-weight: 400;
   }
 }
 
