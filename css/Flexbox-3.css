@@ -375,6 +375,7 @@ header .container .menu .main-menu .btn-login i {
     margin-bottom: 60px;
     margin-top: 50px;
     display: block;
+    margin-left: -100px;
   }
 }
 .showcase-2 .container .logo-section .logo {
@@ -779,9 +780,6 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .part-3 .content-3-right .lorem-2 {
-    font-size: 13px;
-    font-weight: 400;
-    margin-top: 29px;
     line-height: 30px;
   }
 }
@@ -807,24 +805,14 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .part-3 .content-3-right .btn-learnmore {
-    position: absolute;
-    font-weight: 400; /*här får vi tjockare text */
-    font-size: 14px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
-    border-radius: 30px;
+    font-size: 14px;
     padding: 10px 30px;
-    margin-bottom: 0px;
     margin-top: 110px;
   }
-  .part-3 .content-3-right .btn-learnmore i {
-    margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
-    font-size: 0.9em;
-    font-weight: 500;
-    color: #ffffff;
-  }
-  .part-3 .content-3-right .btn-learnmore:hover { /*fixa denna biten sen */
-    background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
-    border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
-    color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
+  .part-3 .content-3-right .btn-learnmore:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #F0EFE9;
   }
 }
 .part-3 .content-3-right .btn-video {
@@ -844,10 +832,8 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .part-3 .content-3-right .btn-video {
-    position: absolute;
     margin-left: 220px;
     margin-top: 112px;
-    border: solid 1.5px #191919;
     height: 45px;
     width: 45px;
     border-radius: 22.5px;
