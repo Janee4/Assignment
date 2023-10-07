@@ -2452,9 +2452,7 @@ header {
           margin-right: 10px;
           margin-bottom: 0px;
          }
-      
-    }
-
+      }
     }
   }
 }
@@ -2522,16 +2520,14 @@ header {
 
 
                 .content-box {
-                    padding-right: 30px; /*justerar hur långt ifrån texten den här
-                    sidan av ramen ska vara*/
+                    padding-right: 30px; 
                     margin-right: 30px;
-                    border-right: 1px solid #DAD9D3; /* skapar en sida
-                    av en ram till höger om allt som finns i content-box klassen */
-                    font-family: 'Inter', sans-serif; /*Textsnitt */
-                    font-size: 15px; /*storleken på texten */
-                    font-weight: 300; /*hur stark färgen blir */
+                    border-right: 1px solid #DAD9D3; 
+                    font-family: 'Inter', sans-serif;
+                    font-size: 15px; 
+                    font-weight: 300; 
 
-                    i { /*egenskaper till ikonerna*/
+                    i {
                       margin-right: 5px;
                       font-size: 1.2em;/*när man skriver "1em" så betyder det
                       att ge mig samma storlek som min parent, vilket blir 15px i detta fallet, skriver
@@ -2590,9 +2586,9 @@ header {
                     @media (min-width: 576px) {
                       a {
                         display: inline-block;
-                        color: #191919; /*färg på länkarna*/
-                        text-decoration: none; /*tar bort linjen under text-länken */
-                        margin-right: 35px; /*separerar länkarna ifrån varandra */
+                        color: #191919; 
+                        text-decoration: none; 
+                        margin-right: 35px; 
                         position: relative;
                         margin-bottom: 20px;
   
@@ -2618,9 +2614,8 @@ header {
                     }
                   }
 
-                .btn-login { /*Om du kollar högre upp i filen så ser vi att knapparna Learn more och get consulting har en del css egenskaper, alla dessa gäller för login knappen också, förutom det vi lägger till här då vi lagt till en extra klass på login knappen i html filen. */
+                .btn-login {
                   padding-top: 10px;
-                  // padding-bottom: 20px;
                   padding-left: 30px;
                   border-radius: 30px;
                   width: 135px;
@@ -2649,7 +2644,7 @@ header {
   
   .container{
     width: 100%;
-   max-width: 1200px; /* Ändra detta värde till det du vill ha för maximal bredd */
+   max-width: 1200px;
    margin: auto;
    text-align: center;
    position: relative;
@@ -2675,16 +2670,16 @@ header {
 
       p {
         color: #191919;
-        font-family: 'Inter', sans-serif; /*Textsnitt */
-        font-size: 14px; /*storleken på texten */
-        font-weight: 400; /*hur stark färgen blir */
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
       }
     }
 
     .second-row {
       h1 {
-        font-family: 'DM Sans', sans-serif; /*kopierar du under import delen på fonts.google.com */
-        font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+        font-family: 'DM Sans', sans-serif; 
+        font-weight: 700; 
         font-size: 45px;
         color: #191919;
         
@@ -2854,9 +2849,9 @@ header {
           }
           
           @media (min-width: 576px) {
-            border-radius: 25px; /* Rundade kanter */
-            padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
-            font-size: 16px; /* Ange textstorlek */
+            border-radius: 25px; 
+            padding: 10px 20px 10px 20px; 
+            font-size: 16px;
             border: none;
             background-color: rgb(255, 255, 255);
             margin: 10px 100px 10px 100px;
@@ -2873,13 +2868,13 @@ header {
         }
     
         .form-2 {
-          border-radius: 25px; /* Rundade kanter */
-          padding: 10px 10px 10px 20px; /* Lägg till lite utrymme runt texten */
-          font-size: 16px; /* Ange textstorlek */
+          border-radius: 25px; 
+          padding: 10px 10px 10px 20px; 
+          font-size: 16px;
           border: none;
           background-color: rgb(255, 255, 255);
           margin: 10px 10px 30px 10px;    
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Skugga med 10px spridning och 50% opacitet */
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           
           input {
             border: none;
@@ -2889,9 +2884,9 @@ header {
             
           }
           @media (min-width: 576px) {
-            border-radius: 25px; /* Rundade kanter */
-            padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
-            font-size: 16px; /* Ange textstorlek */
+            border-radius: 25px; 
+            padding: 10px 20px 10px 20px; 
+            font-size: 16px;
             border: none;
             background-color: rgb(255, 255, 255);
             margin: 10px 100px 10px 100px;
@@ -3016,33 +3011,3 @@ header {
     
    
     
-  
-
-
-
-
-
-
-
-
-
-
-
-  
-// <div>
-// <div class="container parent">
-//   <div class="child-1"></div>
-//   <div class="child-2"></div>
-// </div>
-// </div>
-// .parent {
-//   display: flex;
-//   gap: 3rem;
-// }
-
-// .child-1 {
-//   // flex: 1;
-// }
-// .child-2 {
-//   // flex: 2;
-// }
