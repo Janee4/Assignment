@@ -1426,7 +1426,6 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .team-members-7 .container .section-team-members {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     -moz-column-gap: 31px;
          column-gap: 31px;
