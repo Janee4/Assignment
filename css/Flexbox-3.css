@@ -1458,6 +1458,11 @@ header .container .menu .main-menu .btn-login i {
   .team-members-7 .container .section-team-members .members-name-and-proffesion {
     margin-top: 0;
   }
+  .team-members-7 .container .section-team-members .members-name-and-proffesion .img-member {
+    display: block;
+    width: 50px;
+    height: px;
+  }
   .team-members-7 .container .section-team-members .members-name-and-proffesion h4 {
     font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
     font-size: 22px;
@@ -1528,8 +1533,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 16px;
 }
 .what-our-client-says-8 .container .section-title h2 {
-  font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-  font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+  font-family: "DM Sans", sans-serif;
   font-size: 35px;
   color: #191919;
 }
@@ -1540,13 +1544,9 @@ header .container .menu .main-menu .btn-login i {
   }
   .what-our-client-says-8 .container .section-title p {
     display: block;
-    color: rgb(249, 77, 28);
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
     font-size: 18px;
   }
   .what-our-client-says-8 .container .section-title h2 {
-    font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
     font-size: 45px;
   }
 }
@@ -1563,6 +1563,7 @@ header .container .menu .main-menu .btn-login i {
     align-items: center;
     background-color: #ffffff;
     margin-right: 50px;
+    margin-left: 60px;
     margin-top: 0;
   }
 }
@@ -1597,19 +1598,11 @@ header .container .menu .main-menu .btn-login i {
     position: static;
   }
   .what-our-client-says-8 .container .total-comments .rating-1 span {
-    color: rgb(249, 77, 28); /* Färg på aktiverade stjärnor */
-    height: 16px;
-    font-size: 18px;
-    margin-right: -3px;
     margin-bottom: 0px;
   }
   .what-our-client-says-8 .container .total-comments .rating-1 p {
     padding-top: 20px;
-    font-family: "Inter", sans-serif; /*Textsnitt */
-    font-size: 14px; /*storleken på texten */
-    font-weight: 400;
     margin-bottom: 30px;
-    line-height: 2;
   }
 }
 .what-our-client-says-8 .container .total-comments .rating-1 .img-name-profession {
@@ -1634,10 +1627,6 @@ header .container .menu .main-menu .btn-login i {
     position: static;
     z-index: 0;
     margin-top: 0px;
-  }
-  .what-our-client-says-8 .container .total-comments .three-images img {
-    width: 70px;
-    height: 70px;
   }
 }
 .what-our-client-says-8 .container .total-comments .name-profession {
@@ -1706,23 +1695,8 @@ header .container .menu .main-menu .btn-login i {
   }
   .what-our-client-says-8 .container .all-recent-projects-div .btn-black {
     position: static;
-    margin-top: -110px;
-    background-color: #191919;
-    border: solid 1px #191919;
-    color: #ffffff; /*Textens färg */
-    text-decoration: none; /*vi tar bort strecket under texten Login */
-    font-family: "Inter", sans-serif;
-    font-weight: 400; /*här får vi tjockare text */
-    font-size: 15px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
-    border-radius: 30px;
     padding: 13px 25px;
     margin-left: 0px;
-  }
-  .what-our-client-says-8 .container .all-recent-projects-div .btn-black i {
-    margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
-    font-size: 0.9em;
-    font-weight: 500;
-    color: #ffffff;
   }
   .what-our-client-says-8 .container .all-recent-projects-div .btn-black:hover { /*fixa denna biten sen */
     background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
@@ -1732,59 +1706,59 @@ header .container .menu .main-menu .btn-login i {
 }
 
 @media (min-width: 576px) {
-  .article-and-news-8 {
+  .article-and-news-9 {
     margin-right: 20px;
   }
 }
 @media (min-width: 576px) {
-  .article-and-news-8 .container .title-container {
+  .article-and-news-9 .container .title-container {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
   }
 }
-.article-and-news-8 .container .title-container .section-title {
+.article-and-news-9 .container .title-container .section-title {
   margin-top: 150px;
 }
-.article-and-news-8 .container .title-container .section-title p {
+.article-and-news-9 .container .title-container .section-title p {
   color: rgb(249, 77, 28);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
-.article-and-news-8 .container .title-container .section-title h2 {
+.article-and-news-9 .container .title-container .section-title h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
   color: #191919;
 }
 @media (min-width: 576px) {
-  .article-and-news-8 .container .title-container .section-title p {
+  .article-and-news-9 .container .title-container .section-title p {
     font-weight: 500;
     font-size: 18px;
   }
-  .article-and-news-8 .container .title-container .section-title h2 {
+  .article-and-news-9 .container .title-container .section-title h2 {
     font-weight: 700;
     font-size: 45px;
   }
 }
-.article-and-news-8 .container .title-container .btn-class .btn-transparent {
+.article-and-news-9 .container .title-container .btn-class .btn-transparent {
   display: none;
 }
 @media (min-width: 576px) {
-  .article-and-news-8 .container .title-container .btn-class .btn-transparent {
+  .article-and-news-9 .container .title-container .btn-class .btn-transparent {
     display: block;
   }
 }
-.article-and-news-8 .how-to-section {
+.article-and-news-9 .container .how-to-section {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 50px;
   margin-top: 50px;
 }
 @media (min-width: 576px) {
-  .article-and-news-8 .how-to-section {
+  .article-and-news-9 .container .how-to-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     -moz-column-gap: 31px;
@@ -1792,57 +1766,52 @@ header .container .menu .main-menu .btn-login i {
     margin-top: 30px;
   }
 }
-.article-and-news-8 .how-to-section .text-under-img #business {
+.article-and-news-9 .container .how-to-section .text-under-img #business {
   display: none;
 }
-.article-and-news-8 .how-to-section .text-under-img p {
+.article-and-news-9 .container .how-to-section .text-under-img p {
   display: block;
   color: #191919;
-  font-family: "Inter", sans-serif; /*Textsnitt */
-  font-size: 14px; /*storleken på texten */
-  font-weight: 500; /*hur stark färgen blir */
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
-.article-and-news-8 .how-to-section .text-under-img h4 {
-  font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-  font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+.article-and-news-9 .container .how-to-section .text-under-img h4 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
   font-size: 21px;
   color: #191919;
   margin-top: 15px;
 }
 @media (min-width: 576px) {
-  .article-and-news-8 .how-to-section .text-under-img {
+  .article-and-news-9 .container .how-to-section .text-under-img {
     position: relative;
   }
-  .article-and-news-8 .how-to-section .text-under-img #business {
+  .article-and-news-9 .container .how-to-section .text-under-img #business {
     display: block;
     color: #191919;
-    font-family: "Inter", sans-serif; /*Textsnitt */
-    font-size: 16px; /*storleken på texten */
-    font-weight: 500; /*hur stark färgen blir */
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     margin-top: 26px;
   }
-  .article-and-news-8 .how-to-section .text-under-img p {
-    display: block;
-    color: #191919;
-    font-family: "Inter", sans-serif; /*Textsnitt */
-    font-size: 16px; /*storleken på texten */
-    font-weight: 500; /*hur stark färgen blir */
+  .article-and-news-9 .container .how-to-section .text-under-img p {
+    font-size: 16px;
   }
-  .article-and-news-8 .how-to-section .text-under-img h4 {
-    font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
+  .article-and-news-9 .container .how-to-section .text-under-img h4 {
     font-size: 22px;
     margin-top: 29px;
   }
 }
-.article-and-news-8 .how-to-section .yellow-rectangle-3 {
+.article-and-news-9 .container .how-to-section .yellow-rectangle-3 {
   position: absolute;
   z-index: 1;
   margin-left: 16px;
   margin-top: 840px;
 }
-.article-and-news-8 .how-to-section .yellow-rectangle-3 .mars-13 {
-  font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-  font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
+.article-and-news-9 .container .how-to-section .yellow-rectangle-3 .mars-13 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
   font-size: 17px;
   color: #191919;
   position: absolute;
@@ -1850,45 +1819,26 @@ header .container .menu .main-menu .btn-login i {
   left: 17px;
   line-height: 20px;
 }
-.article-and-news-8 .how-to-section .yellow-rectangle-3 .mars-13::first-line { /* Välj den första textraden */
-  font-size: 20px; /* Ange en annan fontstorlek för den första raden ("25") */
+.article-and-news-9 .container .how-to-section .yellow-rectangle-3 .mars-13::first-line {
+  font-size: 20px;
   font-weight: 700;
 }
-.article-and-news-8 .how-to-section .yellow-rectangle-3 .day {
+.article-and-news-9 .container .how-to-section .yellow-rectangle-3 .day {
   margin-left: 5px;
 }
 @media (min-width: 576px) {
-  .article-and-news-8 .how-to-section .yellow-rectangle-3 {
-    position: absolute;
-    z-index: 1;
+  .article-and-news-9 .container .how-to-section .yellow-rectangle-3 {
     margin-left: 920px;
     margin-top: 15px;
   }
-  .article-and-news-8 .how-to-section .yellow-rectangle-3 .mars-13 {
-    font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-    font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
-    font-size: 17px;
-    color: #191919;
-    position: absolute;
-    top: 17px;
-    left: 17px;
-    line-height: 20px;
-  }
-  .article-and-news-8 .how-to-section .yellow-rectangle-3 .mars-13::first-line { /* Välj den första textraden */
-    font-size: 20px; /* Ange en annan fontstorlek för den första raden ("25") */
-    font-weight: 700;
-  }
-  .article-and-news-8 .how-to-section .yellow-rectangle-3 .day {
-    margin-left: 5px;
-  }
 }
-.article-and-news-8 .yellow-rectangle-2 {
+.article-and-news-9 .container .yellow-rectangle-2 {
   position: absolute;
   z-index: 1;
   margin-left: 17px;
   margin-top: 430px;
 }
-.article-and-news-8 .yellow-rectangle-2 .mars-17 {
+.article-and-news-9 .container .yellow-rectangle-2 .mars-17 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
   font-size: 17px;
@@ -1898,45 +1848,26 @@ header .container .menu .main-menu .btn-login i {
   left: 17px;
   line-height: 20px;
 }
-.article-and-news-8 .yellow-rectangle-2 .mars-17::first-line { /* Välj den första textraden */
+.article-and-news-9 .container .yellow-rectangle-2 .mars-17::first-line { /* Välj den första textraden */
   font-size: 20px; /* Ange en annan fontstorlek för den första raden ("25") */
   font-weight: 700;
 }
-.article-and-news-8 .yellow-rectangle-2 .day {
+.article-and-news-9 .container .yellow-rectangle-2 .day {
   margin-left: 5px;
 }
 @media (min-width: 576px) {
-  .article-and-news-8 .yellow-rectangle-2 {
-    position: absolute;
-    z-index: 1;
+  .article-and-news-9 .container .yellow-rectangle-2 {
     margin-left: 470px;
     margin-top: 15px;
   }
-  .article-and-news-8 .yellow-rectangle-2 .mars-17 {
-    font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
-    font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
-    font-size: 17px;
-    color: #191919;
-    position: absolute;
-    top: 17px;
-    left: 17px;
-    line-height: 20px;
-  }
-  .article-and-news-8 .yellow-rectangle-2 .mars-17::first-line { /* Välj den första textraden */
-    font-size: 20px; /* Ange en annan fontstorlek för den första raden ("25") */
-    font-weight: 700;
-  }
-  .article-and-news-8 .yellow-rectangle-2 .day {
-    margin-left: 5px;
-  }
 }
-.article-and-news-8 .yellow-rectangle-1 {
+.article-and-news-9 .container .yellow-rectangle-1 {
   position: absolute;
   z-index: 1;
   margin-left: 17px;
   margin-top: 15px;
 }
-.article-and-news-8 .yellow-rectangle-1 .mars-25 {
+.article-and-news-9 .container .yellow-rectangle-1 .mars-25 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
   font-size: 17px;
@@ -1946,15 +1877,15 @@ header .container .menu .main-menu .btn-login i {
   left: 15px;
   line-height: 20px;
 }
-.article-and-news-8 .yellow-rectangle-1 .mars-25::first-line { /* Välj den första textraden */
-  font-size: 20px; /* Ange en annan fontstorlek för den första raden ("25") */
+.article-and-news-9 .container .yellow-rectangle-1 .mars-25::first-line {
+  font-size: 20px;
   font-weight: 700;
 }
-.article-and-news-8 .circles {
+.article-and-news-9 .container .circles {
   display: none;
 }
 @media (min-width: 576px) {
-  .article-and-news-8 .circles {
+  .article-and-news-9 .container .circles {
     display: block;
     display: grid;
     grid-template-columns: repeat(5, 10px); /* Skapar 4 kolumner med 100px vardera */
@@ -1963,14 +1894,14 @@ header .container .menu .main-menu .btn-login i {
     margin-top: 50px;
     margin-bottom: 70px;
   }
-  .article-and-news-8 .circles .circle {
+  .article-and-news-9 .container .circles .circle {
     width: 10px;
     height: 10px;
     background-color: #404a51;
     opacity: 20%; /* Fyllningsfärg för cirklarna */
     border-radius: 50%; /* Gör elementet till en cirkel */
   }
-  .article-and-news-8 .circles .circle-1 {
+  .article-and-news-9 .container .circles .circle-1 {
     width: 10px;
     height: 10px;
     background-color: #191919;
