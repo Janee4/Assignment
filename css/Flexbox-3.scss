@@ -1346,106 +1346,102 @@ header {
   }   
 }
 .project-and-case-6 {
-    
-    .container {
-     
-      
-      .section-title {
-        text-align: center; /*centrerar endast denna section title som vi har i project and case */
-        padding-top: 70px;
-        padding-bottom: 40px;
-       
-        p {
-          margin-bottom: 17px;
-        }
 
-        h2 {
-          margin-bottom: 40px;
-        }
-         
-        @media (min-width: 768px) {
-          padding-top: 120px; /*skapar avstånd till toppen  */
-          padding-bottom: 90px;
-    
-        }
+  .container {
+
+    .section-title {
+      text-align: center; /*centrerar endast denna section title som vi har i project and case */
+      padding-top: 70px;
+      padding-bottom: 40px;
+
+      p {
+        margin-bottom: 17px;
       }
-        
-          .project-and-cases {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            
-            &:hover .read-more{ //när du går över bilderna med musen så får read-more knappen en underline
-              text-decoration: underline;
-            }
 
-            @media (min-width: 768px) {
-              grid-template-columns: 1fr 1fr;
-            }
-            
-            article {
-              display: grid;
-              grid-template-columns: 1fr;
-              grid-template-rows: auto 1fr auto;
-              
-              a {
-              img {
-                width: 100% /*Här kommer bilderna att anpassas efter storleken på sidan, gör du skärmen mindre blir också bilderna mindre osv. */;
-                height: auto; /*Elementet kommer att vara så högt som det behöver vara för att rymma sitt innehåll utan att du behöver specificera en exakt höjd. */
-              }
-            }
+      h2 {
+        margin-bottom: 40px;
+      }
 
-              h3 {
-              color: #191919;
-              font-family: 'DM Sans', sans-serif;
-              font-size: 22px;
-              font-weight: 700;
-              padding-top: 35px;
-              padding-bottom: 16px;
-              border-bottom: solid 1px #DAD9D3;
-              text-align: left;
-              }
-              
-              .read-more {
-                padding: 15px; //skapar utrymme runt om kring så att den får större avstånd
-                margin-right: 16px;
-                display: block; /*efter som att a element är inline element, så kan de ej flyttas hur som helst då de endast tar upp den bredden den behöver. Därför omvandlar vi elementet till ett block element för att kunna flytta den i sidled */
-                text-align: right;
-                color: #191919;
-                font-family: 'Inter', sans-serif; //textsnitt
-                font-size: 14px; 
-                font-weight: 500; 
-                text-decoration: none; //detta tar bort raden som normalt finns under länkar
-                i {
-                  margin-left: 3px;
-                }
-              }
-            }  
-         }
-        
-.all-recent-projects-div {
-  display: flex;
-  // justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 80px;
-  
-  
-    .btn-black  {
-      padding: 10px 10px 10px 20px;
+      @media (min-width: 768px) {
+        padding-top: 120px; /*skapar avstånd till toppen  */
+        padding-bottom: 90px;
+      }
     }
-    
-    @media (min-width: 576px) {
+
+    .project-and-cases {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+
+      &:hover .read-more{ //när du går över bilderna med musen så får read-more knappen en underline
+        text-decoration: underline;
+      }
+
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+
+        a {
+          img {
+          width: 100% /*Här kommer bilderna att anpassas efter storleken på sidan, gör du skärmen mindre blir också bilderna mindre osv. */;
+          height: auto; /*Elementet kommer att vara så högt som det behöver vara för att rymma sitt innehåll utan att du behöver specificera en exakt höjd. */
+          }
+        }
+
+        h3 {
+          color: #191919;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 22px;
+          font-weight: 700;
+          padding-top: 35px;
+          padding-bottom: 16px;
+          border-bottom: solid 1px #DAD9D3;
+          text-align: left;
+        }
+
+        .read-more {
+          padding: 15px; //skapar utrymme runt om kring så att den får större avstånd
+          margin-right: 16px;
+          display: block; /*efter som att a element är inline element, så kan de ej flyttas hur som helst då de endast tar upp den bredden den behöver. Därför omvandlar vi elementet till ett block element för att kunna flytta den i sidled */
+          text-align: right;
+          color: #191919;
+          font-family: 'Inter', sans-serif; //textsnitt
+          font-size: 14px; 
+          font-weight: 500; 
+          text-decoration: none; //detta tar bort raden som normalt finns under länkar
+          
+          i {
+            margin-left: 3px;
+          }
+        }
+      }  
+    }
+
+    .all-recent-projects-div {
       display: flex;
-      justify-content: center;
       align-items: center;
-      margin: 70px 150px 150px 150px; 
-      
+      margin-top: 30px;
+      margin-bottom: 80px;
+
+      .btn-black  {
+        padding: 10px 10px 10px 20px;
+      }
+
+      @media (min-width: 576px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 150px 150px 150px; 
+
         .btn-black  {
           padding: 10px 10px 10px 20px;
         }
-    }
-  
+      }
     }
   }
 }
