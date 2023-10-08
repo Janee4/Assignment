@@ -2393,6 +2393,7 @@ header .container .menu .main-menu .btn-login i {
   padding: 10px 20px 0px 20px;
   display: block;
   background-color: #F0EFE9;
+  border-radius: 10px;
 }
 .main-content .three-boxes .box .img img {
   display: flex;
