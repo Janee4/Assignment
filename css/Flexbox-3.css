@@ -2296,9 +2296,9 @@ header .container .menu .main-menu {
 }
 header .container .menu .main-menu nav a {
   display: inline-block;
-  color: #191919; /*färg på länkarna*/
-  text-decoration: none; /*tar bort linjen under text-länken */
-  margin-right: 35px; /*separerar länkarna ifrån varandra */
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
   position: relative;
   margin-bottom: 20px;
 }
@@ -2415,7 +2415,6 @@ header .container .menu .main-menu .btn-login i {
 @media (min-width: 576px) {
   .main-content .three-boxes {
     display: flex;
-    justify-content: center;
     gap: 20px;
     margin: 70px 0px 0px 0px;
     background-color: #ffffff;
@@ -2441,9 +2440,7 @@ header .container .menu .main-menu .btn-login i {
     margin-bottom: 0px;
   }
   .main-content .three-boxes .box h4 {
-    font-family: "DM Sans", sans-serif;
     font-size: 20px;
-    font-weight: 700;
     margin-bottom: 20px;
     padding-bottom: 0;
   }
@@ -2507,20 +2504,13 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .big-form .container .form-1 {
-    border-radius: 25px;
     padding: 10px 20px 10px 20px;
-    font-size: 16px;
-    border: none;
-    background-color: rgb(255, 255, 255);
     margin: 10px 100px 10px 100px;
     box-shadow: none;
   }
   .big-form .container .form-1 input {
     border: none;
     outline: none;
-  }
-  .big-form .container .form-1 #name {
-    padding: 10px 20px 10px 20px;
   }
 }
 .big-form .container .form-2 {
@@ -2538,11 +2528,8 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .big-form .container .form-2 {
-    border-radius: 25px;
     padding: 10px 20px 10px 20px;
     font-size: 16px;
-    border: none;
-    background-color: rgb(255, 255, 255);
     margin: 10px 100px 10px 100px;
     box-shadow: none;
   }
@@ -2568,19 +2555,8 @@ header .container .menu .main-menu .btn-login i {
 }
 @media (min-width: 576px) {
   .big-form .container .form-3 {
-    border-radius: 25px; /* Rundade kanter */
-    padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
-    font-size: 16px; /* Ange textstorlek */
-    border: none;
-    background-color: rgb(255, 255, 255);
-    height: 170px;
-    margin-top: 10px;
     margin: 10px 100px 10px 100px;
     box-shadow: none;
-  }
-  .big-form .container .form-3 input {
-    border: none;
-    outline: none;
   }
 }
 .big-form .container .btn {
@@ -2603,19 +2579,8 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 700;
 }
 @media (min-width: 576px) {
-  .big-form .container .btn {
-    margin-top: 25px;
-  }
   .big-form .container .btn .btn-send-message {
-    background-color: #F9D783;
-    border: solid 1px #F9D783;
-    color: #191919; /*Textens färg */
-    text-decoration: none; /*vi tar bort strecket under texten Login */
     padding: 12px 337px 12px 337px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
-    font-weight: 500; /*här får vi tjockare text */
-    font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
-    border-radius: 30px;
-    margin-left: 85px;
   }
   .big-form .container .btn .btn-send-message:hover {
     background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
