@@ -2622,16 +2622,17 @@ header {
     .thin-line-showcase {
       display: none;
 
-      @media (min-width: 576px) {
-      position: absolute;
-      z-index: 1;
-      margin-top: 200px;
-      bottom: -60px;
-      left: -358px;
-      display: block;
-      }
-    }
+  @media (min-width: 576px) {
+  position: absolute;
+  z-index: 1;
+  margin-top: 200px;
+  bottom: -60px;
+  left: -358px;
+  display: block;
+  }
+  }
    
+    
    .first-row {
       display: flex;
       gap: 30px;
@@ -2646,31 +2647,32 @@ header {
     }
 
     .second-row {
-      h1 {
+     
+     h1 {
         font-family: 'DM Sans', sans-serif; 
         font-weight: 700; 
         font-size: 45px;
-        color: #191919;  
+        color: #191919;
+        
       }
     }
   }
 }
 
 //main-content
-
 .main-content {
   background-color: #F0EFE9;
   padding-bottom: 60px;
-  
+ 
   @media (min-width: 576px) {
     padding-bottom: 0;
   }
-
+  
   .three-boxes {
     display: flex;
     justify-content: center;
-    gap: 20px;
-
+    gap: 20px;   
+    
     .box {
       border: solid 1px rgb(70, 70, 70);
       padding: 10px 20px 0px 20px;
@@ -2701,7 +2703,7 @@ header {
         p {
             display: none;
         }
-    }
+     }
 
     @media (min-width: 576px) {
       display: flex;
@@ -2765,113 +2767,138 @@ header {
     border-radius: 25px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 
-    @media (min-width: 576px) {
-    background-color: #F0EFE9;
-    width: 1038px;
-    height: 670px;
-    margin-top: 60px;
-    border-radius: 0px;
-    box-shadow: none;
-    }
-
-    .title{
-      padding-top: 25px;
-      padding-bottom: 25px;
-      text-align: center;
-      
       @media (min-width: 576px) {
-      padding-top: 90px;
-      }
-
-      h2 {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 35px;
-        font-weight: 700;
-
-      }
-    }
-
-    .form-1 {
-      border-radius: 25px; 
-      padding: 10px 10px 10px 20px; 
-      font-size: 16px; 
-      border: none;
-      background-color: rgb(255, 255, 255);
-      margin: 10px 10px 20px 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-      input {
-        border: none;
-        outline: none;
-      }
-
-      #name {
-        padding: 10px 20px 10px 20px;
-
-      }
-
-      @media (min-width: 576px) {
-        padding: 10px 20px 10px 20px; 
-        margin: 10px 100px 10px 100px;
+        background-color: #F0EFE9;
+        width: 1038px;
+        height: 670px;
+        margin-top: 60px;
+        border-radius: 0px;
         box-shadow: none;
+      }
       
-        input {
-        border: none;
-        outline: none;
+      
+      .title{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+        @media (min-width: 576px) {
+          padding-top: 90px;
+        }
+
+        h2 {
+          font-family: 'DM Sans', sans-serif;
+          font-size: 35px;
+          font-weight: 700;
+         
         }
       }
-    }
-
-    .form-2 {
-      border-radius: 25px; 
-      padding: 10px 10px 10px 20px; 
-      font-size: 16px;
-      border: none;
-      background-color: rgb(255, 255, 255);
-      margin: 10px 10px 30px 10px;    
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-      input {
-        border: none;
-        outline: none;
-      }
-
-      @media (min-width: 576px) { 
-        padding: 10px 20px 10px 20px; 
-        font-size: 16px;
-        margin: 10px 100px 10px 100px;
-        box-shadow: none;
-
-        input {
+    
+        .form-1 {
+          border-radius: 25px; 
+          padding: 10px 10px 10px 20px; 
+          font-size: 16px; 
           border: none;
-          outline: none;
+          background-color: rgb(255, 255, 255);
+          margin: 10px 10px 20px 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          
+          input {
+            border: none;
+            outline: none;
+          }
+          #name {
+            padding: 10px 20px 10px 20px;
+    
+          }
+          
+          @media (min-width: 576px) {
+            border-radius: 25px; 
+            padding: 10px 20px 10px 20px; 
+            font-size: 16px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            margin: 10px 100px 10px 100px;
+            box-shadow: none;
+            input {
+              border: none;
+              outline: none;
+            }
+          #name {
+            padding: 10px 20px 10px 20px;
+    
+          }
+          }
         }
-      }
-    }
+    
+        .form-2 {
+          border-radius: 25px; 
+          padding: 10px 10px 10px 20px; 
+          font-size: 16px;
+          border: none;
+          background-color: rgb(255, 255, 255);
+          margin: 10px 10px 30px 10px;    
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          
+          input {
+            border: none;
+            outline: none;
+          }
+          #email-2 {
+            
+          }
+          @media (min-width: 576px) {
+            border-radius: 25px; 
+            padding: 10px 20px 10px 20px; 
+            font-size: 16px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            margin: 10px 100px 10px 100px;
+            box-shadow: none;
+            
+            input {
+              border: none;
+              outline: none;
+            }
+           }
 
-    .form-3 {
-      border-radius: 25px; /* Rundade kanter */
-      padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
-      font-size: 16px; /* Ange textstorlek */
-      border: none;
-      background-color: rgb(255, 255, 255);
-      height: 170px;
-      margin-top: 10px;
-      margin: 10px 10px 10px 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Skugga med 10px spridning och 50% opacitet */
+        }
+        
+        .form-3 {
+          border-radius: 25px; /* Rundade kanter */
+          padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
+          font-size: 16px; /* Ange textstorlek */
+          border: none;
+          background-color: rgb(255, 255, 255);
+          height: 170px;
+          margin-top: 10px;
+          margin: 10px 10px 10px 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Skugga med 10px spridning och 50% opacitet */
+          
+          input {
+            border: none;
+            outline: none;
+          }
+          #message {
+            
+          }
+          
+          @media (min-width: 576px) {
+            border-radius: 25px; /* Rundade kanter */
+            padding: 10px 20px 10px 20px; /* Lägg till lite utrymme runt texten */
+            font-size: 16px; /* Ange textstorlek */
+            border: none;
+            background-color: rgb(255, 255, 255);
+            height: 170px;
+            margin-top: 10px;
+            margin: 10px 100px 10px 100px;
+            box-shadow: none;
+            
+            input {
+              border: none;
+              outline: none;
+            }
 
-      input {
-        border: none;
-        outline: none;
-      }
- 
-
-      @media (min-width: 576px) {
-      margin: 10px 100px 10px 100px;
-      box-shadow: none;
-
-      }
-    }
+          }
 
     .btn {
       margin-top: 25px;
