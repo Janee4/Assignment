@@ -19,12 +19,14 @@ html, body { /*All text blir till denna färg */
   border-radius: 30px;
   padding: 16px 25px;
 }
+
 .btn-black i {
   margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
   font-size: 0.9em;
   font-weight: 500;
   color: #ffffff;
 }
+
 .btn-black:hover { /*fixa denna biten sen */
   background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svart */
   border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
@@ -41,11 +43,13 @@ html, body { /*All text blir till denna färg */
   font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
   border-radius: 30px;
 }
+
 .btn-yellow i {
   margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
   font-size: 0.9em;
   font-weight: 700;
 }
+
 .btn-yellow:hover {
   background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
   border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
@@ -62,11 +66,13 @@ html, body { /*All text blir till denna färg */
   font-size: 16px; /*samma storlek som redan finns, men för att kunna hänvisa till denna från "i" så sätter vi en fontsize. */
   border-radius: 30px;
 }
+
 .btn-transparent i {
   margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
   font-size: 0.9em;
   font-weight: 600;
 }
+
 .btn-transparent:hover {
   background-color: #191919; /*När vi går över med musen så blir bakgrundsfärgen svar */
   border: 1px solid #191919; /*bordern blir också svart då den var gul innan*/
@@ -84,6 +90,7 @@ html, body { /*All text blir till denna färg */
   margin-left: 200px;
   margin-top: 18px;
 }
+
 .btn-go-to i {
   position: absolute;
   color: white;
@@ -105,6 +112,7 @@ html, body { /*All text blir till denna färg */
   margin-left: 200px;
   margin-top: 18px;
 }
+
 .btn-yellow-box i {
   position: absolute;
   color: rgb(0, 0, 0);
@@ -121,6 +129,7 @@ html, body { /*All text blir till denna färg */
   font-weight: 500;
   font-size: 18px;
 }
+
 .section-title h2 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
@@ -133,6 +142,7 @@ header {
   padding: 16px;
   margin-bottom: -50px;
 }
+
 header .container {
   display: flex;
   align-items: center; /*Här centrerar du sakerna i container
@@ -141,16 +151,19 @@ i detta faller flyttades bara meny ikonen, varför? */
 och gå åt varsitt håll. */
   gap: 70px;
 }
+
 header .container .crito {
   margin-top: 0;
   padding-bottom: 100px;
 }
+
 header .container .menu-bars {
   border: none;
   font-size: 25px;
   background-color: transparent;
   margin-bottom: 80px;
 }
+
 @media (min-width: 992px) {
   header .container .menu-bars {
     display: none;
@@ -160,6 +173,7 @@ header .container .menu {
   display: none;
   flex: 1;
 }
+
 @media (min-width: 992px) {
   header .container .menu {
     display: block;
@@ -175,6 +189,7 @@ padding för att få bordern att gå ut hela vägen*/
 till social-media ikonerna. Align items centrerar dem i mitten av boxen vertikalt. */
   margin-bottom: 80px;
 }
+
 @media (min-width: 1200px) {
   header .container .menu .top-menu { /*Närvi kommer över en 1200px så vill vi: */
     justify-content: space-between; /*ha en space between så att sociala medier knapparna hamnar längst ut */
@@ -184,6 +199,7 @@ header .container .menu .top-menu .contact-information {
   display: none;
   align-items: center;
 }
+
 @media (min-width: 1200px) {
   header .container .menu .top-menu .contact-information { /*När vi kommer över en 1200px så vill vi: */
     display: flex; /*vi vill att contact-information delen ska vara flexad, dvs att elementen sätter sig bredvid varandra.
@@ -201,21 +217,25 @@ av en ram till höger om allt som finns i content-box klassen */
   font-size: 15px; /*storleken på texten */
   font-weight: 300; /*hur stark färgen blir */
 }
+
 header .container .menu .top-menu .contact-information .content-box i { /*egenskaper till ikonerna*/
   margin-right: 5px;
   font-size: 1.2em; /*när man skriver "1em" så betyder det
 att ge mig samma storlek som min parent, vilket blir 15px i detta fallet, skriver
 man 1.2 så blir det lite större än parentsens storlek osv. */
 }
+
 header .container .menu .top-menu .contact-information .content-box.last { /*för att targeta klassen last som
 är i höjd med de andra klasserna "content-box" så måste du 
 sätta dit ett "&" */
   border: none; /* nu tar vi bort den sista ram sidan på just denna klassen specifikt */
 }
+
 header .container .menu .top-menu .social-media #linked { /*skapar ett id för att just sista linkedin ikonen ska ligga
 sida vid sida med borderns slut*/
   margin-right: 0;
 }
+
 header .container .menu .top-menu .social-media a {
   color: #191919;
   font-size: 1.3rem; /*Man vill inte ha för små ikoner för att de ska gå att trycka på rem
@@ -223,10 +243,12 @@ utgår från font sizen i html och body delen, och 1,3 rem betyder att öka upp 
 från det vi satt i html och body delen vilket är 16 px (tror det betyder det)*/
   margin-right: 10px;
 }
+
 header .container .menu .top-menu .social-media a:hover { /*När vi drar med musen över ikonerna så kommer
 dem att ändra färg. */
   color: #666666;
 }
+
 header .container .menu .main-menu {
   display: flex; /*Så att varje text "home", "service" etc kan sättas bredvid varandra */
   justify-content: space-between; /*För att separera gruppen "home, service, news och contact" från "login"
@@ -238,6 +260,7 @@ höger och den andra till vänster */
   padding-bottom: 70px; /*flyttar ner båda grupperna*/
   margin-top: -50px;
 }
+
 header .container .menu .main-menu nav a {
   display: inline-block;
   color: #191919; /*färg på länkarna*/
@@ -246,9 +269,11 @@ header .container .menu .main-menu nav a {
   position: relative;
   margin-bottom: 20px;
 }
+
 header .container .menu .main-menu nav a.active { /*När den är active så blir den fet stilad */
   font-weight: 500;
 }
+
 header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
   content: "";
   position: absolute; /*Lär vi oss sen */
@@ -261,6 +286,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   transform: translate(calc(50% - 15px)); /*Lär vi oss sen */
   text-decoration: underline;
 }
+
 header .container .menu .main-menu .btn-login { /*Om du kollar högre upp i filen så ser vi att knapparna Learn more och get consulting har en del css egenskaper, alla dessa gäller för login knappen också, förutom det vi lägger till här då vi lagt till en extra klass på login knappen i html filen. */
   padding-top: 10px;
   padding-left: 30px;
@@ -268,6 +294,7 @@ header .container .menu .main-menu .btn-login { /*Om du kollar högre upp i file
   width: 135px;
   height: 50px;
 }
+
 header .container .menu .main-menu .btn-login i {
   margin: 10px;
 }
@@ -276,15 +303,18 @@ header .container .menu .main-menu .btn-login i {
   background-color: #F0EFE9; /*samma färg som headern */
   padding-left: 20px;
 }
+
 .showcase .container {
   display: flex;
   justify-content: space-between; /*För att separera dem ifrån varandra, inom containern, den ena går längst ut till vänster och bilden till höger */
   align-items: center; /*Nu flyttas båda ner in mot mitten, men man ser den största skillnaden hos texten som centreras. */
   position: relative;
 }
+
 .showcase .container .thin-line-showcase {
   display: none;
 }
+
 @media (min-width: 576px) {
   .showcase .container .thin-line-showcase {
     position: absolute;
@@ -298,6 +328,7 @@ header .container .menu .main-menu .btn-login i {
 .showcase .container .content {
   text-align: center; /*vi centrerar texten så länge vi håller oss under 1400px */
 }
+
 @media (min-width: 576px) {
   .showcase .container .content {
     padding-top: 80px;
@@ -314,6 +345,7 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 900;
   font-size: 35px;
 }
+
 @media (min-width: 768px) {
   .showcase .container .content h1 {
     font-family: "DM Sans", sans-serif;
@@ -332,6 +364,7 @@ header .container .menu .main-menu .btn-login i {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 @media (min-width: 768px) {
   .showcase .container p {
     font-size: 20px; /*när vi kommer över 768px så blir texten 20px */
@@ -344,6 +377,7 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: 50px;
   margin-right: 0px;
 }
+
 @media (min-width: 576px) {
   .showcase .container a {
     display: inline-block; /*nu vill vi att de ska bli inline-element igen och sätta sig bredvid varandra */
@@ -353,13 +387,13 @@ header .container .menu .main-menu .btn-login i {
 .showcase .container .man-img {
   display: none;
 }
+
 @media (min-width: 1200px) {
   .showcase .container .man-img {
     display: block;
     margin-right: -50px; /*flytta bilden till höger */
   }
 }
-
 @media (min-width: 576px) {
   .showcase-2 {
     margin-left: 0;
@@ -370,6 +404,7 @@ header .container .menu .main-menu .btn-login i {
   background-color: rgb(255, 255, 255);
   display: none;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .logo-section {
     margin-bottom: 60px;
@@ -382,11 +417,13 @@ header .container .menu .main-menu .btn-login i {
   background-color: #ffffff;
   margin-left: 90px;
 }
+
 .showcase-2 .container .container-2 {
   padding-bottom: 100px;
   max-width: 1400px;
   gap: 2rem;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 {
     background-color: #ffffff;
@@ -401,6 +438,7 @@ header .container .menu .main-menu .btn-login i {
   background-color: #ffffff;
   margin-bottom: 60px;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left {
     padding-left: 115px;
@@ -415,6 +453,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 15px;
   text-align: center;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left p {
     font-size: 18px;
@@ -432,6 +471,7 @@ header .container .menu .main-menu .btn-login i {
   text-align: center;
   margin-top: 10px;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left h2 {
     font-size: 45px;
@@ -444,6 +484,7 @@ header .container .menu .main-menu .btn-login i {
 .showcase-2 .container .container-2 .left .btn-learn-yellow {
   display: none;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .left .btn-learn-yellow {
     display: block;
@@ -475,6 +516,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 0px;
   margin-left: 0px;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .right {
     display: grid;
@@ -488,21 +530,25 @@ header .container .menu .main-menu .btn-login i {
 .showcase-2 .container .container-2 .right .business-advice {
   margin-left: 13px;
 }
+
 .showcase-2 .container .container-2 .right .business-advice img {
   margin-bottom: 10px;
 }
+
 .showcase-2 .container .container-2 .right .business-advice h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
   font-weight: 600;
   font-size: 18px;
   color: #191919;
 }
+
 .showcase-2 .container .container-2 .right .business-advice p {
   color: rgb(94, 94, 93);
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 13px; /*storleken på texten */
   font-weight: 400;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .right .business-advice {
     margin-top: 40px;
@@ -523,21 +569,25 @@ header .container .menu .main-menu .btn-login i {
 .showcase-2 .container .container-2 .right .startup-business {
   margin-left: 13px;
 }
+
 .showcase-2 .container .container-2 .right .startup-business img {
   margin-bottom: 10px;
 }
+
 .showcase-2 .container .container-2 .right .startup-business h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
   font-weight: 600;
   font-size: 18px;
   color: #191919;
 }
+
 .showcase-2 .container .container-2 .right .startup-business p {
   color: rgb(94, 94, 93);
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 13px; /*storleken på texten */
   font-weight: 400;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .right .startup-business {
     margin-top: 40px;
@@ -558,21 +608,25 @@ header .container .menu .main-menu .btn-login i {
 .showcase-2 .container .container-2 .right .financial-advice {
   margin-left: 13px;
 }
+
 .showcase-2 .container .container-2 .right .financial-advice img {
   margin-bottom: 10px;
 }
+
 .showcase-2 .container .container-2 .right .financial-advice h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   color: #191919;
 }
+
 .showcase-2 .container .container-2 .right .financial-advice p {
   color: rgb(94, 94, 93);
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 13px; /*storleken på texten */
   font-weight: 400;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .right .financial-advice {
     margin-top: 40px;
@@ -593,21 +647,25 @@ header .container .menu .main-menu .btn-login i {
 .showcase-2 .container .container-2 .right .risk-management {
   margin-left: 13px;
 }
+
 .showcase-2 .container .container-2 .right .risk-management img {
   margin-bottom: 10px;
 }
+
 .showcase-2 .container .container-2 .right .risk-management h2 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
   font-weight: 600;
   font-size: 18px;
   color: #191919;
 }
+
 .showcase-2 .container .container-2 .right .risk-management p {
   color: rgb(94, 94, 93);
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 13px; /*storleken på texten */
   font-weight: 400;
 }
+
 @media (min-width: 576px) {
   .showcase-2 .container .container-2 .right .risk-management {
     margin-top: 40px;
@@ -625,12 +683,12 @@ header .container .menu .main-menu .btn-login i {
     font-weight: 400;
   }
 }
-
 .part-3 {
   margin-bottom: 100px;
   background-color: #ffffff;
   padding: 30px;
 }
+
 @media (min-width: 576px) {
   .part-3 {
     margin-top: 100px; /*Gör att du kan flytta upp ramen ännu mer då vanlig margin inte räcker */
@@ -650,9 +708,11 @@ header .container .menu .main-menu .btn-login i {
   position: relative; /* Gör den överordnade behållaren relativt positionerad */
   flex: 1;
 }
+
 .part-3 .container .content-3-left .woman-img {
   display: none;
 }
+
 @media (min-width: 576px) {
   .part-3 .container .content-3-left .woman-img {
     display: block;
@@ -666,6 +726,7 @@ header .container .menu .main-menu .btn-login i {
 .part-3 .container .content-3-left .blue-box {
   display: none;
 }
+
 @media (min-width: 576px) {
   .part-3 .container .content-3-left .blue-box {
     width: 380px; /* Bredden på lådan */
@@ -688,6 +749,7 @@ header .container .menu .main-menu .btn-login i {
   margin: 0; /* Ta bort eventuell marginal som standardmässigt läggs till av webbläsaren */
   display: inline; /* Placera elementet som inline för att ligga på samma rad som features */
 }
+
 .part-3 .container .content-3-left .blue-box .founder-paragraph {
   font-size: 14px; /* Ange önskad fontstorlek för "features" */
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
@@ -696,19 +758,23 @@ header .container .menu .main-menu .btn-login i {
   margin: 0; /* Ta bort eventuell marginal som standardmässigt läggs till av webbläsaren */
   display: inline; /* Placera elementet som inline för att ligga på samma rad */
 }
+
 .part-3 .container .content-3-left .blue-box .lorem-paragraph {
   font-size: 14px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
   margin-top: 13px;
 }
+
 .part-3 .content-3-right {
   flex: 1.1;
   text-align: start;
 }
+
 .part-3 .content-3-right br {
   display: none;
 }
+
 @media (min-width: 576px) {
   .part-3 .content-3-right {
     margin-left: 0px;
@@ -727,6 +793,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 14px;
   display: block;
 }
+
 @media (min-width: 576px) {
   .part-3 .content-3-right .about-company-paragraph {
     margin-top: -5px;
@@ -741,9 +808,11 @@ header .container .menu .main-menu .btn-login i {
   font-size: 22px;
   text-align: start;
 }
+
 .part-3 .content-3-right h2 br {
   display: none;
 }
+
 @media (min-width: 576px) {
   .part-3 .content-3-right h2 {
     font-weight: 800;
@@ -762,6 +831,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 29px;
   line-height: 25px;
 }
+
 @media (min-width: 576px) {
   .part-3 .content-3-right .lorem {
     font-size: 13px;
@@ -778,6 +848,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 29px;
   line-height: 25px;
 }
+
 @media (min-width: 576px) {
   .part-3 .content-3-right .lorem-2 {
     line-height: 30px;
@@ -797,12 +868,14 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: 0px;
   margin-top: 10px;
 }
+
 .part-3 .content-3-right .btn-learnmore i {
   margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
   font-size: 0.9em;
   font-weight: 500;
   color: #ffffff;
 }
+
 @media (min-width: 576px) {
   .part-3 .content-3-right .btn-learnmore {
     font-size: 14px;
@@ -825,11 +898,13 @@ header .container .menu .main-menu .btn-login i {
   border-radius: 50%;
   background-color: #ffffff;
 }
+
 .part-3 .content-3-right .btn-video i {
   margin: 6px 10px 9px 7px; /*skapar avstånd mellan ikonen (pilen) och texten */
   font-size: 0.55em; /*storlek på ikonen */
   text-align: center;
 }
+
 @media (min-width: 576px) {
   .part-3 .content-3-right .btn-video {
     margin-left: 220px;
@@ -851,6 +926,7 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 400;
   font-size: 0.7em;
 }
+
 @media (min-width: 576px) {
   .part-3 .content-3-right .intro-video-paragraph {
     margin-left: 280px;
@@ -858,14 +934,15 @@ header .container .menu .main-menu .btn-login i {
     font-size: 0.8em;
   }
 }
-
 .we-provide-part4 {
   background-color: rgb(240, 239, 233);
   position: relative;
 }
+
 .we-provide-part4 .thin-line {
   display: none;
 }
+
 @media (min-width: 576px) {
   .we-provide-part4 .thin-line {
     position: absolute;
@@ -882,6 +959,7 @@ header .container .menu .main-menu .btn-login i {
   position: relative;
   padding-bottom: 100px;
 }
+
 .we-provide-part4 .container .main-text {
   margin-left: 20px;
   margin-bottom: 20px;
@@ -889,18 +967,21 @@ header .container .menu .main-menu .btn-login i {
   text-align: center;
   padding-top: 20px;
 }
+
 .we-provide-part4 .container .main-text p {
   color: rgb(249, 77, 28);
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
+
 .we-provide-part4 .container .main-text h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 800;
   font-size: 30px;
   color: #191919;
 }
+
 @media (min-width: 576px) {
   .we-provide-part4 .container .main-text {
     margin-left: 14px;
@@ -923,6 +1004,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 200px;
   row-gap: 50px;
 }
+
 @media (min-width: 576px) {
   .we-provide-part4 .container .boxes {
     display: flex;
@@ -941,12 +1023,14 @@ header .container .menu .main-menu .btn-login i {
   margin: 0 15px;
   position: relative;
 }
+
 .we-provide-part4 .container .boxes .box-1 img,
 .we-provide-part4 .container .boxes .box-3 img,
 .we-provide-part4 .container .boxes .box-4 img {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
 .we-provide-part4 .container .boxes .box-1 h3,
 .we-provide-part4 .container .boxes .box-3 h3,
 .we-provide-part4 .container .boxes .box-4 h3 {
@@ -955,6 +1039,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 20px;
   font-weight: 900;
 }
+
 .we-provide-part4 .container .boxes .box-1 p,
 .we-provide-part4 .container .boxes .box-3 p,
 .we-provide-part4 .container .boxes .box-4 p {
@@ -963,6 +1048,7 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 400;
   color: #191919;
 }
+
 .we-provide-part4 .container .boxes .box-1 .btn-go-to,
 .we-provide-part4 .container .boxes .box-3 .btn-go-to,
 .we-provide-part4 .container .boxes .box-4 .btn-go-to {
@@ -977,6 +1063,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 10px;
   z-index: 1;
 }
+
 .we-provide-part4 .container .boxes .box-1 .btn-go-to i,
 .we-provide-part4 .container .boxes .box-3 .btn-go-to i,
 .we-provide-part4 .container .boxes .box-4 .btn-go-to i {
@@ -987,6 +1074,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 1em;
   font-weight: 390;
 }
+
 @media (min-width: 576px) {
   .we-provide-part4 .container .boxes .box-1,
   .we-provide-part4 .container .boxes .box-3,
@@ -1036,22 +1124,26 @@ header .container .menu .main-menu .btn-login i {
   padding: 20px; /* Inre utfyllnad */
   margin: 0 15px;
 }
+
 .we-provide-part4 .container .boxes .box-2 img {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
 .we-provide-part4 .container .boxes .box-2 h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
   font-weight: 900;
 }
+
 .we-provide-part4 .container .boxes .box-2 p {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #191919;
 }
+
 .we-provide-part4 .container .boxes .box-2 .btn-yellow-box {
   position: absolute;
   background-color: #ffffff;
@@ -1064,6 +1156,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 10px;
   z-index: 1;
 }
+
 .we-provide-part4 .container .boxes .box-2 .btn-yellow-box i {
   position: absolute;
   color: rgb(0, 0, 0);
@@ -1073,6 +1166,7 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 400;
   transform: translate(-20%, 0%); /* Centrera ikonen helt och hållet */
 }
+
 @media (min-width: 576px) {
   .we-provide-part4 .container .boxes .box-2 {
     height: 333px; /* Höjden på lådan */
@@ -1091,11 +1185,13 @@ header .container .menu .main-menu .btn-login i {
 .we-provide-part4 .container .centered-browse-services-button {
   position: relative;
 }
+
 .we-provide-part4 .container .centered-browse-services-button .button-under-boxes {
   display: flex;
   justify-content: center;
   margin-top: 48px;
 }
+
 .we-provide-part4 .container .centered-browse-services-button .button-under-boxes .btn-transparent {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -1106,6 +1202,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 30px;
   position: relative;
 }
+
 @media (min-width: 576px) {
   .why-choose-us-part5 {
     margin-right: 185px;
@@ -1115,14 +1212,17 @@ header .container .menu .main-menu .btn-login i {
 .why-choose-us-part5 .container {
   display: flex;
 }
+
 .why-choose-us-part5 .container .left {
   margin-top: -29px;
   margin-left: 30px;
 }
+
 .why-choose-us-part5 .container .left .title {
   padding-top: 20px;
   margin-right: -35px;
 }
+
 .why-choose-us-part5 .container .left .title p {
   color: rgb(249, 77, 28);
   font-family: "Inter", sans-serif;
@@ -1130,6 +1230,7 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 500;
   text-align: center;
 }
+
 .why-choose-us-part5 .container .left .title h2 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
@@ -1138,9 +1239,11 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: 55px;
   text-align: center;
 }
+
 .why-choose-us-part5 .container .left .title h2 br {
   display: none;
 }
+
 @media (min-width: 576px) {
   .why-choose-us-part5 .container .left {
     margin-left: 100px;
@@ -1167,10 +1270,12 @@ header .container .menu .main-menu .btn-login i {
   margin-left: -25px;
   margin-bottom: 15px;
 }
+
 .why-choose-us-part5 .container .left .text-and-img img {
   margin-bottom: 15px;
   max-width: 50px;
 }
+
 .why-choose-us-part5 .container .left .text-and-img h3 {
   margin-left: 24px;
   color: #191919;
@@ -1178,6 +1283,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 18px;
   font-weight: 900;
 }
+
 .why-choose-us-part5 .container .left .text-and-img p {
   margin-left: 24px;
   color: #7a7979;
@@ -1186,6 +1292,7 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 400;
   white-space: nowrap;
 }
+
 @media (min-width: 576px) {
   .why-choose-us-part5 .container .left .text-and-img {
     display: flex;
@@ -1211,12 +1318,15 @@ header .container .menu .main-menu .btn-login i {
   position: relative;
   padding-right: 554px;
 }
+
 .why-choose-us-part5 .container .right .beige-box {
   display: none;
 }
+
 .why-choose-us-part5 .container .right img {
   display: none;
 }
+
 @media (min-width: 576px) {
   .why-choose-us-part5 .container .right {
     position: relative;
@@ -1244,18 +1354,20 @@ header .container .menu .main-menu .btn-login i {
     display: block;
   }
 }
-
 .project-and-case-6 .container .section-title {
   text-align: center; /*centrerar endast denna section title som vi har i project and case */
   padding-top: 70px;
   padding-bottom: 40px;
 }
+
 .project-and-case-6 .container .section-title p {
   margin-bottom: 17px;
 }
+
 .project-and-case-6 .container .section-title h2 {
   margin-bottom: 40px;
 }
+
 @media (min-width: 768px) {
   .project-and-case-6 .container .section-title {
     padding-top: 120px; /*skapar avstånd till toppen  */
@@ -1267,9 +1379,11 @@ header .container .menu .main-menu .btn-login i {
   grid-template-columns: 1fr;
   gap: 30px;
 }
+
 .project-and-case-6 .container .project-and-cases:hover .read-more {
   text-decoration: underline;
 }
+
 @media (min-width: 768px) {
   .project-and-case-6 .container .project-and-cases {
     grid-template-columns: 1fr 1fr;
@@ -1280,10 +1394,12 @@ header .container .menu .main-menu .btn-login i {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
 }
+
 .project-and-case-6 .container .project-and-cases article a img {
   width: 100%;
   height: auto; /*Elementet kommer att vara så högt som det behöver vara för att rymma sitt innehåll utan att du behöver specificera en exakt höjd. */
 }
+
 .project-and-case-6 .container .project-and-cases article h3 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
@@ -1294,6 +1410,7 @@ header .container .menu .main-menu .btn-login i {
   border-bottom: solid 1px #DAD9D3;
   text-align: left;
 }
+
 .project-and-case-6 .container .project-and-cases article .read-more {
   padding: 15px;
   margin-right: 16px;
@@ -1305,18 +1422,22 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 500;
   text-decoration: none;
 }
+
 .project-and-case-6 .container .project-and-cases article .read-more i {
   margin-left: 3px;
 }
+
 .project-and-case-6 .container .all-recent-projects-div {
   display: flex;
   align-items: center;
   margin-top: 30px;
   margin-bottom: 80px;
 }
+
 .project-and-case-6 .container .all-recent-projects-div .btn-black {
   padding: 10px 10px 10px 20px;
 }
+
 @media (min-width: 576px) {
   .project-and-case-6 .container .all-recent-projects-div {
     display: flex;
@@ -1328,11 +1449,11 @@ header .container .menu .main-menu .btn-login i {
     padding: 10px 10px 10px 20px;
   }
 }
-
 .team-members-7 {
   background-color: rgb(240, 208, 130);
   height: 2500px;
 }
+
 @media (min-width: 576px) {
   .team-members-7 {
     background-color: rgb(240, 208, 130);
@@ -1344,6 +1465,7 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: 10px;
   padding-top: 20px;
 }
+
 @media (min-width: 576px) {
   .team-members-7 .container .title-container {
     display: flex;
@@ -1356,18 +1478,21 @@ header .container .menu .main-menu .btn-login i {
 .team-members-7 .container .title-container .section-title {
   text-align: center;
 }
+
 .team-members-7 .container .title-container .section-title p {
   color: rgb(249, 77, 28);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
+
 .team-members-7 .container .title-container .section-title h2 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 700; /*kolla design mallen och hämta från fonts.google.com */
   font-size: 30px;
   color: #191919;
 }
+
 @media (min-width: 576px) {
   .team-members-7 .container .title-container .section-title {
     text-align: start;
@@ -1390,6 +1515,7 @@ header .container .menu .main-menu .btn-login i {
 .team-members-7 .container .title-container .btn-browse-team {
   display: none;
 }
+
 @media (min-width: 576px) {
   .team-members-7 .container .title-container .btn-browse-team {
     margin-left: 260px;
@@ -1424,11 +1550,12 @@ header .container .menu .main-menu .btn-login i {
   grid-template-columns: 1fr;
   margin-top: 40px;
 }
+
 @media (min-width: 576px) {
   .team-members-7 .container .section-team-members {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     -moz-column-gap: 31px;
-         column-gap: 31px;
+    column-gap: 31px;
     margin-top: 121px;
   }
 }
@@ -1436,6 +1563,7 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 50px;
   margin-left: 30px;
 }
+
 @media (min-width: 576px) {
   .team-members-7 .container .section-team-members .members-name-and-proffesion {
     margin-left: 0px;
@@ -1448,12 +1576,14 @@ header .container .menu .main-menu .btn-login i {
   color: #191919;
   margin-top: 15px;
 }
+
 .team-members-7 .container .section-team-members .members-name-and-proffesion p {
   color: #191919;
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 16px; /*storleken på texten */
   font-weight: 500; /*hur stark färgen blir */
 }
+
 @media (min-width: 576px) {
   .team-members-7 .container .section-team-members .members-name-and-proffesion {
     margin-top: 0;
@@ -1478,6 +1608,7 @@ header .container .menu .main-menu .btn-login i {
 .team-members-7 .container .circles {
   display: none;
 }
+
 @media (min-width: 576px) {
   .team-members-7 .container .circles {
     display: block;
@@ -1495,6 +1626,7 @@ header .container .menu .main-menu .btn-login i {
   opacity: 20%; /* Fyllningsfärg för cirklarna */
   border-radius: 50%; /* Gör elementet till en cirkel */
 }
+
 .team-members-7 .container .circles .circle-2 {
   width: 10px;
   height: 10px;
@@ -1506,6 +1638,7 @@ header .container .menu .main-menu .btn-login i {
   background-color: rgb(240, 208, 130);
   height: 1200px;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 {
     height: 900px;
@@ -1515,6 +1648,7 @@ header .container .menu .main-menu .btn-login i {
   background-color: #ffffff;
   text-align: center;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 .container {
     padding: 200px 120px 100px 120px;
@@ -1526,17 +1660,20 @@ header .container .menu .main-menu .btn-login i {
   margin-top: 20px;
   margin-bottom: 170px;
 }
+
 .what-our-client-says-8 .container .section-title p {
   color: rgb(249, 77, 28);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
+
 .what-our-client-says-8 .container .section-title h2 {
   font-family: "DM Sans", sans-serif;
   font-size: 35px;
   color: #191919;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .section-title {
     margin-top: -80px;
@@ -1555,6 +1692,7 @@ header .container .menu .main-menu .btn-login i {
   background-color: #ffffff;
   margin-top: 150px;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .total-comments {
     display: flex;
@@ -1570,6 +1708,7 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .total-comments .rating-1 {
   text-align: start;
 }
+
 .what-our-client-says-8 .container .total-comments .rating-1 span {
   color: rgb(249, 77, 28); /* Färg på aktiverade stjärnor */
   height: 16px;
@@ -1577,6 +1716,7 @@ header .container .menu .main-menu .btn-login i {
   margin-right: -3px;
   margin-bottom: -60px;
 }
+
 .what-our-client-says-8 .container .total-comments .rating-1 p {
   padding-top: 15px;
   font-family: "Inter", sans-serif; /*Textsnitt */
@@ -1585,6 +1725,7 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: 150px;
   line-height: 2;
 }
+
 .what-our-client-says-8 .container .total-comments .rating-1 .jack-paragraph {
   padding-top: 15px;
   font-family: "Inter", sans-serif; /*Textsnitt */
@@ -1592,6 +1733,7 @@ header .container .menu .main-menu .btn-login i {
   font-weight: 400;
   line-height: 2;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .total-comments .rating-1 {
     text-align: start;
@@ -1608,6 +1750,7 @@ header .container .menu .main-menu .btn-login i {
 .what-our-client-says-8 .container .total-comments .rating-1 .img-name-profession {
   display: flex;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .total-comments .rating-1 .img-name-profession {
     display: flex;
@@ -1618,10 +1761,12 @@ header .container .menu .main-menu .btn-login i {
   z-index: 1;
   margin-top: -405px;
 }
+
 .what-our-client-says-8 .container .total-comments .three-images img {
   width: 70px;
   height: 70px;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .total-comments .three-images {
     position: static;
@@ -1635,18 +1780,21 @@ header .container .menu .main-menu .btn-login i {
   position: absolute;
   z-index: 1;
 }
+
 .what-our-client-says-8 .container .total-comments .name-profession h4 {
   font-family: "DM Sans", sans-serif; /*kolla design mallen och hämta från fonts.google.com */
   font-weight: 700;
   font-size: 18px;
   margin-bottom: -20px;
 }
+
 .what-our-client-says-8 .container .total-comments .name-profession p {
   color: rgb(249, 77, 28);
   font-family: "Inter", sans-serif; /*Textsnitt */
   font-size: 13px; /*storleken på texten */
   font-weight: 400;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .total-comments .name-profession {
     z-index: 0;
@@ -1669,6 +1817,7 @@ header .container .menu .main-menu .btn-login i {
   margin-bottom: 50px;
   position: relative;
 }
+
 .what-our-client-says-8 .container .all-recent-projects-div .btn-black {
   position: absolute;
   margin-top: -60px;
@@ -1683,12 +1832,14 @@ header .container .menu .main-menu .btn-login i {
   padding: 5px 25px;
   margin-left: -90px;
 }
+
 .what-our-client-says-8 .container .all-recent-projects-div .btn-black i {
   margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
   font-size: 0.9em;
   font-weight: 500;
   color: #ffffff;
 }
+
 @media (min-width: 576px) {
   .what-our-client-says-8 .container .all-recent-projects-div {
     margin-bottom: 50px;
@@ -1704,7 +1855,6 @@ header .container .menu .main-menu .btn-login i {
     color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
   }
 }
-
 @media (min-width: 576px) {
   .article-and-news-9 {
     margin-right: 20px;
@@ -1721,18 +1871,21 @@ header .container .menu .main-menu .btn-login i {
 .article-and-news-9 .container .title-container .section-title {
   margin-top: 150px;
 }
+
 .article-and-news-9 .container .title-container .section-title p {
   color: rgb(249, 77, 28);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
+
 .article-and-news-9 .container .title-container .section-title h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
   color: #191919;
 }
+
 @media (min-width: 576px) {
   .article-and-news-9 .container .title-container .section-title p {
     font-weight: 500;
@@ -1746,6 +1899,7 @@ header .container .menu .main-menu .btn-login i {
 .article-and-news-9 .container .title-container .btn-class .btn-transparent {
   display: none;
 }
+
 @media (min-width: 576px) {
   .article-and-news-9 .container .title-container .btn-class .btn-transparent {
     display: block;
@@ -1757,18 +1911,20 @@ header .container .menu .main-menu .btn-login i {
   row-gap: 50px;
   margin-top: 50px;
 }
+
 @media (min-width: 576px) {
   .article-and-news-9 .container .how-to-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     -moz-column-gap: 31px;
-         column-gap: 31px;
+    column-gap: 31px;
     margin-top: 30px;
   }
 }
 .article-and-news-9 .container .how-to-section .text-under-img #business {
   display: none;
 }
+
 .article-and-news-9 .container .how-to-section .text-under-img p {
   display: block;
   color: #191919;
@@ -1776,6 +1932,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 14px;
   font-weight: 500;
 }
+
 .article-and-news-9 .container .how-to-section .text-under-img h4 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -1783,6 +1940,7 @@ header .container .menu .main-menu .btn-login i {
   color: #191919;
   margin-top: 15px;
 }
+
 @media (min-width: 576px) {
   .article-and-news-9 .container .how-to-section .text-under-img {
     position: relative;
@@ -1809,6 +1967,7 @@ header .container .menu .main-menu .btn-login i {
   margin-left: 16px;
   margin-top: 840px;
 }
+
 .article-and-news-9 .container .how-to-section .yellow-rectangle-3 .mars-13 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
@@ -1819,13 +1978,16 @@ header .container .menu .main-menu .btn-login i {
   left: 17px;
   line-height: 20px;
 }
+
 .article-and-news-9 .container .how-to-section .yellow-rectangle-3 .mars-13::first-line {
   font-size: 20px;
   font-weight: 700;
 }
+
 .article-and-news-9 .container .how-to-section .yellow-rectangle-3 .day {
   margin-left: 5px;
 }
+
 @media (min-width: 576px) {
   .article-and-news-9 .container .how-to-section .yellow-rectangle-3 {
     margin-left: 920px;
@@ -1838,6 +2000,7 @@ header .container .menu .main-menu .btn-login i {
   margin-left: 17px;
   margin-top: 430px;
 }
+
 .article-and-news-9 .container .yellow-rectangle-2 .mars-17 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
@@ -1848,13 +2011,16 @@ header .container .menu .main-menu .btn-login i {
   left: 17px;
   line-height: 20px;
 }
+
 .article-and-news-9 .container .yellow-rectangle-2 .mars-17::first-line { /* Välj den första textraden */
   font-size: 20px; /* Ange en annan fontstorlek för den första raden ("25") */
   font-weight: 700;
 }
+
 .article-and-news-9 .container .yellow-rectangle-2 .day {
   margin-left: 5px;
 }
+
 @media (min-width: 576px) {
   .article-and-news-9 .container .yellow-rectangle-2 {
     margin-left: 470px;
@@ -1867,6 +2033,7 @@ header .container .menu .main-menu .btn-login i {
   margin-left: 17px;
   margin-top: 15px;
 }
+
 .article-and-news-9 .container .yellow-rectangle-1 .mars-25 {
   font-family: "DM Sans", sans-serif; /*kopierar du under import delen på fonts.google.com */
   font-weight: 400; /*kolla design mallen och hämta från fonts.google.com */
@@ -1877,13 +2044,16 @@ header .container .menu .main-menu .btn-login i {
   left: 15px;
   line-height: 20px;
 }
+
 .article-and-news-9 .container .yellow-rectangle-1 .mars-25::first-line {
   font-size: 20px;
   font-weight: 700;
 }
+
 .article-and-news-9 .container .circles {
   display: none;
 }
+
 @media (min-width: 576px) {
   .article-and-news-9 .container .circles {
     display: block;
@@ -1908,7 +2078,6 @@ header .container .menu .main-menu .btn-login i {
     border-radius: 50%;
   }
 }
-
 .signup {
   background-color: #F0EFE9;
   height: 14rem;
@@ -1917,6 +2086,7 @@ header .container .menu .main-menu .btn-login i {
   position: relative;
   margin-top: 100px;
 }
+
 @media (min-width: 576px) {
   .signup {
     background-color: #F0EFE9;
@@ -1930,6 +2100,7 @@ header .container .menu .main-menu .btn-login i {
 .signup .m-detail {
   display: none;
 }
+
 @media (min-width: 576px) {
   .signup .m-detail {
     display: block;
@@ -1942,6 +2113,7 @@ header .container .menu .main-menu .btn-login i {
 .signup .container {
   display: block;
 }
+
 @media (min-width: 576px) {
   .signup .container {
     display: flex;
@@ -1955,6 +2127,7 @@ header .container .menu .main-menu .btn-login i {
   color: #191919;
   margin-bottom: 40px;
 }
+
 @media (min-width: 576px) {
   .signup .container .left h3 {
     font-size: 40px;
@@ -1966,6 +2139,7 @@ header .container .menu .main-menu .btn-login i {
   justify-content: center;
   align-items: center;
 }
+
 @media (min-width: 576px) {
   .signup .container .right .searchbar-plus-button {
     display: flex;
@@ -1978,27 +2152,32 @@ header .container .menu .main-menu .btn-login i {
   margin-right: 10px;
   border-radius: 25px;
 }
+
 .signup .container .right .searchbar-plus-button .searchbox input {
   border: solid 1px rgb(192, 192, 192);
   text-align: center;
   font-size: 5px;
   outline: none;
 }
+
 .signup .container .right .searchbar-plus-button .searchbox #email {
   border-radius: 25px; /* Rundade kanter */
   padding: 8px 8px 8px 0;
   font-size: 16px; /* Ange textstorlek */
 }
+
 .signup .container .right .searchbar-plus-button .searchbox #email::-moz-placeholder {
   color: #999; /* Grå färg för plachållartexten */
   font-style: italic; /* Kursiv stil för plachållartexten */
   font-size: 15px;
 }
+
 .signup .container .right .searchbar-plus-button .searchbox #email::placeholder {
   color: #999; /* Grå färg för plachållartexten */
   font-style: italic; /* Kursiv stil för plachållartexten */
   font-size: 15px;
 }
+
 @media (min-width: 576px) {
   .signup .container .right .searchbar-plus-button .searchbox {
     display: flex;
@@ -2029,11 +2208,13 @@ header .container .menu .main-menu .btn-login i {
   border-radius: 30px;
   border-color: #e2c67e;
 }
+
 .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe i {
   margin: 8px;
   font-size: 0.9em;
   font-weight: 700;
 }
+
 @media (min-width: 576px) {
   .signup .container .right .searchbar-plus-button .btn-subscribe .subscribe {
     background-color: #F9D783;
@@ -2051,31 +2232,33 @@ header .container .menu .main-menu .btn-login i {
     color: #F0EFE9;
   }
 }
-
 .black-navigation {
   background-color: #0E1021;
   height: 300px;
   position: relative;
 }
+
 .black-navigation .container {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
   -moz-column-gap: 7px;
-       column-gap: 7px;
+  column-gap: 7px;
   row-gap: 10px;
   margin-left: 10px;
 }
+
 @media (min-width: 576px) {
   .black-navigation .container {
     margin-left: auto;
     -moz-column-gap: 107px;
-         column-gap: 107px;
+    column-gap: 107px;
   }
 }
 .black-navigation .container .crito {
   display: none;
 }
+
 @media (min-width: 576px) {
   .black-navigation .container .crito {
     display: block;
@@ -2091,13 +2274,16 @@ header .container .menu .main-menu .btn-login i {
 .black-navigation .container .small-titles .help {
   margin-left: 5px;
 }
+
 .black-navigation .container .small-titles .link {
   margin-right: -20px;
   position: absolute;
 }
+
 .black-navigation .container .small-titles .company {
   margin-left: -7px;
 }
+
 .black-navigation .container .small-titles h4 {
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
@@ -2105,6 +2291,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 14px;
   padding-bottom: 5px;
 }
+
 .black-navigation .container .small-titles a {
   text-decoration: none;
   color: #b9b9b9;
@@ -2112,11 +2299,12 @@ header .container .menu .main-menu .btn-login i {
   font-size: 12px;
   font-weight: 500;
 }
+
 @media (min-width: 576px) {
   .black-navigation .container .small-titles {
     display: grid;
     -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
   .black-navigation .container .small-titles .help {
     margin-left: 0px;
@@ -2151,6 +2339,7 @@ header .container .menu .main-menu .btn-login i {
   border-top: solid 1px #707070;
   display: flex;
 }
+
 @media (min-width: 576px) {
   .footer {
     display: block;
@@ -2160,6 +2349,7 @@ header .container .menu .main-menu .btn-login i {
   display: flex;
   flex-direction: column-reverse;
 }
+
 .footer .container .left p {
   color: #b9b9b9;
   font-family: "Inter", sans-serif; /*Textsnitt */
@@ -2168,16 +2358,19 @@ header .container .menu .main-menu .btn-login i {
   order: 1;
   margin-left: 11px;
 }
+
 .footer .container .right {
   margin-left: 60px;
   margin-bottom: 20px;
 }
+
 .footer .container .right a {
   color: #ffffff;
   font-size: 1.3rem;
   margin-right: 50px;
   order: 2;
 }
+
 @media (min-width: 576px) {
   .footer .container {
     display: flex;
@@ -2195,27 +2388,30 @@ header .container .menu .main-menu .btn-login i {
     margin-bottom: 0px;
   }
 }
-
 header {
   background-color: #F0EFE9;
   padding: 16px;
   margin-bottom: -50px;
 }
+
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 70px;
 }
+
 header .container .crito {
   margin-top: 0;
   padding-bottom: 100px;
 }
+
 header .container .menu-bars {
   border: none;
   font-size: 25px;
   background-color: transparent;
 }
+
 @media (min-width: 992px) {
   header .container .menu-bars {
     display: none;
@@ -2225,6 +2421,7 @@ header .container .menu {
   display: none;
   flex: 1;
 }
+
 @media (min-width: 992px) {
   header .container .menu {
     display: block;
@@ -2238,6 +2435,7 @@ header .container .menu .top-menu {
   align-items: center;
   margin-bottom: 80px;
 }
+
 @media (min-width: 1200px) {
   header .container .menu .top-menu { /*Närvi kommer över en 1200px så vill vi: */
     justify-content: space-between; /*ha en space between så att sociala medier knapparna hamnar längst ut */
@@ -2247,6 +2445,7 @@ header .container .menu .top-menu .contact-information {
   display: none;
   align-items: center;
 }
+
 @media (min-width: 1200px) {
   header .container .menu .top-menu .contact-information {
     display: flex;
@@ -2261,21 +2460,25 @@ header .container .menu .top-menu .contact-information .content-box {
   font-size: 15px;
   font-weight: 300;
 }
+
 header .container .menu .top-menu .contact-information .content-box i {
   margin-right: 5px;
   font-size: 1.2em; /*när man skriver "1em" så betyder det
 att ge mig samma storlek som min parent, vilket blir 15px i detta fallet, skriver
 man 1.2 så blir det lite större än parentsens storlek osv. */
 }
+
 header .container .menu .top-menu .contact-information .content-box.last { /*för att targeta klassen last som
 är i höjd med de andra klasserna "content-box" så måste du 
 sätta dit ett "&" */
   border: none; /* nu tar vi bort den sista ram sidan på just denna klassen specifikt */
 }
+
 header .container .menu .top-menu .social-media #linked { /*skapar ett id för att just sista linkedin ikonen ska ligga
 sida vid sida med borderns slut*/
   margin-right: 0;
 }
+
 header .container .menu .top-menu .social-media a {
   color: #191919;
   font-size: 1.3rem; /*Man vill inte ha för små ikoner för att de ska gå att trycka på rem
@@ -2283,10 +2486,12 @@ utgår från font sizen i html och body delen, och 1,3 rem betyder att öka upp 
 från det vi satt i html och body delen vilket är 16 px (tror det betyder det)*/
   margin-right: 10px;
 }
+
 header .container .menu .top-menu .social-media a:hover { /*När vi drar med musen över ikonerna så kommer
 dem att ändra färg. */
   color: #666666;
 }
+
 header .container .menu .main-menu {
   display: flex;
   justify-content: space-between;
@@ -2294,6 +2499,7 @@ header .container .menu .main-menu {
   padding-bottom: 70px;
   margin-top: -50px;
 }
+
 header .container .menu .main-menu nav a {
   display: inline-block;
   color: #191919;
@@ -2302,6 +2508,7 @@ header .container .menu .main-menu nav a {
   position: relative;
   margin-bottom: 20px;
 }
+
 @media (min-width: 576px) {
   header .container .menu .main-menu nav a.active { /*När den är active så blir den fet stilad */
     font-weight: 500;
@@ -2326,6 +2533,7 @@ header .container .menu .main-menu .btn-login {
   width: 135px;
   height: 50px;
 }
+
 header .container .menu .main-menu .btn-login i {
   margin: 10px;
 }
@@ -2336,6 +2544,7 @@ header .container .menu .main-menu .btn-login i {
   height: 150px;
   padding-bottom: 50px;
 }
+
 .mini-nav-bar .container {
   width: 100%;
   max-width: 1200px;
@@ -2343,9 +2552,11 @@ header .container .menu .main-menu .btn-login i {
   text-align: center;
   position: relative;
 }
+
 .mini-nav-bar .container .thin-line-showcase {
   display: none;
 }
+
 @media (min-width: 576px) {
   .mini-nav-bar .container .thin-line-showcase {
     position: absolute;
@@ -2361,12 +2572,14 @@ header .container .menu .main-menu .btn-login i {
   gap: 30px;
   justify-content: center;
 }
+
 .mini-nav-bar .container .first-row p {
   color: #191919;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
+
 .mini-nav-bar .container .second-row h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -2378,6 +2591,7 @@ header .container .menu .main-menu .btn-login i {
   background-color: #F0EFE9;
   padding-bottom: 60px;
 }
+
 @media (min-width: 576px) {
   .main-content {
     padding-bottom: 0;
@@ -2388,6 +2602,7 @@ header .container .menu .main-menu .btn-login i {
   justify-content: center;
   gap: 20px;
 }
+
 .main-content .three-boxes .box {
   border: solid 1px rgb(70, 70, 70);
   padding: 10px 20px 0px 20px;
@@ -2395,6 +2610,7 @@ header .container .menu .main-menu .btn-login i {
   background-color: #F0EFE9;
   border-radius: 20px;
 }
+
 .main-content .three-boxes .box .img img {
   display: flex;
   justify-content: center;
@@ -2402,6 +2618,7 @@ header .container .menu .main-menu .btn-login i {
   height: 40px;
   margin-bottom: 10px;
 }
+
 .main-content .three-boxes .box h4 {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
@@ -2410,9 +2627,11 @@ header .container .menu .main-menu .btn-login i {
   text-align: start;
   padding-bottom: 20px;
 }
+
 .main-content .three-boxes .box p {
   display: none;
 }
+
 @media (min-width: 576px) {
   .main-content .three-boxes {
     display: flex;
@@ -2453,7 +2672,6 @@ header .container .menu .main-menu .btn-login i {
     line-height: 0.5;
   }
 }
-
 .big-form .container {
   background-color: #ffffff;
   width: 390px;
@@ -2462,6 +2680,7 @@ header .container .menu .main-menu .btn-login i {
   border-radius: 25px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
+
 @media (min-width: 576px) {
   .big-form .container {
     background-color: #F0EFE9;
@@ -2477,6 +2696,7 @@ header .container .menu .main-menu .btn-login i {
   padding-bottom: 25px;
   text-align: center;
 }
+
 @media (min-width: 576px) {
   .big-form .container .title {
     padding-top: 90px;
@@ -2487,6 +2707,7 @@ header .container .menu .main-menu .btn-login i {
   font-size: 35px;
   font-weight: 700;
 }
+
 .big-form .container .form-1 {
   border-radius: 25px;
   padding: 10px 10px 10px 20px;
@@ -2496,13 +2717,16 @@ header .container .menu .main-menu .btn-login i {
   margin: 10px 10px 20px 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .big-form .container .form-1 input {
   border: none;
   outline: none;
 }
+
 .big-form .container .form-1 #name {
   padding: 10px 20px 10px 20px;
 }
+
 @media (min-width: 576px) {
   .big-form .container .form-1 {
     padding: 10px 20px 10px 20px;
@@ -2523,10 +2747,12 @@ header .container .menu .main-menu .btn-login i {
   margin: 10px 10px 30px 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .big-form .container .form-2 input {
   border: none;
   outline: none;
 }
+
 @media (min-width: 576px) {
   .big-form .container .form-2 {
     padding: 10px 20px 10px 20px;
@@ -2550,10 +2776,12 @@ header .container .menu .main-menu .btn-login i {
   margin: 10px 10px 10px 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Skugga med 10px spridning och 50% opacitet */
 }
+
 .big-form .container .form-3 input {
   border: none;
   outline: none;
 }
+
 @media (min-width: 576px) {
   .big-form .container .form-3 {
     margin: 10px 100px 10px 100px;
@@ -2563,6 +2791,7 @@ header .container .menu .main-menu .btn-login i {
 .big-form .container .btn {
   margin-top: 25px;
 }
+
 .big-form .container .btn .btn-send-message {
   background-color: #F9D783;
   border: solid 1px #F9D783;
@@ -2574,11 +2803,13 @@ header .container .menu .main-menu .btn-login i {
   border-radius: 30px;
   margin-left: 85px;
 }
+
 .big-form .container .btn .btn-send-message i {
   margin: 8px; /*skapar avstånd mellan ikonen (pilen) och texten */
   font-size: 0.9em;
   font-weight: 700;
 }
+
 @media (min-width: 576px) {
   .big-form .container .btn .btn-send-message {
     padding: 12px 337px 12px 337px; /*Här är det som att säga padding-top och bottom:8px, samt padding-top och bottom: 25px */
@@ -2589,15 +2820,16 @@ header .container .menu .main-menu .btn-login i {
     color: #F0EFE9; /* text färgen går över från svart till vit (obs! lite mjukare vit) */
   }
 }
-
 .map {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
+
 .map img {
   max-width: 390px;
 }
+
 @media (min-width: 576px) {
   .map {
     display: flex;
