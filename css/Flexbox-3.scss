@@ -2500,122 +2500,110 @@ header {
             justify-content: space-between; 
           }
 
+          .content-box {
+            padding-right: 30px; 
+            margin-right: 30px;
+            border-right: 1px solid #DAD9D3; 
+            font-family: 'Inter', sans-serif;
+            font-size: 15px; 
+            font-weight: 300; 
+
+            i {
+              margin-right: 5px;
+              font-size: 1.2em;/*när man skriver "1em" så betyder det
+              att ge mig samma storlek som min parent, vilket blir 15px i detta fallet, skriver
+              man 1.2 så blir det lite större än parentsens storlek osv. */  
+            }
+
+            &.last { /*för att targeta klassen last som
+            är i höjd med de andra klasserna "content-box" så måste du 
+            sätta dit ett "&" */ 
+              border: none; /* nu tar vi bort den sista ram sidan på just denna klassen specifikt */   
+            }
+
+          }
+        }
+
+        .social-media {
+          
+          #linked { /*skapar ett id för att just sista linkedin ikonen ska ligga
+          sida vid sida med borderns slut*/
+          margin-right: 0;
+          }
+
+            a {
+              color: #191919;
+              font-size: 1.3rem; /*Man vill inte ha för små ikoner för att de ska gå att trycka på rem
+              utgår från font sizen i html och body delen, och 1,3 rem betyder att öka upp med 30%
+              från det vi satt i html och body delen vilket är 16 px (tror det betyder det)*/ 
+              margin-right: 10px;
             
+              &:hover { /*När vi drar med musen över ikonerna så kommer
+              dem att ändra färg. */
+              color: #666666;
+              }
+            }       
+          }         
+        }
 
+        .main-menu {
+          display: flex; 
+          justify-content: space-between; 
+          align-items: center;
+          padding-bottom: 70px; 
+          margin-top: -50px;
+          
+          nav {
+            
+            a {
+              display: inline-block;
+              color: #191919; /*färg på länkarna*/
+              text-decoration: none; /*tar bort linjen under text-länken */
+              margin-right: 35px; /*separerar länkarna ifrån varandra */
+              position: relative;
+              margin-bottom: 20px;
+            }
 
-                .content-box {
-                    padding-right: 30px; 
-                    margin-right: 30px;
-                    border-right: 1px solid #DAD9D3; 
-                    font-family: 'Inter', sans-serif;
-                    font-size: 15px; 
-                    font-weight: 300; 
-
-                    i {
-                      margin-right: 5px;
-                      font-size: 1.2em;/*när man skriver "1em" så betyder det
-                      att ge mig samma storlek som min parent, vilket blir 15px i detta fallet, skriver
-                      man 1.2 så blir det lite större än parentsens storlek osv. */
-                      
-                    }
-
-                    &.last { /*för att targeta klassen last som
-                    är i höjd med de andra klasserna "content-box" så måste du 
-                    sätta dit ett "&" */ 
-                      border: none; /* nu tar vi bort den sista ram sidan på just denna klassen specifikt */   
-                    }
-
-                      }
-                    }
-                  .social-media {
-                  #linked { /*skapar ett id för att just sista linkedin ikonen ska ligga
-                    sida vid sida med borderns slut*/
-                    margin-right: 0;
-                  }
-
-                  a {
-                    color: #191919;
-                    font-size: 1.3rem; /*Man vill inte ha för små ikoner för att de ska gå att trycka på rem
-                    utgår från font sizen i html och body delen, och 1,3 rem betyder att öka upp med 30%
-                    från det vi satt i html och body delen vilket är 16 px (tror det betyder det)*/ 
-                    margin-right: 10px;
-                  
-                      &:hover { /*När vi drar med musen över ikonerna så kommer
-                      dem att ändra färg. */
-                      color: #666666;
-                      }
-                    
-                    }
-                    
-                  
-                  
-                  }  
-                  
+            @media (min-width: 576px) {
+              
+              a {
+                
+                &.active { /*När den är active så blir den fet stilad */
+                  font-weight: 500;
                 }
-                .main-menu {
-                  display: flex; 
-                  justify-content: space-between; 
-                  align-items: center;
-                  padding-bottom: 70px; 
-                  margin-top: -50px;
-                  nav {
-                    a {
-                      display: inline-block;
-                      color: #191919; /*färg på länkarna*/
-                      text-decoration: none; /*tar bort linjen under text-länken */
-                      margin-right: 35px; /*separerar länkarna ifrån varandra */
-                      position: relative;
-                      margin-bottom: 20px;
-                    }
-                    @media (min-width: 576px) {
-                      a {
-                        display: inline-block;
-                        color: #191919; 
-                        text-decoration: none; 
-                        margin-right: 35px; 
-                        position: relative;
-                        margin-bottom: 20px;
-  
-                        &.active { /*När den är active så blir den fet stilad */
-                          font-weight: 500;
-                        }
-  
-                        &.active::after,
-                        &:hover::after {
-                          content: '';
-                          position: absolute;
-                          font-weight: 500;
-                          height: 2px;
-                          width: 15px;
-                          background-color: #191919;
-                          left: 50%;
-                          bottom: 3px;
-                          transform: translate((calc(50% - 15px))); 
-                          text-decoration: underline;
-                        }
-                      }
 
-                    }
-                  }
-
-                .btn-login {
-                  padding-top: 10px;
-                  padding-left: 30px;
-                  border-radius: 30px;
-                  width: 135px;
-                  height: 50px;
-
-                    i {
-                      margin: 10px;
-                      
-
-                    }
-                  
+                &.active::after,
+                &:hover::after {
+                  content: '';
+                  position: absolute;
+                  font-weight: 500;
+                  height: 2px;
+                  width: 15px;
+                  background-color: #191919;
+                  left: 50%;
+                  bottom: 3px;
+                  transform: translate((calc(50% - 15px))); 
+                  text-decoration: underline;
                 }
-                  
               }
             }
           }
+
+          .btn-login {
+            padding-top: 10px;
+            padding-left: 30px;
+            border-radius: 30px;
+            width: 135px;
+            height: 50px;
+
+              i {
+                margin: 10px;
+              }
+            }
+          
+      }
+    }
+  }
 
 } 
           
@@ -2625,26 +2613,25 @@ header {
   height: 150px;
   padding-bottom: 50px;
   
-  
   .container{
     width: 100%;
-   max-width: 1200px;
-   margin: auto;
-   text-align: center;
-   position: relative;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    position: relative;
 
-   .thin-line-showcase {
-    display: none;
+      .thin-line-showcase {
+      display: none;
 
-    @media (min-width: 576px) {
-    position: absolute;
-    z-index: 1;
-    margin-top: 200px;
-    bottom: -60px;
-    left: -358px;
-    display: block;
-    }
-   }
+  @media (min-width: 576px) {
+  position: absolute;
+  z-index: 1;
+  margin-top: 200px;
+  bottom: -60px;
+  left: -358px;
+  display: block;
+  }
+  }
    
     
    .first-row {
@@ -2692,12 +2679,11 @@ header {
       border: solid 1px grey;
       padding: 10px 20px 0px 20px;
       display: block;
-      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       background-color: #F0EFE9; 
-      // border-radius: 5px;
-        
+
       .img {
-       img {
+       
+        img {
         display: flex;
         justify-content: center;
           width: 40px;
@@ -2706,18 +2692,18 @@ header {
         }  
       }
 
-      h4 {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        margin-bottom: 0px;
-        text-align: start;
-        padding-bottom: 20px;
-      }
+        h4 {
+          font-family: 'DM Sans', sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 0px;
+          text-align: start;
+          padding-bottom: 20px;
+        }
 
-      p {
-          display: none;
-      }
+        p {
+            display: none;
+        }
     }
 
     @media (min-width: 576px) {
@@ -2739,7 +2725,8 @@ header {
         
         
         .img {
-         img {
+         
+          img {
             margin-left: -80px;
             margin-top: -2px;
             width: 25%;
@@ -2748,8 +2735,7 @@ header {
             display: block;
             justify-content: center;
             margin-bottom: 0px;
-          }
-          
+          }   
         }
   
         h4 {
@@ -2763,13 +2749,12 @@ header {
   
         p {
           display: block;
-            font-family: 'Inter', sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 0.5 ;
+          font-family: 'Inter', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 0.5 ;
         }
       }
-
     }
   }
 

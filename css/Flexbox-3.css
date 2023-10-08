@@ -2303,14 +2303,6 @@ header .container .menu .main-menu nav a {
   margin-bottom: 20px;
 }
 @media (min-width: 576px) {
-  header .container .menu .main-menu nav a {
-    display: inline-block;
-    color: #191919;
-    text-decoration: none;
-    margin-right: 35px;
-    position: relative;
-    margin-bottom: 20px;
-  }
   header .container .menu .main-menu nav a.active { /*När den är active så blir den fet stilad */
     font-weight: 500;
   }
